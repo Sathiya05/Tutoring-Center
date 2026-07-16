@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorCenter | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="tailwind.js"></script>
+          <link rel="icon" href="images\logo.png">
+              <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F172A',
+                        secondary: '#5ba0d9',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-primary text-slate-900 dark:text-white font-sans antialiased selection:bg-secondary selection:text-white">
+
+    <div id="navbar"></div>
+
+    <main class="pt-10 md:pt-24">
+
+        <!-- ==================== COMPONENT 1: SPLIT HERO ==================== -->
+<section class="relative bg-white dark:bg-primary overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1920&q=80" alt="" class="absolute inset-0 w-full h-full object-cover z-0">
+            <div class="absolute inset-0 bg-black/70 z-0"></div>
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10 relative z-10">
+                <div class="flex flex-col lg:flex-row items-center min-h-screen py-20 pt-5">
+                    <div class="w-full lg:w-1/2 lg:pr-16">
+                        <span class="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary text-xs font-bold uppercase tracking-wider mb-6">Since 2010</span>
+                        <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-6 text-slate-100 dark:text-white">
+                            Building <span class="text-secondary">Brighter</span> Futures Through
+                            <span class="text-secondary">Personalized</span> Tutoring
+                        </h1>
+                        <p class="text-slate-100 dark:text-slate-100 text-lg mb-8 leading-relaxed">
+                            Every child learns differently. Our adaptive approach matches each student with a tutor who fits their personality, learning style, and academic needs.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="signup.html" class="flex items-center justify-center px-8 py-3.5 rounded-xl bg-secondary text-white font-bold text-base hover:-translate-y-0.5 transition-all duration-300 shadow-lg shadow-secondary/20">Get Started Now</a>
+                            <a href="courses.html" class="flex items-center justify-center px-8 py-3.5 rounded-xl border-2 border-slate-300 dark:border-slate-100 text-slate-100 dark:text-slate-100 font-bold text-base hover:bg-slate-50 dark:hover:bg-white/5 transition-all duration-300">
+                                <i class="fa-regular fa-circle-play mr-2"></i> Watch Video
+                            </a>
+                        </div>
+                        <div class="flex items-center gap-6 mt-10 pt-8 border-t border-slate-200 dark:border-slate-700">
+                            <div class="flex -space-x-2">
+                                <img class="w-10 h-10 rounded-full border-2 border-white dark:border-primary" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" alt="">
+                                <img class="w-10 h-10 rounded-full border-2 border-white dark:border-primary" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=80&q=80" alt="">
+                                <img class="w-10 h-10 rounded-full border-2 border-white dark:border-primary" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=80&q=80" alt="">
+                                <div class="w-10 h-10 rounded-full border-2 border-white dark:border-primary bg-secondary flex items-center justify-center text-white font-bold text-xs">500+</div>
+                            </div>
+                            <div class="text-sm text-white "><span class="font-bold block">500+ Students</span> enrolled &amp; thriving</div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 mt-12 lg:mt-0">
+                        <div class="relative">
+                            <img class="w-full h-auto rounded-3xl shadow-2xl" src="images\img3.avif" alt="Students">
+                            <div class="absolute -bottom-6 -left-6 bg-white dark:bg-primary p-6 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-800 flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-500 text-2xl">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    <span class="text-2xl font-bold text-green-500">95%</span>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400">Success Rate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== COMPONENT 2: STATISTICS BANNER (zigzag) ==================== -->
+        <section class="py-16 bg-secondary">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="text-white">
+                        <span class="text-4xl md:text-5xl font-bold">500+</span>
+                        <p class="text-white/80 text-sm mt-1 font-medium">Students Enrolled</p>
+                    </div>
+                    <div class="text-white">
+                        <span class="text-4xl md:text-5xl font-bold">50+</span>
+                        <p class="text-white/80 text-sm mt-1 font-medium">Expert Tutors</p>
+                    </div>
+                    <div class="text-white">
+                        <span class="text-4xl md:text-5xl font-bold">12</span>
+                        <p class="text-white/80 text-sm mt-1 font-medium">Years Experience</p>
+                    </div>
+                    <div class="text-white">
+                        <span class="text-4xl md:text-5xl font-bold">4.9</span>
+                        <p class="text-white/80 text-sm mt-1 font-medium">Avg. Rating</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== COMPONENT 3: PROGRAMS (Offset Cards) ==================== -->
+        <section class="py-24 bg-slate-50 dark:bg-slate-900/50">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-secondary text-sm tracking-wider uppercase font-bold">Our Programs</span>
+                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">Pick Your Path</h2>
+                    <p class="text-slate-600 dark:text-slate-400">Whether you need full curriculum coverage or just a little extra help in one subject, we have a program for you.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white dark:bg-[#0F172A] p-0 rounded-2xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800 flex flex-col md:flex-row md:col-span-2 lg:col-span-3">
+                        <img class="w-full md:w-2/5 h-56 md:h-auto object-cover" src="images\img4.avif" alt="Full curriculum">
+                        <div class="p-8 md:p-12 flex flex-col justify-center">
+                            <span class="text-secondary text-xs font-bold uppercase tracking-wider">K-12 Complete</span>
+                            <h3 class="text-2xl md:text-3xl font-bold mt-1 mb-3">Full Curriculum Support</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Comprehensive tutoring across all subjects for students K-12. We align with your school's curriculum to reinforce concepts taught in class.</p>
+                            <a href="courses.html" class="text-secondary font-bold text-sm flex items-center gap-1 hover:underline">Learn more <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800 flex flex-col md:flex-row md:col-span-2 lg:col-span-3 md:flex-row-reverse">
+                        <img class="w-full md:w-2/5 h-56 md:h-auto object-cover" src="images\img5.avif" alt="Exam prep">
+                        <div class="p-8 md:p-12 flex flex-col justify-center">
+                            <span class="text-secondary text-xs font-bold uppercase tracking-wider">Standardized Tests</span>
+                            <h3 class="text-2xl md:text-3xl font-bold mt-1 mb-3">Exam &amp; Test Prep</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">SAT, ACT, GRE, and state assessment prep. Our strategies help students maximize scores and enter the exam room with confidence.</p>
+                            <a href="courses.html" class="text-secondary font-bold text-sm flex items-center gap-1 hover:underline">Learn more <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-8 flex flex-col items-center text-center">
+                        <div class="w-16 h-16 rounded-full bg-secondary/10 text-secondary flex items-center justify-center text-3xl mb-4"><i class="fa-solid fa-rocket"></i></div>
+                        <h3 class="text-lg font-bold mb-2">Summer Camps</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm">Week-long immersive camps focused on STEM, creative writing, and coding.</p>
+                    </div>
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-8 flex flex-col items-center text-center">
+                        <div class="w-16 h-16 rounded-full bg-secondary/10 text-secondary flex items-center justify-center text-3xl mb-4"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3 class="text-lg font-bold mb-2">Online Tutoring</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm">Live 1-on-1 sessions from the comfort of your home with our interactive platform.</p>
+                    </div>
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-8 flex flex-col items-center text-center">
+                        <div class="w-16 h-16 rounded-full bg-secondary/10 text-secondary flex items-center justify-center text-3xl mb-4"><i class="fa-solid fa-people-group"></i></div>
+                        <h3 class="text-lg font-bold mb-2">Group Tutoring</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm">Small group sessions with peers of similar skill levels for collaborative learning.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== COMPONENT 4: HOW IT WORKS (timeline) ==================== -->
+        <section class="py-24 bg-white dark:bg-[#0F172A]">
+            <div class="max-w-[1200px] mx-auto px-6 lg:px-10">
+                <div class="text-center mb-16">
+                    <span class="text-secondary text-sm tracking-wider uppercase font-bold">Simple Steps</span>
+                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">How It Works</h2>
+                    <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">We made starting tutoring as easy as 1-2-3. No hidden fees, no long-term commitment.</p>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-16 items-center">
+                    <div class="w-full lg:w-1/2">
+                        <div class="space-y-8">
+                            <div class="flex gap-5">
+                                <div class="w-14 h-14 rounded-full bg-secondary text-white flex items-center justify-center text-xl font-bold shrink-0">01</div>
+                                <div>
+                                    <h3 class="text-lg font-bold">Free Consultation</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 text-sm">Schedule a no-obligation call to discuss your child's needs and our approach.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-5">
+                                <div class="w-14 h-14 rounded-full bg-secondary text-white flex items-center justify-center text-xl font-bold shrink-0">02</div>
+                                <div>
+                                    <h3 class="text-lg font-bold">Match with a Tutor</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 text-sm">We pair you with a tutor who has expertise in your subject area and a compatible teaching style.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-5">
+                                <div class="w-14 h-14 rounded-full bg-secondary text-white flex items-center justify-center text-xl font-bold shrink-0">03</div>
+                                <div>
+                                    <h3 class="text-lg font-bold">Start Learning</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 text-sm">Begin your sessions with ongoing feedback and progress tracking to ensure results.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <img class="w-full rounded-3xl shadow-xl" src="images\img6.avif" alt="Students studying">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== COMPONENT 5: SCHEDULE OVERVIEW (hours table) ==================== -->
+        <section class="py-24 bg-slate-50 dark:bg-slate-900/50">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-secondary text-sm tracking-wider uppercase font-bold">Schedule</span>
+                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">Availability &amp; Session Times</h2>
+                    <p class="text-slate-600 dark:text-slate-400">Flexible hours to fit your family's busy lifestyle. Both in-person and remote sessions available.</p>
+                </div>
+
+                <!-- Weekly schedule grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-6 text-center">
+                        <h3 class="font-bold text-lg mb-3">Monday</h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="bg-secondary/10 rounded-lg px-3 py-2 text-secondary font-medium">8:00 AM - 12:00 PM</div>
+                            <div class="bg-secondary/10 rounded-lg px-3 py-2 text-secondary font-medium">1:00 PM - 7:00 PM</div>
+                        </div>
+                        <span class="inline-block mt-3 text-xs text-slate-500">10 slots available</span>
+                    </div>
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-6 text-center">
+                        <h3 class="font-bold text-lg mb-3">Tuesday</h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="bg-secondary/10 rounded-lg px-3 py-2 text-secondary font-medium">8:00 AM - 12:00 PM</div>
+                            <div class="bg-secondary/10 rounded-lg px-3 py-2 text-secondary font-medium">1:00 PM - 7:00 PM</div>
+                        </div>
+                        <span class="inline-block mt-3 text-xs text-slate-500">12 slots available</span>
+                    </div>
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-6 text-center">
+                        <h3 class="font-bold text-lg mb-3">Wednesday</h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="bg-secondary/10 rounded-lg px-3 py-2 text-secondary font-medium">8:00 AM - 12:00 PM</div>
+                            <div class="bg-secondary/10 rounded-lg px-3 py-2 text-secondary font-medium">1:00 PM - 7:00 PM</div>
+                        </div>
+                        <span class="inline-block mt-3 text-xs text-slate-500">8 slots available</span>
+                    </div>
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-6 text-center">
+                        <h3 class="font-bold text-lg mb-3">Thursday</h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="bg-secondary/10 rounded-lg px-3 py-2 text-secondary font-medium">8:00 AM - 12:00 PM</div>
+                            <div class="bg-secondary/10 rounded-lg px-3 py-2 text-secondary font-medium">1:00 PM - 7:00 PM</div>
+                        </div>
+                        <span class="inline-block mt-3 text-xs text-slate-500">15 slots available</span>
+                    </div>
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-6 text-center">
+                        <h3 class="font-bold text-lg mb-3">Friday</h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="bg-secondary/10 rounded-lg px-3 py-2 text-secondary font-medium">8:00 AM - 5:00 PM</div>
+                        </div>
+                        <span class="inline-block mt-3 text-xs text-slate-500">14 slots available</span>
+                    </div>
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl shadow-sm border-2 border-secondary/40 p-6 text-center relative">
+                        <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-white text-xs px-3 py-0.5 rounded-full font-bold">Popular</span>
+                        <h3 class="font-bold text-lg mb-3">Saturday</h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="bg-secondary/10 rounded-lg px-3 py-2 text-secondary font-medium">9:00 AM - 1:00 PM</div>
+                            <div class="bg-secondary rounded-lg px-3 py-2 text-white font-medium">1:00 PM - 5:00 PM</div>
+                            <span class="inline-block text-2xs text-white/80 pb-1">Peak time</span>
+                        </div>
+                        <span class="inline-block mt-3 text-xs text-slate-500">20 slots available</span>
+                    </div>
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-6 text-center">
+                        <h3 class="font-bold text-lg mb-3">Sunday</h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="bg-secondary/10 rounded-lg px-3 py-2 text-secondary font-medium">10:00 AM - 2:00 PM</div>
+                        </div>
+                        <span class="inline-block mt-3 text-xs text-slate-500">5 slots available</span>
+                    </div>
+                    <div class="bg-secondary/10 rounded-2xl border border-secondary/30 p-6 flex flex-col justify-center items-center text-center">
+                        <i class="fa-solid fa-calendar-check text-secondary text-3xl mb-4"></i>
+                        <h3 class="font-bold text-secondary mb-2">Need a custom schedule?</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">We work around your availability</p>
+                        <a href="contact.html" class="inline-block px-6 py-2 bg-secondary text-white rounded-xl font-bold text-sm hover:shadow-lg transition-all">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== COMPONENT 6: TESTIMONIAL CARDS (masonry style) ==================== -->
+        <section class="py-24 bg-white dark:bg-[#0F172A]">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+                <div class="flex flex-col lg:flex-row gap-12 items-start">
+                    <div class="w-full lg:w-1/3 lg:sticky lg:top-28">
+                        <span class="text-secondary text-sm tracking-wider uppercase font-bold">Testimonials</span>
+                        <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">What Parents Say</h2>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6">Hear from families who transformed their academic journey with us.</p>
+                        <div class="flex gap-1 text-secondary text-2xl mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <span class="text-base ml-2 text-slate-600 dark:text-slate-400 self-center">4.9 avg</span>
+                        </div>
+                        <a href="contact.html" class="text-secondary font-bold flex items-center gap-1 hover:underline">Read all reviews <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800">
+                            <div class="flex gap-1 text-yellow-400 text-sm mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 italic">"My son went from failing math to getting an A in one semester. Absolutely incredible transformation."</p>
+                            <div class="flex items-center gap-3">
+                                <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" alt="Customer">
+                                <div>
+                                    <h4 class="font-bold text-sm">Emily Hart</h4>
+                                    <span class="text-xs text-slate-500">Parent of 7th grader</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800">
+                            <div class="flex gap-1 text-yellow-400 text-sm mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 italic">"Our daughter's confidence has skyrocketed since she started the reading program. Worth every penny."</p>
+                            <div class="flex items-center gap-3">
+                                <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80" alt="Customer">
+                                <div>
+                                    <h4 class="font-bold text-sm">David Kim</h4>
+                                    <span class="text-xs text-slate-500">Parent of 3rd grader</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 md:-mt-4">
+                            <div class="flex gap-1 text-yellow-400 text-sm mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 italic">"The SAT prep was fantastic. My daughter's score increased by 180 points and she got into her dream school."</p>
+                            <div class="flex items-center gap-3">
+                                <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=80&q=80" alt="Customer">
+                                <div>
+                                    <h4 class="font-bold text-sm">Linda Torres</h4>
+                                    <span class="text-xs text-slate-500">Parent of 11th grader</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800">
+                            <div class="flex gap-1 text-yellow-400 text-sm mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 italic">"Flexible scheduling and the tutor genuinely cares about my son's progress. Great experience."</p>
+                            <div class="flex items-center gap-3">
+                                <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=80&q=80" alt="Customer">
+                                <div>
+                                    <h4 class="font-bold text-sm">Robert Chen</h4>
+                                    <span class="text-xs text-slate-500">Parent of 5th grader</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== COMPONENT 7: CTA + FOOTER BANNER ==================== -->
+        <section class="py-20 bg-secondary relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-[120px] pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-900/10 rounded-full blur-[120px] pointer-events-none"></div>
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10 relative z-10">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                    <div class="text-center lg:text-left">
+                        <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Don't Wait, Start Today</h2>
+                        <p class="text-blue-100 text-lg">Your child's potential is limitless. Sign up for a free consultation.</p>
+                        <div class="flex items-center gap-6 mt-8 justify-center lg:justify-start">
+                            <a href="contact.html" class="px-8 py-3.5 rounded-xl bg-white text-secondary font-bold hover:shadow-xl transition-all duration-300">Book Free Consultation</a>
+                            <a href="tel:+15551234567" class="px-8 py-3.5 rounded-xl border-2 border-white/30 text-white font-bold hover:bg-white/10 transition-all duration-300">Call Us</a>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-x-12 gap-y-4 text-white text-sm font-medium">
+                        <span><i class="fa-solid fa-check-circle mr-2 text-blue-200"></i> No sign-up fees</span>
+                        <span><i class="fa-solid fa-check-circle mr-2 text-blue-200"></i> Free assessment</span>
+                        <span><i class="fa-solid fa-check-circle mr-2 text-blue-200"></i> Cancel anytime</span>
+                        <span><i class="fa-solid fa-check-circle mr-2 text-blue-200"></i> Certified tutors</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+</body>
+</html>

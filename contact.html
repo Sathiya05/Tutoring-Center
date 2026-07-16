@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorCenter | Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="tailwind.js"></script>
+          <link rel="icon" href="images\logo.png">
+              <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F172A',
+                        secondary: '#5ba0d9',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-primary text-slate-900 dark:text-white font-sans antialiased selection:bg-secondary selection:text-white transition-colors duration-500">
+
+    <div id="navbar"></div>
+
+    <main class="pt-20 md:pt-24">
+
+        <!-- ==================== COMPONENT 1: PAGE HEADER ==================== -->
+        <section class="relative h-[85vh] min-h-[380px] flex items-center justify-center overflow-hidden bg-[#0F172A]">
+            <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1920&q=80" alt="Contact us" class="absolute inset-0 w-full h-full object-cover object-center z-0">
+            <div class="absolute inset-0 bg-black/70 z-0"></div>
+            <div class="max-w-[1440px] w-full mx-auto px-6 lg:px-10 relative z-10">
+                <div class="max-w-2xl mx-auto text-center">
+                    <span class="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary text-xs font-bold uppercase tracking-wider mb-5">Get in Touch</span>
+                    <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">We'd Love to <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5ba0d9] to-blue-300">Hear From You</span></h1>
+                    <p class="text-slate-200 text-lg mt-4 max-w-lg mx-auto">Have questions about our programs? Ready to book a consultation? Reach out and our team will respond within 24 hours.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== COMPONENT 2: CONTACT INFO + FORM (split) ==================== -->
+        <section class="py-20 bg-white dark:bg-primary">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+                <div class="flex flex-col lg:flex-row gap-14">
+                    <!-- Left: Contact Info -->
+                    <div class="w-full lg:w-2/5">
+                        <span class="text-secondary text-sm tracking-wider uppercase font-bold">Contact Info</span>
+                        <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6">Reach Out to Us</h2>
+                        <p class="text-slate-600 dark:text-slate-400 mb-10">Our team is available Monday through Saturday to answer your questions and help you get started.</p>
+                        <div class="space-y-8">
+                            <div class="flex gap-5">
+                                <div class="w-14 h-14 shrink-0 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary text-xl"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h4 class="font-bold">Visit Us</h4>
+                                    <p class="text-slate-600 dark:text-slate-400 text-sm">123 Learning Lane, Suite 200<br>Springfield, ST 54321</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-5">
+                                <div class="w-14 h-14 shrink-0 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary text-xl"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <h4 class="font-bold">Call Us</h4>
+                                    <p class="text-slate-600 dark:text-slate-400 text-sm">(555) 123-4567</p>
+                                    <span class="text-xs text-slate-500">Mon-Fri 8AM-7PM, Sat 9AM-5PM</span>
+                                </div>
+                            </div>
+                            <div class="flex gap-5">
+                                <div class="w-14 h-14 shrink-0 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary text-xl"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <h4 class="font-bold">Email Us</h4>
+                                    <p class="text-slate-600 dark:text-slate-400 text-sm">hello@tutorcenter.com</p>
+                                    <span class="text-xs text-slate-500">We reply within 24 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 mt-10 pt-8 border-t border-slate-200 dark:border-slate-700">
+                            <a href="https://facebook.com/tutorcenter" target="_blank" class="w-11 h-11 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-500 hover:bg-secondary hover:text-white transition-all"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://instagram.com/tutorcenter" target="_blank" class="w-11 h-11 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-500 hover:bg-secondary hover:text-white transition-all"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://twitter.com/tutorcenter" target="_blank" class="w-11 h-11 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-500 hover:bg-secondary hover:text-white transition-all"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://linkedin.com/company/tutorcenter" target="_blank" class="w-11 h-11 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-500 hover:bg-secondary hover:text-white transition-all"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <!-- Right: Form -->
+                    <div class="w-full lg:w-3/5 bg-slate-50 dark:bg-slate-800/30 rounded-3xl p-8 md:p-12 border border-slate-200 dark:border-slate-800">
+                        <h3 class="text-2xl font-bold mb-2">Send Us a Message</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-8">Fill out the form below and we'll get back to you as soon as possible.</p>
+                        <form class="space-y-5">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-sm font-bold mb-1.5">Full Name</label>
+                                    <input type="text" placeholder="John Doe" class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#0F172A] text-sm focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold mb-1.5">Email Address</label>
+                                    <input type="email" placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#0F172A] text-sm focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-all">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-sm font-bold mb-1.5">Phone Number</label>
+                                    <input type="tel" placeholder="(555) 000-0000" class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#0F172A] text-sm focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-all">
+                                </div>
+                                <div>
+                                  
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold mb-1.5">Message</label>
+                                <textarea rows="5" placeholder="Tell us how we can help..." class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#0F172A] text-sm focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-all resize-none"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-3.5 rounded-xl bg-secondary text-white font-bold text-base hover:shadow-lg hover:shadow-secondary/30 hover:-translate-y-0.5 transition-all duration-300">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== COMPONENT 3: MAP + QUICK LINKS ==================== -->
+        <section class="py-20 bg-slate-50 dark:bg-slate-900/50">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+                <div class="flex flex-col lg:flex-row gap-12 items-stretch">
+                    <div class="w-full lg:w-3/5 rounded-3xl overflow-hidden shadow-md min-h-[320px]">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095915174!2d-73.985428!3d40.748817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU1LjciTiA3M8KwNTknMDcuNSJX!5e0!3m2!1sen!2sus!4v1" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="min-h-[320px]"></iframe>
+                    </div>
+                    <div class="w-full lg:w-2/5 bg-white dark:bg-[#0F172A] rounded-3xl p-8 md:p-10 border border-slate-200 dark:border-slate-800">
+                        <h3 class="text-2xl font-bold mb-2">Quick Links</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">Navigate to the most popular pages on our site.</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <a href="index.html" class="flex items-center gap-3 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/30 border border-slate-200 dark:border-slate-700 hover:border-secondary/50 hover:-translate-y-0.5 transition-all">
+                                <div class="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary"><i class="fa-solid fa-house"></i></div>
+                                <div><h4 class="font-bold text-sm">Home</h4><span class="text-xs text-slate-500">Back to main page</span></div>
+                            </a>
+                            <a href="about.html" class="flex items-center gap-3 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/30 border border-slate-200 dark:border-slate-700 hover:border-secondary/50 hover:-translate-y-0.5 transition-all">
+                                <div class="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary"><i class="fa-solid fa-info"></i></div>
+                                <div><h4 class="font-bold text-sm">About Us</h4><span class="text-xs text-slate-500">Our story & team</span></div>
+                            </a>
+                            <a href="courses.html" class="flex items-center gap-3 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/30 border border-slate-200 dark:border-slate-700 hover:border-secondary/50 hover:-translate-y-0.5 transition-all">
+                                <div class="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary"><i class="fa-solid fa-book-open"></i></div>
+                                <div><h4 class="font-bold text-sm">Programs</h4><span class="text-xs text-slate-500">View all subjects</span></div>
+                            </a>
+                            <a href="contact.html" class="flex items-center gap-3 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/30 border border-slate-200 dark:border-slate-700 hover:border-secondary/50 hover:-translate-y-0.5 transition-all">
+                                <div class="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary"><i class="fa-solid fa-question"></i></div>
+                                <div><h4 class="font-bold text-sm">FAQs</h4><span class="text-xs text-slate-500">Common questions</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== COMPONENT 4: FAQ ACCORDION ==================== -->
+        <section class="py-20 bg-white dark:bg-primary">
+            <div class="max-w-[900px] mx-auto px-6 lg:px-10">
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <span class="text-secondary text-sm tracking-wider uppercase font-bold">FAQs</span>
+                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">Frequently Asked Questions</h2>
+                    <p class="text-slate-600 dark:text-slate-400">Quick answers to the most common questions we receive.</p>
+                </div>
+                <div class="space-y-4">
+                    <details class="group bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 open:border-secondary/50 transition-colors">
+                        <summary class="flex items-center justify-between cursor-pointer p-6 font-bold text-lg marker:hidden list-none">What age groups do you tutor?<i class="fa-solid fa-chevron-down text-sm text-secondary group-open:rotate-180 transition-transform"></i></summary>
+                        <div class="px-6 pb-6 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">We tutor students from Kindergarten through 12th grade. Our programs are designed to meet the developmental needs of each age group, from foundational reading in elementary school to advanced calculus and SAT prep for high schoolers.</div>
+                    </details>
+                    <details class="group bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 open:border-secondary/50 transition-colors">
+                        <summary class="flex items-center justify-between cursor-pointer p-6 font-bold text-lg marker:hidden list-none">How do you match tutors with students?<i class="fa-solid fa-chevron-down text-sm text-secondary group-open:rotate-180 transition-transform"></i></summary>
+                        <div class="px-6 pb-6 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">We consider your child's subject needs, learning style, personality, and schedule. Our goal is to find a tutor who not only has expertise in the subject but also connects well with your child to build trust and engagement.</div>
+                    </details>
+                    <details class="group bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 open:border-secondary/50 transition-colors">
+                        <summary class="flex items-center justify-between cursor-pointer p-6 font-bold text-lg marker:hidden list-none">Can I switch tutors if it's not a good fit?<i class="fa-solid fa-chevron-down text-sm text-secondary group-open:rotate-180 transition-transform"></i></summary>
+                        <div class="px-6 pb-6 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Absolutely. We want to ensure the best match for your child. If the chemistry isn't right or the teaching style doesn't align, we'll find a new tutor at no extra cost.</div>
+                    </details>
+                    <details class="group bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 open:border-secondary/50 transition-colors">
+                        <summary class="flex items-center justify-between cursor-pointer p-6 font-bold text-lg marker:hidden list-none">Do you offer online tutoring?<i class="fa-solid fa-chevron-down text-sm text-secondary group-open:rotate-180 transition-transform"></i></summary>
+                        <div class="px-6 pb-6 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Yes! We offer both in-person and live online tutoring sessions. Our online platform includes a virtual whiteboard, screen sharing, and recording capabilities so sessions can be reviewed later.</div>
+                    </details>
+                    <details class="group bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 open:border-secondary/50 transition-colors">
+                        <summary class="flex items-center justify-between cursor-pointer p-6 font-bold text-lg marker:hidden list-none">What is the cancellation policy?<i class="fa-solid fa-chevron-down text-sm text-secondary group-open:rotate-180 transition-transform"></i></summary>
+                        <div class="px-6 pb-6 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">We require 24 hours notice for cancellations to avoid a late fee. However, we understand emergencies happen — contact us and we'll work with you. There's no long-term contract required for any of our plans.</div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== COMPONENT 5: BUSINESS HOURS ==================== -->
+        <section class="py-20 bg-slate-50 dark:bg-slate-900/50">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+                <div class="flex flex-col lg:flex-row items-center gap-14">
+                    <div class="w-full lg:w-1/2">
+                        <span class="text-secondary text-sm tracking-wider uppercase font-bold">Hours</span>
+                        <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-6">When You Can Find Us</h2>
+                        <p class="text-slate-600 dark:text-slate-400 mb-8">Visit us during operating hours or schedule an appointment for after-hours support.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between py-3 border-b border-slate-200 dark:border-slate-800">
+                                <span class="font-medium">Monday - Thursday</span>
+                                <span class="text-secondary font-bold">8:00 AM - 7:00 PM</span>
+                            </div>
+                            <div class="flex items-center justify-between py-3 border-b border-slate-200 dark:border-slate-800">
+                                <span class="font-medium">Friday</span>
+                                <span class="text-secondary font-bold">8:00 AM - 5:00 PM</span>
+                            </div>
+                            <div class="flex items-center justify-between py-3 border-b border-slate-200 dark:border-slate-800">
+                                <span class="font-medium">Saturday</span>
+                                <span class="text-secondary font-bold">9:00 AM - 5:00 PM</span>
+                            </div>
+                            <div class="flex items-center justify-between py-3 border-b border-slate-200 dark:border-slate-800">
+                                <span class="font-medium">Sunday</span>
+                                <span class="text-slate-400 font-bold">Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <img class="w-full h-auto rounded-3xl shadow-xl" src="images\img4.avif" alt="Our center">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== COMPONENT 6: CTA ==================== -->
+        <section class="py-20 bg-secondary relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-[120px] pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-900/10 rounded-full blur-[120px] pointer-events-none"></div>
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10 relative z-10">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Still Have Questions?</h2>
+                    <p class="text-blue-100 text-lg mb-10">Our team is standing by to help. Give us a call or send an email — we respond within 24 hours.</p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="tel:+15551234567" class="flex items-center justify-center px-10 py-4 rounded-xl bg-white text-secondary font-bold text-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"><i class="fa-solid fa-phone mr-3"></i> (555) 123-4567</a>
+                        <a href="mailto:hello@tutorcenter.com" class="flex items-center justify-center px-10 py-4 rounded-xl border-2 border-white/30 text-white font-bold text-lg hover:bg-white/10 transition-all duration-300"><i class="fa-solid fa-envelope mr-3"></i> Email Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+</body>
+</html>

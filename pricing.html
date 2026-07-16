@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorCenter | Pricing Plans</title>
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+
+    <script src="tailwind.js"></script>
+          <link rel="icon" href="images\logo.png">
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F172A',
+                        secondary: '#5ba0d9',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-primary text-slate-900 dark:text-white font-sans antialiased selection:bg-secondary selection:text-white transition-colors duration-500">
+
+    <!-- Navbar Mount Point -->
+    <div id="navbar"></div>
+
+    <main class="pt-20 md:pt-24">
+
+        <!-- ==========================================
+             SECTION 1: HERO
+        =========================================== -->
+        <section class="relative w-full min-h-[60vh] md:h-[70vh] flex items-center overflow-hidden bg-[#0F172A]">
+            <img src="images/bg1.avif" alt="Students learning" class="absolute inset-0 w-full h-full object-cover object-center z-0" />
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-black/30 z-0"></div>
+
+            <div class="max-w-[1440px] w-full mx-auto px-6 lg:px-10 relative z-10 py-20">
+                <div class="max-w-3xl mx-auto text-center">
+                    <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold text-sm mb-8 shadow-sm mx-auto">
+                        <span class="relative flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#5ba0d9] opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-[#5ba0d9]"></span>
+                        </span>
+                        Simple &amp; Transparent Pricing
+                    </div>
+
+                    <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6 leading-[1.15] text-white">
+                        Invest in Your Child's
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5ba0d9] to-blue-300 drop-shadow-sm">
+                            Brighter Future
+                        </span>
+                    </h1>
+
+                    <p class="text-lg md:text-xl text-slate-200 mb-10 leading-relaxed max-w-xl mx-auto font-medium drop-shadow-md">
+                        Flexible plans designed to fit every family's budget and every student's goals. No hidden fees, cancel anytime.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-5 justify-center">
+                        <a href="#pricing" class="flex items-center justify-center px-8 py-4 rounded-xl bg-[#5ba0d9] text-white font-bold text-lg hover:shadow-xl hover:shadow-[#5ba0d9]/30 hover:-translate-y-1 transition-all duration-300 gap-3 border border-[#5ba0d9]">
+                            View Plans <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                        <a href="contact.html" class="flex items-center justify-center px-8 py-4 rounded-xl bg-white/5 backdrop-blur-sm border-2 border-white/30 hover:border-[#5ba0d9] hover:bg-[#5ba0d9]/10 font-bold text-lg text-white transition-all duration-300 hover:-translate-y-1">
+                            Talk to Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECTION 2: PRICING PLANS (Toggle)
+        =========================================== -->
+        <section id="pricing" class="py-24 bg-white dark:bg-primary transition-colors duration-500">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-[#5ba0d9] font-bold text-sm tracking-wider uppercase mb-3 block">Pricing Plans</span>
+                    <h2 class="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">Choose the Right Plan</h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg">Every plan includes a free initial assessment and progress tracking.</p>
+                </div>
+
+                <!-- Monthly / Annual Toggle -->
+                <div class="flex items-center justify-center gap-4 mb-16">
+                    <span id="label-monthly" class="text-sm font-bold text-slate-900 dark:text-white">Monthly</span>
+                    <button id="billing-toggle" class="relative w-14 h-7 bg-slate-300 dark:bg-slate-700 rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#5ba0d9] focus:ring-offset-2 dark:focus:ring-offset-[#0F172A]" aria-label="Toggle billing period">
+                        <span id="billing-dot" class="absolute top-0.5 left-0.5 w-6 h-6 bg-white rounded-full shadow transition-transform duration-300"></span>
+                    </button>
+                    <span id="label-annual" class="text-sm font-bold text-slate-500 dark:text-slate-400">Annual <span class="text-[10px] ml-0.5 px-2 py-0.5 rounded-full bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 font-bold">Save 20%</span></span>
+                </div>
+
+                <!-- Plans Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
+                    <!-- Starter Plan -->
+                    <div class="rounded-3xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 p-6 md:p-8 lg:p-10 flex flex-col hover:border-[#5ba0d9]/50 dark:hover:border-[#5ba0d9]/50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="mb-6">
+                            <div class="w-12 h-12 rounded-full bg-[#5ba0d9]/10 text-[#5ba0d9] flex items-center justify-center text-lg mb-4">
+                                <i class="fa-solid fa-seedling"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Starter</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm">Perfect for occasional help</p>
+                        </div>
+                        <div class="mb-8">
+                            <span class="text-4xl font-bold text-slate-900 dark:text-white price-value" data-monthly="49" data-annual="39">$49</span>
+                            <span class="text-slate-500 dark:text-slate-400 text-sm"> / session</span>
+                        </div>
+                        <ul class="space-y-3 mb-10 flex-1">
+                            <li class="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
+                                <i class="fa-solid fa-check text-[#5ba0d9] mt-0.5 shrink-0"></i> 1-on-1 Tutoring (60 min)
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
+                                <i class="fa-solid fa-check text-[#5ba0d9] mt-0.5 shrink-0"></i> Free Learning Assessment
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
+                                <i class="fa-solid fa-check text-[#5ba0d9] mt-0.5 shrink-0"></i> Progress Reports
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-400 dark:text-slate-500">
+                                <i class="fa-solid fa-xmark text-slate-300 dark:text-slate-600 mt-0.5 shrink-0"></i> Custom Study Plan
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-400 dark:text-slate-500">
+                                <i class="fa-solid fa-xmark text-slate-300 dark:text-slate-600 mt-0.5 shrink-0"></i> Priority Booking
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="block w-full py-3.5 rounded-xl border-2 border-slate-200 dark:border-slate-700 text-center font-bold text-sm text-slate-700 dark:text-slate-200 hover:border-[#5ba0d9] hover:text-[#5ba0d9] transition-all duration-300">
+                            Get Started
+                        </a>
+                    </div>
+
+                    <!-- Pro Plan (Featured) -->
+                    <div class="rounded-3xl bg-white dark:bg-[#0F172A] border-2 border-[#5ba0d9] p-6 md:p-8 lg:p-10 flex flex-col relative shadow-xl shadow-[#5ba0d9]/10 hover:-translate-y-2 transition-all duration-300">
+                        <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-5 py-1.5 rounded-full bg-[#5ba0d9] text-white text-xs font-bold uppercase tracking-wider shadow-lg shadow-[#5ba0d9]/30">
+                            Most Popular
+                        </div>
+                        <div class="mb-6 mt-2">
+                            <div class="w-12 h-12 rounded-full bg-[#5ba0d9]/10 text-[#5ba0d9] flex items-center justify-center text-lg mb-4">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Pro</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm">Best for consistent growth</p>
+                        </div>
+                        <div class="mb-8">
+                            <span class="text-4xl font-bold text-slate-900 dark:text-white price-value" data-monthly="179" data-annual="139">$179</span>
+                            <span class="text-slate-500 dark:text-slate-400 text-sm"> / month</span>
+                        </div>
+                        <ul class="space-y-3 mb-10 flex-1">
+                            <li class="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
+                                <i class="fa-solid fa-check text-[#5ba0d9] mt-0.5 shrink-0"></i> 4 Sessions / Month (60 min each)
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
+                                <i class="fa-solid fa-check text-[#5ba0d9] mt-0.5 shrink-0"></i> Free Learning Assessment
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
+                                <i class="fa-solid fa-check text-[#5ba0d9] mt-0.5 shrink-0"></i> Custom Study Plan
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
+                                <i class="fa-solid fa-check text-[#5ba0d9] mt-0.5 shrink-0"></i> Detailed Progress Reports
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-400 dark:text-slate-500">
+                                <i class="fa-solid fa-xmark text-slate-300 dark:text-slate-600 mt-0.5 shrink-0"></i> Priority Booking
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="block w-full py-3.5 rounded-xl bg-[#5ba0d9] text-center font-bold text-sm text-white hover:bg-blue-600 hover:shadow-xl hover:shadow-[#5ba0d9]/30 transition-all duration-300">
+                            Enroll Now
+                        </a>
+                    </div>
+
+                    <!-- Premium Plan -->
+                    <div class="rounded-3xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 p-6 md:p-8 lg:p-10 flex flex-col hover:border-[#5ba0d9]/50 dark:hover:border-[#5ba0d9]/50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="mb-6">
+                            <div class="w-12 h-12 rounded-full bg-[#5ba0d9]/10 text-[#5ba0d9] flex items-center justify-center text-lg mb-4">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Premium</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm">Maximum support &amp; results</p>
+                        </div>
+                        <div class="mb-8">
+                            <span class="text-4xl font-bold text-slate-900 dark:text-white price-value" data-monthly="349" data-annual="279">$349</span>
+                            <span class="text-slate-500 dark:text-slate-400 text-sm"> / month</span>
+                        </div>
+                        <ul class="space-y-3 mb-10 flex-1">
+                            <li class="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
+                                <i class="fa-solid fa-check text-[#5ba0d9] mt-0.5 shrink-0"></i> 8 Sessions / Month (60 min each)
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
+                                <i class="fa-solid fa-check text-[#5ba0d9] mt-0.5 shrink-0"></i> Free Learning Assessment
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
+                                <i class="fa-solid fa-check text-[#5ba0d9] mt-0.5 shrink-0"></i> Custom Study Plan
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
+                                <i class="fa-solid fa-check text-[#5ba0d9] mt-0.5 shrink-0"></i> Weekly Progress Reports
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
+                                <i class="fa-solid fa-check text-[#5ba0d9] mt-0.5 shrink-0"></i> Priority Booking &amp; Support
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="block w-full py-3.5 rounded-xl border-2 border-slate-200 dark:border-slate-700 text-center font-bold text-sm text-slate-700 dark:text-slate-200 hover:border-[#5ba0d9] hover:text-[#5ba0d9] transition-all duration-300">
+                            Get Started
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECTION 3: WHAT'S INCLUDED
+        =========================================== -->
+        <section class="py-24 bg-slate-50 dark:bg-slate-900/50 transition-colors duration-500">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-[#5ba0d9] font-bold text-sm tracking-wider uppercase mb-3 block">Value</span>
+                    <h2 class="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">What Every Plan Includes</h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg">No matter which plan you choose, every family gets these core benefits.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white dark:bg-[#0F172A] p-8 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 dark:hover:border-[#5ba0d9]/50 transition-all duration-300 hover:-translate-y-1 group">
+                        <div class="w-14 h-14 rounded-full bg-[#5ba0d9]/10 text-[#5ba0d9] flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-[#5ba0d9] group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Free Assessment</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Comprehensive evaluation of your child's current academic level and learning style.</p>
+                    </div>
+
+                    <div class="bg-white dark:bg-[#0F172A] p-8 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 dark:hover:border-[#5ba0d9]/50 transition-all duration-300 hover:-translate-y-1 group">
+                        <div class="w-14 h-14 rounded-full bg-[#5ba0d9]/10 text-[#5ba0d9] flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-[#5ba0d9] group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Progress Tracking</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Regular reports on grades, attendance, and skill development sent to your inbox.</p>
+                    </div>
+
+                    <div class="bg-white dark:bg-[#0F172A] p-8 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 dark:hover:border-[#5ba0d9]/50 transition-all duration-300 hover:-translate-y-1 group">
+                        <div class="w-14 h-14 rounded-full bg-[#5ba0d9]/10 text-[#5ba0d9] flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-[#5ba0d9] group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2"> Scheduling</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Book sessions that fit your family's schedule. Reschedule with 24-hour notice.</p>
+                    </div>
+
+                    <div class="bg-white dark:bg-[#0F172A] p-8 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 dark:hover:border-[#5ba0d9]/50 transition-all duration-300 hover:-translate-y-1 group">
+                        <div class="w-14 h-14 rounded-full bg-[#5ba0d9]/10 text-[#5ba0d9] flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-[#5ba0d9] group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Parent Support</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Direct line to your child's tutor plus dedicated support for any questions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECTION 4: FEATURE COMPARISON TABLE
+        =========================================== -->
+        <section class="py-24 bg-white dark:bg-primary transition-colors duration-500">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-[#5ba0d9] font-bold text-sm tracking-wider uppercase mb-3 block">Compare</span>
+                    <h2 class="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">Full Feature Comparison</h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg">See exactly what you get with each plan at a glance.</p>
+                </div>
+
+                <div class="bg-white dark:bg-[#0F172A] rounded-3xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm max-w-4xl mx-auto">
+                    <!-- Mobile: Stacked Cards -->
+                    <div class="md:hidden divide-y divide-slate-200 dark:divide-slate-800">
+                        <div class="p-6">
+                            <h4 class="font-bold text-slate-900 dark:text-white text-sm mb-3">Sessions per Month</h4>
+                            <div class="grid grid-cols-3 gap-3 text-center text-sm">
+                                <div><span class="font-bold text-slate-900 dark:text-white">1</span><p class="text-[10px] text-slate-500 mt-0.5">Starter</p></div>
+                                <div><span class="font-bold text-[#5ba0d9]">4</span><p class="text-[10px] text-slate-500 mt-0.5">Pro</p></div>
+                                <div><span class="font-bold text-slate-900 dark:text-white">8</span><p class="text-[10px] text-slate-500 mt-0.5">Premium</p></div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-slate-900 dark:text-white text-sm mb-3">Learning Assessment</h4>
+                            <div class="grid grid-cols-3 gap-3 text-center text-sm">
+                                <div><i class="fa-solid fa-check text-[#5ba0d9]"></i></div>
+                                <div><i class="fa-solid fa-check text-[#5ba0d9]"></i></div>
+                                <div><i class="fa-solid fa-check text-[#5ba0d9]"></i></div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-slate-900 dark:text-white text-sm mb-3">Custom Study Plan</h4>
+                            <div class="grid grid-cols-3 gap-3 text-center text-sm">
+                                <div><i class="fa-solid fa-xmark text-slate-300 dark:text-slate-600"></i></div>
+                                <div><i class="fa-solid fa-check text-[#5ba0d9]"></i></div>
+                                <div><i class="fa-solid fa-check text-[#5ba0d9]"></i></div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-slate-900 dark:text-white text-sm mb-3">Progress Reports</h4>
+                            <div class="grid grid-cols-3 gap-3 text-center text-sm">
+                                <div><span class="text-slate-600 dark:text-slate-400 text-xs">Monthly</span></div>
+                                <div><span class="text-slate-600 dark:text-slate-400 text-xs">Monthly</span></div>
+                                <div><span class="text-[#5ba0d9] text-xs font-bold">Weekly</span></div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-slate-900 dark:text-white text-sm mb-3">Priority Booking</h4>
+                            <div class="grid grid-cols-3 gap-3 text-center text-sm">
+                                <div><i class="fa-solid fa-xmark text-slate-300 dark:text-slate-600"></i></div>
+                                <div><i class="fa-solid fa-xmark text-slate-300 dark:text-slate-600"></i></div>
+                                <div><i class="fa-solid fa-check text-[#5ba0d9]"></i></div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-slate-900 dark:text-white text-sm mb-3">Sibling Discount</h4>
+                            <div class="grid grid-cols-3 gap-3 text-center text-sm">
+                                <div><i class="fa-solid fa-xmark text-slate-300 dark:text-slate-600"></i></div>
+                                <div><span class="text-slate-600 dark:text-slate-400 text-xs">10%</span></div>
+                                <div><span class="text-[#5ba0d9] text-xs font-bold">20%</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desktop: Table -->
+                    <table class="w-full text-left border-collapse hidden md:table">
+                        <thead>
+                            <tr class="bg-slate-50 dark:bg-slate-900 text-xs uppercase tracking-widest text-slate-500 border-b border-slate-200 dark:border-slate-800">
+                                <th class="p-5 font-bold">Feature</th>
+                                <th class="p-5 font-bold text-center">Starter</th>
+                                <th class="p-5 font-bold text-center text-[#5ba0d9]">Pro</th>
+                                <th class="p-5 font-bold text-center">Premium</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm">
+                            <tr class="border-b border-slate-100 dark:border-slate-800">
+                                <td class="p-5 font-medium text-slate-700 dark:text-slate-300">Sessions per Month</td>
+                                <td class="p-5 text-center font-bold text-slate-900 dark:text-white">1</td>
+                                <td class="p-5 text-center font-bold text-[#5ba0d9]">4</td>
+                                <td class="p-5 text-center font-bold text-slate-900 dark:text-white">8</td>
+                            </tr>
+                            <tr class="border-b border-slate-100 dark:border-slate-800">
+                                <td class="p-5 font-medium text-slate-700 dark:text-slate-300">Learning Assessment</td>
+                                <td class="p-5 text-center"><i class="fa-solid fa-check text-[#5ba0d9]"></i></td>
+                                <td class="p-5 text-center"><i class="fa-solid fa-check text-[#5ba0d9]"></i></td>
+                                <td class="p-5 text-center"><i class="fa-solid fa-check text-[#5ba0d9]"></i></td>
+                            </tr>
+                            <tr class="border-b border-slate-100 dark:border-slate-800">
+                                <td class="p-5 font-medium text-slate-700 dark:text-slate-300">Custom Study Plan</td>
+                                <td class="p-5 text-center"><i class="fa-solid fa-xmark text-slate-300 dark:text-slate-600"></i></td>
+                                <td class="p-5 text-center"><i class="fa-solid fa-check text-[#5ba0d9]"></i></td>
+                                <td class="p-5 text-center"><i class="fa-solid fa-check text-[#5ba0d9]"></i></td>
+                            </tr>
+                            <tr class="border-b border-slate-100 dark:border-slate-800">
+                                <td class="p-5 font-medium text-slate-700 dark:text-slate-300">Progress Reports</td>
+                                <td class="p-5 text-center text-slate-600 dark:text-slate-400">Monthly</td>
+                                <td class="p-5 text-center text-slate-600 dark:text-slate-400">Monthly</td>
+                                <td class="p-5 text-center text-[#5ba0d9] font-bold">Weekly</td>
+                            </tr>
+                            <tr class="border-b border-slate-100 dark:border-slate-800">
+                                <td class="p-5 font-medium text-slate-700 dark:text-slate-300">Priority Booking</td>
+                                <td class="p-5 text-center"><i class="fa-solid fa-xmark text-slate-300 dark:text-slate-600"></i></td>
+                                <td class="p-5 text-center"><i class="fa-solid fa-xmark text-slate-300 dark:text-slate-600"></i></td>
+                                <td class="p-5 text-center"><i class="fa-solid fa-check text-[#5ba0d9]"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="p-5 font-medium text-slate-700 dark:text-slate-300">Sibling Discount</td>
+                                <td class="p-5 text-center text-slate-400">—</td>
+                                <td class="p-5 text-center text-slate-600 dark:text-slate-400">10%</td>
+                                <td class="p-5 text-center text-[#5ba0d9] font-bold">20%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECTION 5: TESTIMONIALS (Value Focus)
+        =========================================== -->
+        <section class="py-24 bg-slate-50 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-[#5ba0d9]/10 rounded-full blur-[100px] pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10 relative z-10">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Worth Every Penny</h2>
+                    <p class="text-slate-600 text-lg">Hear from parents who say our pricing reflects the real value they receive.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white backdrop-blur-sm border border-slate-200 rounded-2xl p-8 relative shadow-sm">
+                        <i class="fa-solid fa-quote-right absolute top-8 right-8 text-4xl text-slate-200"></i>
+                        <div class="flex gap-1 text-[#5ba0d9] mb-6 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 mb-8 italic relative z-10">
+                            "We tried a cheaper option before and it was a waste of money. TutorCenter's Pro plan gave my son a complete study plan and his grades jumped within weeks. True value."
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <img src="images/prog1.avif" alt="Rachel Kim" class="w-12 h-12 rounded-full object-cover border-2 border-slate-200">
+                            <div>
+                                <h4 class="text-slate-900 font-bold text-sm">Rachel Kim</h4>
+                                <span class="text-slate-500 text-xs">Parent of 9th Grader</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white backdrop-blur-sm border border-slate-200 rounded-2xl p-8 relative shadow-sm">
+                        <i class="fa-solid fa-quote-right absolute top-8 right-8 text-4xl text-slate-200"></i>
+                        <div class="flex gap-1 text-[#5ba0d9] mb-6 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 mb-8 italic relative z-10">
+                            "The sibling discount made it affordable for us to enroll both kids and adult students. The progress reports keep us in the loop and the results speak for themselves."
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <img src="images/prob1.avif" alt="James Carter" class="w-12 h-12 rounded-full object-cover border-2 border-slate-200">
+                            <div>
+                                <h4 class="text-slate-900 font-bold text-sm">James Carter</h4>
+                                <span class="text-slate-500 text-xs">Parent of 5th &amp; 7th Grader</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white backdrop-blur-sm border border-slate-200 rounded-2xl p-8 relative shadow-sm">
+                        <i class="fa-solid fa-quote-right absolute top-8 right-8 text-4xl text-slate-200"></i>
+                        <div class="flex gap-1 text-[#5ba0d9] mb-6 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p class="text-slate-600 mb-8 italic relative z-10">
+                            "Switching to the annual plan saved us a lot. The premium weekly reports are amazing — we know exactly where our daughter stands every single week."
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <img src="images/prog2.avif" alt="Lisa Tran" class="w-12 h-12 rounded-full object-cover border-2 border-slate-200">
+                            <div>
+                                <h4 class="text-slate-900 font-bold text-sm">Lisa Tran</h4>
+                                <span class="text-slate-500 text-xs">Parent of 10th Grader</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECTION 6: FAQ
+        =========================================== -->
+        <section class="py-24 bg-white dark:bg-primary transition-colors duration-500">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-[#5ba0d9] font-bold text-sm tracking-wider uppercase mb-3 block">Questions?</span>
+                    <h2 class="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">Frequently Asked</h2>
+                </div>
+
+                <div class="max-w-3xl mx-auto space-y-4">
+
+                    <!-- FAQ 1 -->
+                    <div class="faq-item rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden transition-colors hover:border-[#5ba0d9]/50 dark:hover:border-[#5ba0d9]/50">
+                        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+                            <span class="font-bold text-slate-900 dark:text-white text-sm md:text-base pr-4">Is there a registration or enrollment fee?</span>
+                            <i class="fa-solid fa-chevron-down text-[#5ba0d9] transition-transform duration-300 shrink-0"></i>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+                            <p class="px-6 pb-6 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">No. There are zero registration fees, hidden costs, or long-term contracts. You only pay for the sessions you book. We believe in earning your trust through results, not locking you in.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden transition-colors hover:border-[#5ba0d9]/50 dark:hover:border-[#5ba0d9]/50">
+                        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+                            <span class="font-bold text-slate-900 dark:text-white text-sm md:text-base pr-4">Can I switch plans or cancel anytime?</span>
+                            <i class="fa-solid fa-chevron-down text-[#5ba0d9] transition-transform duration-300 shrink-0"></i>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+                            <p class="px-6 pb-6 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Absolutely. You can upgrade, downgrade, or cancel your plan at any time with no penalties. If you switch from monthly to annual, we'll prorate the difference for you.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden transition-colors hover:border-[#5ba0d9]/50 dark:hover:border-[#5ba0d9]/50">
+                        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+                            <span class="font-bold text-slate-900 dark:text-white text-sm md:text-base pr-4">What if my child misses a session?</span>
+                            <i class="fa-solid fa-chevron-down text-[#5ba0d9] transition-transform duration-300 shrink-0"></i>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+                            <p class="px-6 pb-6 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">We understand life happens. Simply reschedule with at least 24-hour notice and the session will be credited back to your plan. No sessions are wasted.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden transition-colors hover:border-[#5ba0d9]/50 dark:hover:border-[#5ba0d9]/50">
+                        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+                            <span class="font-bold text-slate-900 dark:text-white text-sm md:text-base pr-4">Do you offer group or family discounts?</span>
+                            <i class="fa-solid fa-chevron-down text-[#5ba0d9] transition-transform duration-300 shrink-0"></i>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+                            <p class="px-6 pb-6 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Yes! Our Pro plan includes a 10% sibling discount and the Premium plan includes 20%. For families with 3+ children, contact us directly for a custom family bundle rate.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="faq-item rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden transition-colors hover:border-[#5ba0d9]/50 dark:hover:border-[#5ba0d9]/50">
+                        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+                            <span class="font-bold text-slate-900 dark:text-white text-sm md:text-base pr-4">Is the free assessment really free?</span>
+                            <i class="fa-solid fa-chevron-down text-[#5ba0d9] transition-transform duration-300 shrink-0"></i>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+                            <p class="px-6 pb-6 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">100% free, no strings attached. It's a comprehensive evaluation of your child's academic level, learning style, and areas for improvement — whether or not you enroll.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECTION 7: FINAL CTA
+        =========================================== -->
+        <section class="py-12 bg-slate-50 dark:bg-[#0F172A] transition-colors duration-500">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+                <div class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#5ba0d9] to-blue-700 p-8 sm:p-12 lg:p-20 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-10">
+                    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-72 h-72 rounded-full bg-white/10 blur-2xl pointer-events-none"></div>
+                    <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 rounded-full bg-blue-900/20 blur-2xl pointer-events-none"></div>
+
+                    <div class="relative z-10 max-w-2xl text-center lg:text-left">
+                        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 lg:mb-6 leading-tight">
+                            Start With a Free Assessment Today
+                        </h2>
+                        <p class="text-blue-100 text-base sm:text-lg lg:text-xl mb-0 mx-auto lg:mx-0 max-w-xl lg:max-w-none">
+                            No risk, no commitment. Find out exactly where your child stands and how we can help them reach their goals.
+                        </p>
+                    </div>
+
+                    <div class="relative z-10 shrink-0 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 w-full sm:w-auto mt-4 lg:mt-0">
+                        <a href="contact.html" class="flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-xl bg-white text-[#0F172A] font-bold text-base sm:text-lg hover:shadow-xl hover:-translate-y-1 hover:bg-slate-50 transition-all duration-300 w-full sm:w-auto whitespace-nowrap">
+                            Get Free Assessment
+                        </a>
+                        <a href="contact.html" class="flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-xl border-2 border-white/30 text-white font-bold text-base sm:text-lg hover:bg-white/10 transition-all duration-300 w-full sm:w-auto whitespace-nowrap">
+                            Talk to Our Team
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Mount Point -->
+    <div id="footer"></div>
+
+    <!-- External Scripts -->
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+
+    <!-- Pricing Toggle Script -->
+    <script>
+        const toggle = document.getElementById('billing-toggle');
+        const dot = document.getElementById('billing-dot');
+        const labelMonthly = document.getElementById('label-monthly');
+        const labelAnnual = document.getElementById('label-annual');
+        const prices = document.querySelectorAll('.price-value');
+        let isAnnual = false;
+
+        toggle.addEventListener('click', () => {
+            isAnnual = !isAnnual;
+            dot.style.transform = isAnnual ? 'translateX(1.75rem)' : 'translateX(0)';
+            toggle.classList.toggle('bg-[#5ba0d9]', isAnnual);
+            toggle.classList.toggle('bg-slate-300', !isAnnual);
+            toggle.classList.toggle('dark:bg-slate-700', !isAnnual);
+            labelMonthly.classList.toggle('text-slate-900', !isAnnual);
+            labelMonthly.classList.toggle('dark:text-white', !isAnnual);
+            labelMonthly.classList.toggle('text-slate-500', isAnnual);
+            labelMonthly.classList.toggle('dark:text-slate-400', isAnnual);
+            labelAnnual.classList.toggle('text-slate-900', isAnnual);
+            labelAnnual.classList.toggle('dark:text-white', isAnnual);
+            labelAnnual.classList.toggle('text-slate-500', !isAnnual);
+            labelAnnual.classList.toggle('dark:text-slate-400', !isAnnual);
+
+            prices.forEach(p => {
+                const val = isAnnual ? p.dataset.annual : p.dataset.monthly;
+                p.textContent = '$' + val;
+            });
+        });
+    </script>
+
+    <!-- FAQ Accordion Script -->
+    <script>
+        function toggleFaq(btn) {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('i');
+            const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+            
+            // Close all others
+            document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = '0px');
+            document.querySelectorAll('.faq-toggle i').forEach(i => i.style.transform = 'rotate(0deg)');
+
+            if (!isOpen) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+    </script>
+
+</body>
+</html>

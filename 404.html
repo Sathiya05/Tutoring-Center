@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="light scroll-smooth h-full">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | TutorCenter</title>
+
+
+    <script src="tailwind.js"></script>
+          <link rel="icon" href="images\logo.png">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800;900&display=swap');
+  </style>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0F172A',
+            secondary: '#5ba0d9',
+            secondarydark: '#4a8ec2',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { height: 100vh; overflow: hidden; }
+    * { transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; }
+    
+    .global-toggles { position: fixed; top: 1.5rem; right: 1.5rem; z-index: 100; display: flex; gap: 0.5rem; }
+    html[dir="rtl"] .global-toggles { right: auto; left: 1.5rem; }
+    
+    @media (max-width: 640px) {
+      .global-toggles { top: 1rem; right: 1rem; }
+      html[dir="rtl"] .global-toggles { right: auto; left: 1rem; }
+    }
+
+    .toggle-btn { width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; background-color: rgba(255, 255, 255, 0.9); border: 1px solid rgba(15, 23, 42, 0.1); border-radius: 9999px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); cursor: pointer; }
+    .dark .toggle-btn { background-color: rgba(30, 30, 30, 0.9); border-color: rgba(91, 160, 217, 0.2); }
+    .toggle-btn:hover { border-color: #5ba0d9; transform: translateY(-2px); }
+  </style>
+</head>
+
+<body class="antialiased flex flex-col items-center justify-center p-6 bg-slate-50 dark:bg-[#0b1121] font-sans text-slate-800 dark:text-slate-200">
+
+
+
+  <!-- 404 Container -->
+  <div class="w-full max-w-lg text-center flex flex-col items-center justify-center px-4">
+    
+    <!-- Icon/Illustration Area -->
+    <div class="w-24 h-24 sm:w-32 sm:h-32 mb-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center border border-slate-200 dark:border-slate-700 shadow-sm relative">
+        <i class="fa-solid fa-map-location-dot text-4xl sm:text-6xl text-secondary"></i>
+        <!-- Decorative question mark -->
+        <div class="absolute -top-2 -right-2 w-10 h-10 bg-white dark:bg-primary rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center shadow-md">
+            <i class="fa-solid fa-question text-slate-400 font-bold text-lg"></i>
+        </div>
+    </div>
+
+    <!-- Error Messaging -->
+    <h1 class="text-6xl sm:text-8xl font-heading font-black text-primary dark:text-white mb-2 tracking-tight">404</h1>
+    <h2 class="text-xl sm:text-2xl font-bold text-slate-700 dark:text-slate-200 mb-4">Looks like you're lost.</h2>
+    <p class="text-sm sm:text-base text-slate-500 dark:text-slate-400 mb-10 max-w-sm mx-auto font-medium">
+      The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+    </p>
+
+    <!-- Navigation Actions -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+        <button onclick="window.history.back()" class="w-full sm:w-auto px-8 py-3.5 rounded-xl border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 font-bold text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+            <i class="fa-solid fa-arrow-left mr-2"></i> Go Back
+        </button>
+        <a href="index.html" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-secondary text-white font-bold text-sm shadow-lg shadow-secondary/20 hover:bg-secondarydark hover:-translate-y-0.5 transition-all flex items-center justify-center">
+            <i class="fa-solid fa-house mr-2"></i> Home Page
+        </a>
+    </div>
+
+  </div>
+
+  <script>
+    const themeToggle = document.getElementById("theme-toggle");
+    const themeIcon = document.getElementById("theme-icon");
+    const rtlToggle = document.getElementById("rtl-toggle");
+    const htmlElement = document.documentElement;
+
+    // Strict initialization to ensure theme persists identically across 404 and other pages
+    function applyTheme() {
+      let theme = localStorage.getItem('tutor-dark');
+      if (theme === 'true') theme = 'dark';
+      if (theme === 'false') theme = 'light';
+      
+      if (theme === 'dark') {
+        htmlElement.classList.add('dark');
+        themeIcon.className = 'fas fa-sun text-primary dark:text-secondary';
+      } else {
+        htmlElement.classList.remove('dark');
+        themeIcon.className = 'fas fa-moon text-primary dark:text-secondary';
+      }
+    }
+
+    themeToggle.addEventListener("click", () => {
+      const isDark = htmlElement.classList.toggle('dark');
+      localStorage.setItem('tutor-dark', isDark ? 'true' : 'false');
+      themeIcon.className = isDark ? 'fas fa-sun text-primary dark:text-secondary' : 'fas fa-moon text-primary dark:text-secondary';
+    });
+
+    rtlToggle.addEventListener("click", () => {
+      const currentDir = htmlElement.getAttribute("dir");
+      const newDir = currentDir === "rtl" ? "ltr" : "rtl";
+      htmlElement.setAttribute("dir", newDir);
+      localStorage.setItem("tutor-rtl", newDir);
+    });
+
+    // Run on load
+    (function init() {
+      applyTheme();
+      const savedRTL = localStorage.getItem("tutor-rtl");
+      if (savedRTL) htmlElement.setAttribute("dir", savedRTL);
+    })();
+  </script>
+
+</body>
+</html>

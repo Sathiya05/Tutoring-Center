@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="light scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In | TutorCenter</title>
+
+
+    <script src="tailwind.js"></script>
+          <link rel="icon" href="images\logo.png">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap');
+  </style>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0F172A',
+            secondary: '#5ba0d9',
+            secondarydark: '#4a8ec2',
+            black: '#000000',
+            white: '#FFFFFF',
+            offwhite: '#F8FAFC', /* Slate-50 equivalent */
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * {
+      transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    html[dir="rtl"] .lg\:flex-row {
+      flex-direction: row-reverse;
+    }
+
+    @media (max-width: 1023px) {
+      .promo-side {
+        display: none !important;
+      }
+    }
+
+    .global-toggles {
+      position: fixed;
+      top: 0.75rem;
+      right: 0.75rem;
+      z-index: 100;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    html[dir="rtl"] .global-toggles {
+      right: auto;
+      left: 0.75rem;
+    }
+
+    @media (max-width: 640px) {
+      .global-toggles {
+        top: 0.5rem;
+        right: 0.5rem;
+      }
+      html[dir="rtl"] .global-toggles {
+        right: auto;
+        left: 0.5rem;
+      }
+    }
+
+    .toggle-btn {
+      width: 2.25rem;
+      height: 2.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(15, 23, 42, 0.1);
+      border-radius: 9999px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: all 0.2s ease;
+      backdrop-filter: blur(4px);
+    }
+
+    .dark .toggle-btn {
+      background-color: rgba(30, 30, 30, 0.9);
+      border-color: rgba(91, 160, 217, 0.2);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .toggle-btn:hover {
+      border-color: #5ba0d9;
+      transform: translateY(-2px);
+    }
+
+    .dark .toggle-btn:hover {
+      border-color: #5ba0d9;
+    }
+
+    .toggle-btn i {
+      font-size: 0.95rem;
+      color: #0F172A;
+    }
+
+    .dark .toggle-btn i {
+      color: #5ba0d9;
+    }
+
+    @media(max-width:360px) {
+      #main-card {
+        margin-top: 50px;
+      }
+    }
+
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
+</head>
+
+<body
+  class="antialiased min-h-screen flex items-center justify-center p-4 bg-slate-100 dark:bg-[#0b1121] font-sans text-slate-800 dark:text-slate-200 relative">
+
+  <div class="global-toggles">
+    <button id="rtl-toggle" class="toggle-btn" aria-label="Toggle RTL">
+      <i class="fas fa-exchange-alt"></i>
+    </button>
+    <button id="theme-toggle" class="toggle-btn" aria-label="Toggle theme">
+      <i id="theme-icon" class="fas fa-moon"></i>
+    </button>
+  </div>
+
+  <div id="main-card"
+    class="w-full max-w-4xl rounded-3xl overflow-hidden relative bg-white dark:bg-[#15203b] border border-slate-200 dark:border-slate-800 shadow-2xl flex flex-col lg:flex-row">
+
+    <div id="login-panel" class="w-full lg:w-1/2 p-6 sm:p-10 flex flex-col justify-center">
+
+      <div class="logo flex justify-center mb-6">
+          <a href="index.html" class="relative z-[60] flex items-center gap-3 group shrink-0">
+            <div class="w-11 h-11 rounded-xl bg-[#5ba0d9] flex items-center justify-center shadow-lg shadow-[#5ba0d9]/20">
+                <i class="fa-solid fa-graduation-cap text-white text-lg"></i>
+            </div>
+            <div class="flex flex-col">
+                <span class="text-xl font-bold font-heading tracking-tight text-[#0F172A] dark:text-white transition-colors">
+                    Tutor<span class="text-[#5ba0d9]">Center</span>
+                </span>
+                <span class="text-[9px] tracking-[0.15em] uppercase text-slate-500 dark:text-slate-400 font-bold leading-none mt-1">
+                     Student Success
+                </span>
+            </div>
+        </a>
+      </div>
+
+      <h2 class="text-xl sm:text-2xl text-center font-heading font-bold text-primary dark:text-white mb-2">
+        Welcome Back
+      </h2>
+      <p class="text-slate-500 dark:text-slate-400 text-center mb-8 text-sm">
+        Sign in to access your classes and study materials.
+      </p>
+
+      <form class="space-y-5">
+
+        <div>
+          <label class="text-primary dark:text-slate-300 text-xs font-bold mb-1.5 flex items-center gap-2 uppercase tracking-wider">
+            <i class="far fa-envelope text-secondary"></i> Email Address
+          </label>
+          <input type="email" placeholder="student@example.com"
+            class="w-full px-4 py-3.5 border rounded-xl bg-slate-50 dark:bg-primary border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-all shadow-sm text-sm">
+        </div>
+
+        <div>
+          <label class="text-primary dark:text-slate-300 text-xs font-bold mb-1.5 flex items-center gap-2 uppercase tracking-wider">
+            <i class="fas fa-lock text-secondary"></i> Password
+          </label>
+          <div class="relative">
+            <input type="password" id="loginPassword" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;"
+              class="w-full px-4 py-3.5 pr-11 border rounded-xl bg-slate-50 dark:bg-primary border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-all shadow-sm text-sm">
+            <button type="button" id="toggleLoginPw" class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-secondary transition-colors">
+              <i class="fa-regular fa-eye-slash text-sm" id="loginPwIcon"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center text-xs">
+          <label class="flex items-center gap-2 text-slate-600 dark:text-slate-400 cursor-pointer font-medium">
+            <input type="checkbox" class="w-4 h-4 accent-secondary rounded cursor-pointer border-slate-300">
+            Remember me
+          </label>
+          <a href="signup.html" class="text-secondary hover:text-primary dark:hover:text-white hover:underline font-bold transition-colors">
+            Forgot Password?
+          </a>
+        </div>
+
+        <button
+          class="w-full bg-secondary text-white py-3.5 rounded-xl font-bold tracking-wider text-sm shadow-lg shadow-secondary/20 hover:bg-secondarydark hover:-translate-y-0.5 transition-all duration-300 mt-2">
+          Log In
+        </button>
+
+        <div class="relative my-6">
+          <div class="border-t border-slate-200 dark:border-slate-700"></div>
+          <span
+            class="absolute left-1/2 -translate-x-1/2 -top-2.5 bg-white dark:bg-[#15203b] px-4 text-slate-400 text-xs font-bold uppercase tracking-widest">
+            Or
+          </span>
+        </div>
+
+        <div class="flex gap-3">
+          <button type="button"
+            class="flex-1 flex items-center justify-center gap-2 bg-slate-50 dark:bg-primary border border-slate-200 dark:border-slate-700 hover:border-secondary dark:hover:border-secondary py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-200 transition-colors group">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg> Google
+          </button>
+          <button type="button"
+            class="flex-1 flex items-center justify-center gap-2 bg-slate-50 dark:bg-primary border border-slate-200 dark:border-slate-700 hover:border-secondary dark:hover:border-secondary py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-200 transition-colors group">
+            <i class="fab fa-apple text-slate-900 dark:text-white"></i> Apple
+          </button>
+        </div>
+
+        <p class="text-center text-slate-600 dark:text-slate-400 pt-4 text-sm font-medium">
+          New to TutorCenter?
+          <a href="signup.html" class="text-secondary hover:text-primary dark:hover:text-white font-bold hover:underline transition-colors">Create an account</a>
+        </p>
+
+      </form>
+    </div>
+
+    <!-- Promotional Side -->
+    <div class="promo-side w-full lg:w-1/2 relative overflow-hidden flex flex-col justify-end p-10">
+      <div class="absolute inset-0 z-0">
+        <!-- Educational imagery -->
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Students Learning" class="w-full h-full object-cover">
+        <!-- Primary color gradient overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/80 to-primary/30"></div>
+      </div>
+
+      <div class="relative z-10 text-white">
+        <div class="inline-block px-3 py-1 rounded-full border border-secondary/40 bg-white/10 backdrop-blur-md mb-5 shadow-sm">
+          <span class="text-[10px] font-bold tracking-widest uppercase text-secondary">
+            <i class="fas fa-award mr-1.5"></i>The Learning Hub
+          </span>
+        </div>
+
+        <h3 class="text-3xl lg:text-4xl font-heading font-semibold mb-5 leading-tight">
+          Unlock your <br><span class="text-secondary italic font-bold">Potential</span>.
+        </h3>
+
+        <div class="space-y-3 text-sm mb-8 text-slate-300 font-medium">
+          <p class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-secondary"></i>
+            <span>Expert tutors in all core subjects</span>
+          </p>
+          <p class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-secondary"></i>
+            <span>Flexible, personalized class scheduling</span>
+          </p>
+          <p class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-secondary"></i>
+            <span>Access to interactive study materials</span>
+          </p>
+          <p class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-secondary"></i>
+            <span>Real-time academic progress tracking</span>
+          </p>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-md inline-flex items-center px-4 py-2.5 rounded-2xl border border-white/10">
+          <div class="flex text-yellow-400 text-xs mr-3 gap-0.5">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span class="text-xs font-bold text-white">Trusted by 5,000+ Students</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const themeToggle = document.getElementById("theme-toggle");
+    const themeIcon = document.getElementById("theme-icon");
+    const rtlToggle = document.getElementById("rtl-toggle");
+    const htmlElement = document.documentElement;
+
+    function applyTheme() {
+      let theme = localStorage.getItem('tutor-dark');
+      // Coerce 'true'/'false' strings if they exist from the main dashboard logic
+      if (theme === 'true') theme = 'dark';
+      if (theme === 'false') theme = 'light';
+      
+      if (theme === 'dark') {
+        htmlElement.classList.add('dark');
+        themeIcon.className = 'fas fa-sun';
+      } else {
+        htmlElement.classList.remove('dark');
+        themeIcon.className = 'fas fa-moon';
+      }
+    }
+
+    themeToggle.addEventListener("click", () => {
+      const isDark = htmlElement.classList.toggle('dark');
+      localStorage.setItem('tutor-dark', isDark ? 'true' : 'false');
+      themeIcon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+    });
+
+    rtlToggle.addEventListener("click", () => {
+      const currentDir = htmlElement.getAttribute("dir");
+      const newDir = currentDir === "rtl" ? "ltr" : "rtl";
+      htmlElement.setAttribute("dir", newDir);
+      localStorage.setItem("tutor-rtl", newDir);
+    });
+
+    (function init() {
+      applyTheme();
+      const savedRTL = localStorage.getItem("tutor-rtl");
+      if (savedRTL) htmlElement.setAttribute("dir", savedRTL);
+    })();
+
+    document.getElementById('toggleLoginPw')?.addEventListener('click', () => {
+      const pw = document.getElementById('loginPassword');
+      const icon = document.getElementById('loginPwIcon');
+      const isPw = pw.type === 'password';
+      pw.type = isPw ? 'text' : 'password';
+      icon.className = isPw ? 'fa-regular fa-eye text-sm text-secondary' : 'fa-regular fa-eye-slash text-sm';
+    });
+  </script>
+
+</body>
+</html>

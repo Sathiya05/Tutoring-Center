@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorCenter | Student Success</title>
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+
+    <script src="tailwind.js"></script>
+          <link rel="icon" href="images\logo.png">
+              
+    <!-- Tailwind Configuration for Theme Colors -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F172A',
+                        secondary: '#5ba0d9',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-primary text-slate-900 dark:text-white font-sans antialiased selection:bg-secondary selection:text-white transition-colors duration-500">
+
+    <!-- Navbar Mount Point -->
+    <div id="navbar"></div>
+
+    <!-- Main Content Wrapper (Padding top accounts for fixed navbar) -->
+    <main class="pt-20 md:pt-24">
+        
+    <!-- Hero Section -->
+<section class="relative w-full h-screen flex items-center overflow-hidden bg-[#0F172A]">
+    
+    <!-- Background Image & Elegant Navy Overlay -->
+    <img src="images\bg1.avif" 
+         alt="Students learning together" 
+         class="absolute inset-0 w-full h-full object-cover object-center z-0" />
+    
+    <!-- Gradient Overlay: Uses your Primary Color to guarantee text readability -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-black/30 z-0"></div>
+
+    <!-- Content Container -->
+    <div class="max-w-[1440px] w-full mx-auto px-6 lg:px-10 relative z-10 pb-10">
+        <div class="max-w-3xl mx-auto text-center">
+            
+            <!-- Glassmorphic Badge -->
+            <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold text-sm mb-8 shadow-sm mx-auto">
+                <span class="relative flex h-3 w-3">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#5ba0d9] opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-[#5ba0d9]"></span>
+                </span>
+                Empowering Students K-12
+            </div>
+            
+            <!-- Elegant Heading with Text Gradient -->
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6 leading-[1.15] text-white">
+                Unlock Your Child's <br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5ba0d9] to-blue-300 drop-shadow-sm">
+                    Academic Potential
+                </span>
+            </h1>
+            
+            <!-- Refined Typography for Subheading -->
+            <p class="text-lg md:text-xl text-slate-200 mb-10 leading-relaxed max-w-xl mx-auto font-medium drop-shadow-md">
+                Expert tutoring tailored to your student's unique learning style. From foundational math and reading to advanced test prep, we build confidence and deliver proven results.
+            </p>
+            
+            <!-- Interactive Buttons -->
+            <div class="flex flex-col sm:flex-row gap-5 justify-center">
+                <a href="programs.html" class="flex items-center justify-center px-8 py-4 rounded-xl bg-[#5ba0d9] text-white font-bold text-lg hover:shadow-xl hover:shadow-[#5ba0d9]/30 hover:-translate-y-1 transition-all duration-300 gap-3 border border-[#5ba0d9]">
+                    Explore Programs <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="contact.html" class="flex items-center justify-center px-8 py-4 rounded-xl bg-white/5 backdrop-blur-sm border-2 border-white/30 hover:border-[#5ba0d9] hover:bg-[#5ba0d9]/10 font-bold text-lg text-white transition-all duration-300 hover:-translate-y-1">
+                    Book a Free Trial
+                </a>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="mt-14 flex items-center gap-6 pt-8 border-t border-white/20 justify-center">
+                <div class="flex -space-x-4">
+                    <img class="w-12 h-12 rounded-full border-2 border-[#0F172A] object-cover" src="images\g1.avif" alt="Happy Student">
+                    <img class="w-12 h-12 rounded-full border-2 border-[#0F172A] object-cover" src="images\b1.avif" alt="Happy Parent">
+                    <img class="w-12 h-12 rounded-full border-2 border-[#0F172A] object-cover" src="images\b2.avif" alt="Happy Student">
+                    <div class="w-12 h-12 rounded-full border-2 border-[#0F172A] bg-white flex items-center justify-center text-[#0F172A] font-bold text-xs z-10">
+                        500+
+                    </div>
+                </div>
+                <div class="text-sm font-medium text-slate-300 leading-tight">
+                    Trusted by <span class="text-white font-bold">500+ parents</span> <br> and students locally.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+        <!-- Features / Why Choose Us Section -->
+        <section class="py-20 bg-white dark:bg-primary">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose TutorCenter?</h2>
+                    <p class="text-slate-600 dark:text-slate-400">We provide a supportive environment that turns academic struggles into success stories.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800 hover:border-secondary/50 dark:hover:border-secondary/50 transition-colors group overflow-hidden">
+                        <img src="images\img1.avif" alt="Expert Educators" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold mb-3">Expert Educators</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                                Our tutors are highly qualified professionals passionate about teaching and mentoring students to achieve their best.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800 hover:border-secondary/50 dark:hover:border-secondary/50 transition-colors group overflow-hidden">
+                        <img src="images\img2.avif" alt="Personalized Learning" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold mb-3">Personalized Learning</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                                We design custom lesson plans that target your child's specific gaps in knowledge and adapt to their learning pace.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800 hover:border-secondary/50 dark:hover:border-secondary/50 transition-colors group overflow-hidden">
+                        <img src="images\img2.webp" alt="Proven Results" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold mb-3">Proven Results</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                                95% of our students report improved grades and higher confidence within the first three months of enrollment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- ==========================================
+     SECTION 1: SUBJECTS & PROGRAMS
+=========================================== -->
+<section class="py-24 bg-slate-50 dark:bg-slate-900/50 transition-colors duration-500">
+    <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-[#5ba0d9] font-bold text-sm tracking-wider uppercase mb-3 block">What We Teach</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">Comprehensive Subjects</h2>
+            <p class="text-slate-600 dark:text-slate-400 text-lg">
+                Our expert tutors cover all major K-12 subjects, ensuring your child receives the targeted support they need to excel.
+            </p>
+        </div>
+
+        <!-- Subjects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+            
+            <!-- Subject Card 1 -->
+            <div class="group bg-white dark:bg-[#0F172A] p-8 rounded-2xl shadow-sm hover:shadow-xl dark:shadow-none border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 dark:hover:border-[#5ba0d9]/50 transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-full bg-[#5ba0d9]/10 text-[#5ba0d9] flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-[#5ba0d9] group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-calculator"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Mathematics</h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+                    From basic arithmetic to advanced calculus. We simplify complex concepts and build strong problem-solving skills.
+                </p>
+                <a href="courses.html" class="text-[#5ba0d9] font-bold text-sm group-hover:underline flex items-center gap-1">Learn more <i class="fa-solid fa-arrow-right text-xs"></i></a>
+            </div>
+
+            <!-- Subject Card 2 -->
+            <div class="group bg-white dark:bg-[#0F172A] p-8 rounded-2xl shadow-sm hover:shadow-xl dark:shadow-none border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 dark:hover:border-[#5ba0d9]/50 transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-full bg-[#5ba0d9]/10 text-[#5ba0d9] flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-[#5ba0d9] group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-flask"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Sciences</h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+                    Biology, Chemistry, and Physics. Hands-on learning approaches to make science engaging and understandable.
+                </p>
+                <a href="courses.html" class="text-[#5ba0d9] font-bold text-sm group-hover:underline flex items-center gap-1">Learn more <i class="fa-solid fa-arrow-right text-xs"></i></a>
+            </div>
+
+            <!-- Subject Card 3 -->
+            <div class="group bg-white dark:bg-[#0F172A] p-8 rounded-2xl shadow-sm hover:shadow-xl dark:shadow-none border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 dark:hover:border-[#5ba0d9]/50 transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-full bg-[#5ba0d9]/10 text-[#5ba0d9] flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-[#5ba0d9] group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Language Arts</h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+                    Improve reading comprehension, essay writing, and grammar to help students communicate effectively.
+                </p>
+                <a href="courses.html" class="text-[#5ba0d9] font-bold text-sm group-hover:underline flex items-center gap-1">Learn more <i class="fa-solid fa-arrow-right text-xs"></i></a>
+            </div>
+
+            <!-- Subject Card 4 -->
+            <div class="group bg-white dark:bg-[#0F172A] p-8 rounded-2xl shadow-sm hover:shadow-xl dark:shadow-none border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 dark:hover:border-[#5ba0d9]/50 transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-full bg-[#5ba0d9]/10 text-[#5ba0d9] flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-[#5ba0d9] group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-file-pen"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3"> Preparation</h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+                    Targeted strategies for SAT, ACT, and state assessments to maximize scores and reduce test anxiety.
+                </p>
+                <a href="courses.html" class="text-[#5ba0d9] font-bold text-sm group-hover:underline flex items-center gap-1">Learn more <i class="fa-solid fa-arrow-right text-xs"></i></a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================
+     SECTION 2: HOW IT WORKS
+=========================================== -->
+<section class="py-24 bg-white dark:bg-[#0F172A] transition-colors duration-500 overflow-hidden">
+    <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+        
+        <div class="flex flex-col lg:flex-row items-center gap-16">
+            
+            <!-- Text Content -->
+            <div class="w-full lg:w-1/2">
+                <span class="text-[#5ba0d9] font-bold text-sm tracking-wider uppercase mb-3 block">Simple Process</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6 leading-tight">
+                    Your Pathway to <br> Academic Success
+                </h2>
+                <p class="text-slate-600 dark:text-slate-400 text-lg mb-8">
+                    We make it easy to get the help your child needs. Our streamlined process ensures a perfect tutor match and a customized learning plan from day one.
+                </p>
+                <a href="signup.html" class="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-[#5ba0d9] text-white font-bold text-base hover:bg-blue-600 transition-all duration-300 shadow-lg shadow-[#5ba0d9]/25">
+                    Start Your Journey
+                </a>
+            </div>
+
+            <!-- Steps -->
+            <div class="w-full lg:w-1/2 relative">
+                <!-- Connecting Line for Desktop -->
+                <div class="hidden md:block absolute left-8 top-10 bottom-10 w-0.5 bg-slate-200 dark:bg-slate-800 z-0"></div>
+
+                <div class="space-y-10 relative z-10">
+                    
+                    <!-- Step 1 -->
+                    <div class="flex gap-6 group">
+                        <div class="shrink-0 w-16 h-16 rounded-full bg-white dark:bg-[#0F172A] border-4 border-slate-100 dark:border-slate-800 flex items-center justify-center text-xl font-bold text-slate-400 group-hover:border-[#5ba0d9] group-hover:text-[#5ba0d9] transition-colors duration-300 shadow-sm">
+                            1
+                        </div>
+                        <div class="pt-3">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Free Assessment</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm">We start with a thorough evaluation to identify your student's strengths, weaknesses, and unique learning style.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="flex gap-6 group">
+                        <div class="shrink-0 w-16 h-16 rounded-full bg-white dark:bg-[#0F172A] border-4 border-slate-100 dark:border-slate-800 flex items-center justify-center text-xl font-bold text-slate-400 group-hover:border-[#5ba0d9] group-hover:text-[#5ba0d9] transition-colors duration-300 shadow-sm">
+                            2
+                        </div>
+                        <div class="pt-3">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Perfect Tutor Match</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm">Based on the assessment, we pair your child with an expert tutor whose personality and teaching style perfectly align.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="flex gap-6 group">
+                        <div class="shrink-0 w-16 h-16 rounded-full bg-[#5ba0d9] border-4 border-[#5ba0d9]/20 flex items-center justify-center text-xl font-bold text-white shadow-lg shadow-[#5ba0d9]/20">
+                            3
+                        </div>
+                        <div class="pt-3">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Customized Learning</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm">Watch your child thrive with 1-on-1 sessions, personalized curriculum, and regular progress reports.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ==========================================
+     SECTION 4: MEET OUR EXPERT TUTORS
+=========================================== -->
+<section class="py-24 bg-white dark:bg-[#0F172A] transition-colors duration-500">
+    <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+        
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+            <div class="max-w-2xl">
+                <span class="text-[#5ba0d9] font-bold text-sm tracking-wider uppercase mb-3 block">Our Team</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">Meet Our Expert Educators</h2>
+                <p class="text-slate-600 dark:text-slate-400 text-lg">
+                    Our tutors are carefully vetted professionals, certified teachers, and subject matter experts dedicated to your child's success.
+                </p>
+            </div>
+            <a href="about.html" class="shrink-0 inline-flex items-center gap-2 text-[#5ba0d9] font-bold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                View All Tutors <i class="fa-solid fa-arrow-right text-sm"></i>
+            </a>
+        </div>
+
+        <!-- Tutors Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- Tutor 1 -->
+            <div class="group rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 transition-all duration-300">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="images\T1.webp" alt="Dr. Amanda Smith" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute bottom-3 right-3 bg-white dark:bg-[#0F172A] p-2 rounded-lg text-[#5ba0d9] font-bold text-xs shadow-sm">
+                        Math & Physics
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Dr. Amanda Smith</h3>
+                    <p class="text-[#5ba0d9] text-sm font-medium mb-4">Ph.D. in Mathematics</p>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">
+                        Former university lecturer with 8+ years of experience helping high schoolers conquer calculus and physics.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tutor 2 -->
+            <div class="group rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 transition-all duration-300">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="images\T2.avif" alt="David Chen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute bottom-3 right-3 bg-white dark:bg-[#0F172A] p-2 rounded-lg text-[#5ba0d9] font-bold text-xs shadow-sm">
+                        Test Prep
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">David Chen</h3>
+                    <p class="text-[#5ba0d9] text-sm font-medium mb-4">M.Ed. in Secondary Edu.</p>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">
+                        SAT/ACT specialist who has helped over 200 students achieve their target scores for Ivy League admissions.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tutor 3 -->
+            <div class="group rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 transition-all duration-300">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="images\T3.avif" alt="Sarah Johnson" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute bottom-3 right-3 bg-white dark:bg-[#0F172A] p-2 rounded-lg text-[#5ba0d9] font-bold text-xs shadow-sm">
+                        Language Arts
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Sarah Johnson</h3>
+                    <p class="text-[#5ba0d9] text-sm font-medium mb-4">M.A. in English Literature</p>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">
+                        Passionate about helping middle and high school students develop strong writing and reading comprehension skills.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tutor 4 -->
+            <div class="group rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 transition-all duration-300">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="images\T4.avif" alt="Marcus Williams" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute bottom-3 right-3 bg-white dark:bg-[#0F172A] p-2 rounded-lg text-[#5ba0d9] font-bold text-xs shadow-sm">
+                        Biology & STEM
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Marcus Williams</h3>
+                    <p class="text-[#5ba0d9] text-sm font-medium mb-4">B.S. in Biology</p>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">
+                        Makes science highly interactive and fun. Specializes in AP Biology and foundational middle school STEM.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ==========================================
+     SECTION 3: TESTIMONIALS (Dark Section)
+=========================================== -->
+<section class="py-24 bg-slate-50 relative overflow-hidden">
+    <!-- Decorative background elements -->
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-[#5ba0d9]/10 rounded-full blur-[100px] pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <div class="max-w-[1440px] mx-auto px-6 lg:px-10 relative z-10">
+        
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Real Results, Happy Parents</h2>
+            <p class="text-slate-600 text-lg">
+                Don't just take our word for it. Here is what families are saying about their experience with TutorCenter.
+            </p>
+        </div>
+
+        <!-- Testimonial Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Review 1 -->
+            <div class="bg-white backdrop-blur-sm border border-slate-200 rounded-2xl p-8 relative shadow-sm">
+                <i class="fa-solid fa-quote-right absolute top-8 right-8 text-4xl text-slate-200"></i>
+                <div class="flex gap-1 text-[#5ba0d9] mb-6 text-sm">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-slate-600 mb-8 italic relative z-10">
+                    "My son was struggling with Algebra, but after just two months at TutorCenter, his grade went from a C- to an A. The tutors are incredibly patient and genuinely care."
+                </p>
+                <div class="flex items-center gap-4">
+                    <img src="images\prog1.avif" alt="Sarah Jenkins" class="w-12 h-12 rounded-full object-cover border-2 border-slate-200">
+                    <div>
+                        <h4 class="text-slate-900 font-bold text-sm">Sarah Jenkins</h4>
+                        <span class="text-slate-500 text-xs">Parent of 8th Grader</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="bg-white backdrop-blur-sm border border-slate-200 rounded-2xl p-8 relative shadow-sm">
+                <i class="fa-solid fa-quote-right absolute top-8 right-8 text-4xl text-slate-200"></i>
+                <div class="flex gap-1 text-[#5ba0d9] mb-6 text-sm">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-slate-600 mb-8 italic relative z-10">
+                    "The SAT prep program was phenomenal. The customized study plan helped my daughter increase her score by 150 points. Highly recommend to any high schooler!"
+                </p>
+                <div class="flex items-center gap-4">
+                    <img src="images\prob1.avif" alt="Michael Chen" class="w-12 h-12 rounded-full object-cover border-2 border-slate-200">
+                    <div>
+                        <h4 class="text-slate-900 font-bold text-sm">Michael Chen</h4>
+                        <span class="text-slate-500 text-xs">Parent of 11th Grader</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="bg-white backdrop-blur-sm border border-slate-200 rounded-2xl p-8 relative shadow-sm">
+                <i class="fa-solid fa-quote-right absolute top-8 right-8 text-4xl text-slate-200"></i>
+                <div class="flex gap-1 text-[#5ba0d9] mb-6 text-sm">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="text-slate-600 mb-8 italic relative z-10">
+                    "We love the elementary reading program. It is engaging, and my daughter actually looks forward to her sessions and classes. Her confidence reading aloud has skyrocketed."
+                </p>
+                <div class="flex items-center gap-4">
+                    <img src="images\prog2.avif" alt="Elena Rodriguez" class="w-12 h-12 rounded-full object-cover border-2 border-slate-200">
+                    <div>
+                        <h4 class="text-slate-900 font-bold text-sm">Elena Rodriguez</h4>
+                        <span class="text-slate-500 text-xs">Parent of 3rd Grader</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ==========================================
+     SECTION 5: FINAL CALL TO ACTION
+=========================================== -->
+<section class="py-12 bg-slate-50 dark:bg-[#0F172A] transition-colors duration-500">
+    <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+        <!-- Changed md:flex-row to lg:flex-row to keep tablet view stacked and spacious -->
+        <div class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#5ba0d9] to-blue-700 p-8 sm:p-12 lg:p-20 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-10">
+            
+            <!-- Decorative Elements -->
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-72 h-72 rounded-full bg-white/10 blur-2xl pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 rounded-full bg-blue-900/20 blur-2xl pointer-events-none"></div>
+            
+            <!-- Content -->
+            <!-- Changed md:text-left to lg:text-left so text remains centered on tablets -->
+            <div class="relative z-10 max-w-2xl text-center lg:text-left">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 lg:mb-6 leading-tight">
+                    Ready to Unlock Your Child's Full Potential?
+                </h2>
+                <!-- Added mx-auto lg:mx-0 to center the paragraph block on tablets -->
+                <p class="text-blue-100 text-base sm:text-lg lg:text-xl mb-0 mx-auto lg:mx-0 max-w-xl lg:max-w-none">
+                    Join TutorCenter today and give your child the academic advantage they deserve. The first consultation and assessment are completely free.
+                </p>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="relative z-10 shrink-0 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 w-full sm:w-auto mt-4 lg:mt-0">
+                <a href="contact.html" class="flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-xl bg-white text-[#0F172A] font-bold text-base sm:text-lg hover:shadow-xl hover:-translate-y-1 hover:bg-slate-50 transition-all duration-300 w-full sm:w-auto whitespace-nowrap">
+                    Book Free Trial
+                </a>
+                <a href="contact.html" class="flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-xl border-2 border-white/30 text-white font-bold text-base sm:text-lg hover:bg-white/10 transition-all duration-300 w-full sm:w-auto whitespace-nowrap">
+                    Contact Us
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <!-- Footer Mount Point -->
+    <div id="footer"></div>
+
+    <!-- External Scripts -->
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+</body>
+</html>

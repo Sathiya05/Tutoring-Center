@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorCenter | Resources</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="tailwind.js"></script>
+          <link rel="icon" href="images\logo.png">
+              <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F172A',
+                        secondary: '#5ba0d9',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-primary text-slate-900 dark:text-white font-sans antialiased selection:bg-secondary selection:text-white transition-colors duration-500">
+
+    <div id="navbar"></div>
+
+    <main class="pt-20 md:pt-24">
+
+        <!-- ==================== COMPONENT 1: PAGE HEADER ==================== -->
+        <section class="relative h-screen flex items-center justify-center overflow-hidden bg-[#0F172A]">
+            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1920&q=80" alt="Library shelves with educational books and resources" class="absolute inset-0 w-full h-full object-cover object-center z-0">
+            <div class="absolute inset-0 bg-black/70 z-0"></div>
+            <div class="max-w-[1440px] w-full mx-auto px-6 lg:px-10 relative z-10">
+                <div class="max-w-3xl mx-auto text-center">
+                    <span class="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary text-xs font-bold uppercase tracking-wider mb-5">Learning Resources</span>
+                    <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">Tools &amp; Guides to <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5ba0d9] to-blue-300">Support Learning</span></h1>
+                    <p class="text-slate-200 text-lg mt-4 max-w-xl mx-auto">Free study guides, practice worksheets, tip sheets, and video tutorials to help your child succeed beyond tutoring sessions.</p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+                        <a href="#guides" class="flex items-center justify-center px-8 py-3.5 rounded-xl bg-secondary text-white font-bold text-base hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">Browse Study Guides</a>
+                        <a href="#videos" class="flex items-center justify-center px-8 py-3.5 rounded-xl border-2 border-white/30 text-white font-bold text-base hover:bg-white/10 transition-all duration-300">Watch Tutorials</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== COMPONENT 2: DOWNLOADABLE STUDY GUIDES ==================== -->
+        <section id="guides" class="py-20 bg-white dark:bg-primary">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-secondary text-sm tracking-wider uppercase font-bold">Free Downloads</span>
+                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">Study Guides &amp; Worksheets</h2>
+                    <p class="text-slate-600 dark:text-slate-400">Download free resources to practice at home and reinforce what's learned in sessions.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-44 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\Algebra Formula Sheet.webp" alt="Algebra">
+                            <div class="absolute top-3 right-3 bg-white/90 text-slate-800 text-xs font-bold px-2.5 py-1 rounded-lg">PDF</div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-sm">Algebra Formula Sheet</h3>
+                            <p class="text-xs text-slate-500 mt-0.5">Complete reference with examples</p>
+                            <div class="flex items-center justify-between mt-3 pt-3 border-t border-slate-200 dark:border-slate-700">
+                                <span class="text-xs text-slate-400">2.4 MB</span>
+                                <a href="contact.html" class="text-secondary text-xs font-bold flex items-center gap-1 hover:underline"><i class="fa-solid fa-download"></i> Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-44 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\grammar.avif" alt="Grammar">
+                            <div class="absolute top-3 right-3 bg-white/90 text-slate-800 text-xs font-bold px-2.5 py-1 rounded-lg">PDF</div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-sm">Grammar & Writing Guide</h3>
+                            <p class="text-xs text-slate-500 mt-0.5">Rules, tips, and practice exercises</p>
+                            <div class="flex items-center justify-between mt-3 pt-3 border-t border-slate-200 dark:border-slate-700">
+                                <span class="text-xs text-slate-400">1.8 MB</span>
+                                <a href="contact.html" class="text-secondary text-xs font-bold flex items-center gap-1 hover:underline"><i class="fa-solid fa-download"></i> Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-44 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\Science Vocabulary Cards.avif" alt="Science">
+                            <div class="absolute top-3 right-3 bg-white/90 text-slate-800 text-xs font-bold px-2.5 py-1 rounded-lg">PDF</div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-sm">Science Vocabulary Cards</h3>
+                            <p class="text-xs text-slate-500 mt-0.5">Biology, chemistry & physics terms</p>
+                            <div class="flex items-center justify-between mt-3 pt-3 border-t border-slate-200 dark:border-slate-700">
+                                <span class="text-xs text-slate-400">3.1 MB</span>
+                                <a href="contact.html" class="text-secondary text-xs font-bold flex items-center gap-1 hover:underline"><i class="fa-solid fa-download"></i> Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-44 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\sat.avif" alt="SAT">
+                            <div class="absolute top-3 right-3 bg-white/90 text-slate-800 text-xs font-bold px-2.5 py-1 rounded-lg">PDF</div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-sm">SAT Math Practice Set</h3>
+                            <p class="text-xs text-slate-500 mt-0.5">50 practice problems with answers</p>
+                            <div class="flex items-center justify-between mt-3 pt-3 border-t border-slate-200 dark:border-slate-700">
+                                <span class="text-xs text-slate-400">4.2 MB</span>
+                                <a href="contact.html" class="text-secondary text-xs font-bold flex items-center gap-1 hover:underline"><i class="fa-solid fa-download"></i> Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-44 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\Essay Outline Templates.avif" alt="Essay">
+                            <div class="absolute top-3 right-3 bg-white/90 text-slate-800 text-xs font-bold px-2.5 py-1 rounded-lg">PDF</div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-sm">Essay Outline Templates</h3>
+                            <p class="text-xs text-slate-500 mt-0.5">5-paragraph essay structure guide</p>
+                            <div class="flex items-center justify-between mt-3 pt-3 border-t border-slate-200 dark:border-slate-700">
+                                <span class="text-xs text-slate-400">1.2 MB</span>
+                                <a href="contact.html" class="text-secondary text-xs font-bold flex items-center gap-1 hover:underline"><i class="fa-solid fa-download"></i> Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-44 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\Vocabulary Builder (Gr 6-8).avif" alt="Vocabulary">
+                            <div class="absolute top-3 right-3 bg-white/90 text-slate-800 text-xs font-bold px-2.5 py-1 rounded-lg">PDF</div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-sm">Vocabulary Builder (Gr 6-8)</h3>
+                            <p class="text-xs text-slate-500 mt-0.5">200 essential words with definitions</p>
+                            <div class="flex items-center justify-between mt-3 pt-3 border-t border-slate-200 dark:border-slate-700">
+                                <span class="text-xs text-slate-400">2.7 MB</span>
+                                <a href="contact.html" class="text-secondary text-xs font-bold flex items-center gap-1 hover:underline"><i class="fa-solid fa-download"></i> Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== COMPONENT 3: TIPS & ADVICE (blog-style cards) ==================== -->
+        <section class="py-20 bg-slate-50 dark:bg-slate-900/50">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-secondary text-sm tracking-wider uppercase font-bold">Tips & Advice</span>
+                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">Parenting & Learning Tips</h2>
+                    <p class="text-slate-600 dark:text-slate-400">Expert advice to help you support your child's education at home.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 flex flex-col md:flex-row">
+                        <img class="w-full md:w-2/5 h-44 md:h-auto object-cover" src="images\study tips.avif" alt="Study tips">
+                        <div class="p-6 flex flex-col justify-center">
+                            <span class="text-secondary text-xs font-bold uppercase">Study Habits</span>
+                            <h3 class="font-bold text-lg mt-1 mb-2">10 Ways to Build Better Study Habits</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm">Simple strategies to help your child stay focused, organized, and motivated.</p>
+                            <a href="contact.html" class="text-secondary font-bold text-sm mt-3 flex items-center gap-1 hover:underline">Read More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 flex flex-col md:flex-row">
+                        <img class="w-full md:w-2/5 h-44 md:h-auto object-cover" src="images\prep.webp" alt="Reading">
+                        <div class="p-6 flex flex-col justify-center">
+                            <span class="text-secondary text-xs font-bold uppercase">Literacy</span>
+                            <h3 class="font-bold text-lg mt-1 mb-2">Encouraging a Love for Reading</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm">Age-appropriate book recommendations and tips to make reading fun.</p>
+                            <a href="contact.html" class="text-secondary font-bold text-sm mt-3 flex items-center gap-1 hover:underline">Read More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 flex flex-col md:flex-row">
+                        <img class="w-full md:w-2/5 h-44 md:h-auto object-cover" src="images\pep.webp" alt="Test prep">
+                        <div class="p-6 flex flex-col justify-center">
+                            <span class="text-secondary text-xs font-bold uppercase">Test Prep</span>
+                            <h3 class="font-bold text-lg mt-1 mb-2">SAT Prep: 3-Month Study Plan</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm">A week-by-week guide to maximize your score and reduce test-day anxiety.</p>
+                            <a href="contact.html" class="text-secondary font-bold text-sm mt-3 flex items-center gap-1 hover:underline">Read More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 flex flex-col md:flex-row">
+                        <img class="w-full md:w-2/5 h-44 md:h-auto object-cover" src="images\fun science.avif" alt="STEM">
+                        <div class="p-6 flex flex-col justify-center">
+                            <span class="text-secondary text-xs font-bold uppercase">STEM</span>
+                            <h3 class="font-bold text-lg mt-1 mb-2">Fun Science Experiments at Home</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm">Easy hands-on activities using household items to spark curiosity.</p>
+                            <a href="contact.html" class="text-secondary font-bold text-sm mt-3 flex items-center gap-1 hover:underline">Read More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+   <!-- ==================== COMPONENT 5: RECOMMENDED TOOLS ==================== -->
+        <section class="py-20 bg-slate-50 dark:bg-slate-900/50">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-secondary text-sm tracking-wider uppercase font-bold">Recommended Tools</span>
+                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">Helpful Learning Apps & Sites</h2>
+                    <p class="text-slate-600 dark:text-slate-400">Curated list of the best educational tools to supplement your child's learning.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl p-6 border border-slate-200 dark:border-slate-800 text-center hover:-translate-y-2 transition-all duration-300">
+                        <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary text-3xl"><i class="fa-solid fa-calculator"></i></div>
+                        <h3 class="font-bold text-sm">Khan Academy</h3>
+                        <p class="text-xs text-slate-500 mt-1">Free math & science lessons</p>
+                        <a href="https://www.khanacademy.org" target="_blank" class="mt-3 inline-block text-secondary text-xs font-bold hover:underline">Visit Site →</a>
+                    </div>
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl p-6 border border-slate-200 dark:border-slate-800 text-center hover:-translate-y-2 transition-all duration-300">
+                        <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary text-3xl"><i class="fa-solid fa-book"></i></div>
+                        <h3 class="font-bold text-sm">Quizlet</h3>
+                        <p class="text-xs text-slate-500 mt-1">Flashcards & study games</p>
+                        <a href="https://quizlet.com" target="_blank" class="mt-3 inline-block text-secondary text-xs font-bold hover:underline">Visit Site →</a>
+                    </div>
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl p-6 border border-slate-200 dark:border-slate-800 text-center hover:-translate-y-2 transition-all duration-300">
+                        <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary text-3xl"><i class="fa-solid fa-pen"></i></div>
+                        <h3 class="font-bold text-sm">Grammarly</h3>
+                        <p class="text-xs text-slate-500 mt-1">Writing assistant & grammar </p>
+                        <a href="https://www.grammarly.com" target="_blank" class="mt-3 inline-block text-secondary text-xs font-bold hover:underline">Visit Site →</a>
+                    </div>
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl p-6 border border-slate-200 dark:border-slate-800 text-center hover:-translate-y-2 transition-all duration-300">
+                        <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary text-3xl"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3 class="font-bold text-sm">Codecademy</h3>
+                        <p class="text-xs text-slate-500 mt-1">Learn coding interactively</p>
+                        <a href="https://www.codecademy.com" target="_blank" class="mt-3 inline-block text-secondary text-xs font-bold hover:underline">Visit Site →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==================== COMPONENT 4: VIDEO TUTORIALS ==================== -->
+        <section id="videos" class="py-20 bg-white dark:bg-primary">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-secondary text-sm tracking-wider uppercase font-bold">Video Library</span>
+                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">Watch & Learn</h2>
+                    <p class="text-slate-600 dark:text-slate-400">Short video tutorials covering key concepts across all subjects.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="group rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/30 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-40 overflow-hidden bg-slate-900 flex items-center justify-center">
+                            <img class="w-full h-full object-cover opacity-70" src="images\Mathematics.avif" alt="Math video">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-14 h-14 rounded-full bg-secondary/90 flex items-center justify-center text-white text-xl group-hover:scale-110 transition-transform"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                            <span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-0.5 rounded">8:32</span>
+                        </div>
+                        <div class="p-4">
+                            <span class="text-secondary text-xs font-bold uppercase">Mathematics</span>
+                            <h3 class="font-bold text-sm mt-1">Solving Quadratic Equations</h3>
+                        </div>
+                    </div>
+                    <div class="group rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/30 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-40 overflow-hidden bg-slate-900 flex items-center justify-center">
+                            <img class="w-full h-full object-cover opacity-70" src="images\s1.avif" alt="Science video">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-14 h-14 rounded-full bg-secondary/90 flex items-center justify-center text-white text-xl group-hover:scale-110 transition-transform"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                            <span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-0.5 rounded">6:15</span>
+                        </div>
+                        <div class="p-4">
+                            <span class="text-secondary text-xs font-bold uppercase">Science</span>
+                            <h3 class="font-bold text-sm mt-1">Understanding the Periodic Table</h3>
+                        </div>
+                    </div>
+                    <div class="group rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/30 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-40 overflow-hidden bg-slate-900 flex items-center justify-center">
+                            <img class="w-full h-full object-cover opacity-70" src="images\writing.avif" alt="Writing video">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-14 h-14 rounded-full bg-secondary/90 flex items-center justify-center text-white text-xl group-hover:scale-110 transition-transform"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                            <span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-0.5 rounded">5:45</span>
+                        </div>
+                        <div class="p-4">
+                            <span class="text-secondary text-xs font-bold uppercase">Writing</span>
+                            <h3 class="font-bold text-sm mt-1">How to Write a Strong Thesis</h3>
+                        </div>
+                    </div>
+                    <div class="group rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/30 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-40 overflow-hidden bg-slate-900 flex items-center justify-center">
+                            <img class="w-full h-full object-cover opacity-70" src="images\img5.avif" alt="SAT video">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-14 h-14 rounded-full bg-secondary/90 flex items-center justify-center text-white text-xl group-hover:scale-110 transition-transform"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                            <span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-0.5 rounded">12:20</span>
+                        </div>
+                        <div class="p-4">
+                            <span class="text-secondary text-xs font-bold uppercase">Test Prep</span>
+                            <h3 class="font-bold text-sm mt-1">SAT Math: Time-Saving Tricks</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     
+
+        <!-- ==================== COMPONENT 6: FAQ MINI ==================== -->
+        <section class="py-20 bg-white dark:bg-primary">
+            <div class="max-w-[900px] mx-auto px-6 lg:px-10">
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <span class="text-secondary text-sm tracking-wider uppercase font-bold">Support</span>
+                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">Resource Help Center</h2>
+                    <p class="text-slate-600 dark:text-slate-400">Answers to common questions about using our resources.</p>
+                </div>
+                <div class="space-y-4">
+                    <details class="group bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 open:border-secondary/50 transition-colors">
+                        <summary class="flex items-center justify-between cursor-pointer p-6 font-bold text-lg marker:hidden list-none">Are the study guides free?<i class="fa-solid fa-chevron-down text-sm text-secondary group-open:rotate-180 transition-transform"></i></summary>
+                        <div class="px-6 pb-6 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Yes, all downloadable study guides and worksheets on this page are completely free. No account or sign-up required.</div>
+                    </details>
+                    <details class="group bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 open:border-secondary/50 transition-colors">
+                        <summary class="flex items-center justify-between cursor-pointer p-6 font-bold text-lg marker:hidden list-none">How often are new resources added?<i class="fa-solid fa-chevron-down text-sm text-secondary group-open:rotate-180 transition-transform"></i></summary>
+                        <div class="px-6 pb-6 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">We add new materials every month. Subscribe to our newsletter to get notified when new guides and videos are published.</div>
+                    </details>
+                    <details class="group bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 open:border-secondary/50 transition-colors">
+                        <summary class="flex items-center justify-between cursor-pointer p-6 font-bold text-lg marker:hidden list-none">Can I request a specific topic?<i class="fa-solid fa-chevron-down text-sm text-secondary group-open:rotate-180 transition-transform"></i></summary>
+                        <div class="px-6 pb-6 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Absolutely! Contact us with your topic request and our tutors will create a custom guide or video for it.</div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== COMPONENT 7: CTA ==================== -->
+        <section class="py-20 bg-secondary relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-[120px] pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-900/10 rounded-full blur-[120px] pointer-events-none"></div>
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10 relative z-10">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Want More Personalized Resources?</h2>
+                    <p class="text-blue-100 text-lg mb-10">Our tutors create custom learning materials tailored to your child's needs. Sign up for a free consultation.</p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="contact.html" class="px-10 py-4 rounded-xl bg-white text-secondary font-bold text-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">Get Free Resources</a>
+                        <a href="contact.html" class="px-10 py-4 rounded-xl border-2 border-white/30 text-white font-bold text-lg hover:bg-white/10 transition-all duration-300">Subscribe to Newsletter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+</body>
+</html>

@@ -37,7 +37,7 @@
     <main class="pt-20 md:pt-24">
         
     <!-- Hero Section -->
-<section class="relative w-full h-screen flex items-center overflow-hidden bg-[#0F172A]">
+<section class="relative w-full min-h-[calc(100vh-5rem)] md:min-h-[calc(100vh-6rem)] flex items-center overflow-hidden bg-[#0F172A]">
     
     <!-- Background Image & Elegant Navy Overlay -->
     <img src="images\bg1.avif" 
@@ -48,7 +48,7 @@
     <div class="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-black/30 z-0"></div>
 
     <!-- Content Container -->
-    <div class="max-w-[1440px] w-full mx-auto px-6 lg:px-10 relative z-10 pb-10">
+    <div class="max-w-[1440px] w-full mx-auto px-6 lg:px-10 relative z-10 py-16 md:py-20">
         <div class="max-w-3xl mx-auto text-center">
             
             <!-- Glassmorphic Badge -->
@@ -57,7 +57,7 @@
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#5ba0d9] opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-3 w-3 bg-[#5ba0d9]"></span>
                 </span>
-                Empowering Students K-12
+                Now Enrolling for the 2026-27 School Year
             </div>
             
             <!-- Elegant Heading with Text Gradient -->
@@ -70,12 +70,12 @@
             
             <!-- Refined Typography for Subheading -->
             <p class="text-lg md:text-xl text-slate-200 mb-10 leading-relaxed max-w-xl mx-auto font-medium drop-shadow-md">
-                Expert tutoring tailored to your student's unique learning style. From foundational math and reading to advanced test prep, we build confidence and deliver proven results.
+                Expert tutoring for students in grades K-12. In-person and live online classes, on-demand video lessons, and current admissions open — from foundational math and reading to advanced SAT prep.
             </p>
             
             <!-- Interactive Buttons -->
             <div class="flex flex-col sm:flex-row gap-5 justify-center">
-                <a href="programs.html" class="flex items-center justify-center px-8 py-4 rounded-xl bg-[#5ba0d9] text-white font-bold text-lg hover:shadow-xl hover:shadow-[#5ba0d9]/30 hover:-translate-y-1 transition-all duration-300 gap-3 border border-[#5ba0d9]">
+                <a href="courses.html" class="flex items-center justify-center px-8 py-4 rounded-xl bg-[#5ba0d9] text-white font-bold text-lg hover:shadow-xl hover:shadow-[#5ba0d9]/30 hover:-translate-y-1 transition-all duration-300 gap-3 border border-[#5ba0d9]">
                     Explore Programs <i class="fa-solid fa-arrow-right"></i>
                 </a>
                 <a href="contact.html" class="flex items-center justify-center px-8 py-4 rounded-xl bg-white/5 backdrop-blur-sm border-2 border-white/30 hover:border-[#5ba0d9] hover:bg-[#5ba0d9]/10 font-bold text-lg text-white transition-all duration-300 hover:-translate-y-1">
@@ -101,6 +101,33 @@
         </div>
     </div>
 </section>
+
+        <!-- ==========================================
+             ADMISSIONS BANNER
+        =========================================== -->
+        <section class="py-6 bg-gradient-to-r from-[#5ba0d9] to-blue-700">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-8">
+                    <div class="flex items-center gap-4 text-white">
+                        <div class="w-12 h-12 shrink-0 rounded-full bg-white/20 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-base sm:text-lg">Admissions Open for Grades K-12</h3>
+                            <p class="text-blue-100 text-sm">Limited seats for the 2026-27 school year. In-person, online, and video-learning programs available now.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3 shrink-0">
+                        <a href="signup.html" class="px-6 py-2.5 rounded-xl bg-white text-[#0F172A] font-bold text-sm text-center hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
+                            Apply Now
+                        </a>
+                        <a href="pricing.html" class="px-6 py-2.5 rounded-xl border-2 border-white/40 text-white font-bold text-sm text-center hover:bg-white/10 transition-all duration-300">
+                            View Pricing
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Features / Why Choose Us Section -->
         <section class="py-20 bg-white dark:bg-primary">
@@ -146,83 +173,282 @@
                 </div>
             </div>
         </section>
+
 <!-- ==========================================
-     SECTION 1: SUBJECTS & PROGRAMS
+     GRADE LEVELS (Age / Grade Categories)
 =========================================== -->
 <section class="py-24 bg-slate-50 dark:bg-slate-900/50 transition-colors duration-500">
     <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
         
         <!-- Section Header -->
         <div class="text-center max-w-2xl mx-auto mb-16">
-            <span class="text-[#5ba0d9] font-bold text-sm tracking-wider uppercase mb-3 block">What We Teach</span>
-            <h2 class="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">Comprehensive Subjects</h2>
+            <span class="text-[#5ba0d9] font-bold text-sm tracking-wider uppercase mb-3 block">Class Levels</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">Programs for Every Grade</h2>
             <p class="text-slate-600 dark:text-slate-400 text-lg">
-                Our expert tutors cover all major K-12 subjects, ensuring your child receives the targeted support they need to excel.
+                From kindergarten to 12th grade, our programs are built around each age group's learning needs and school curriculum.
             </p>
         </div>
 
-        <!-- Subjects Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+        <!-- Grade Level Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             
-            <!-- Subject Card 1 -->
-            <div class="group bg-white dark:bg-[#0F172A] p-8 rounded-2xl shadow-sm hover:shadow-xl dark:shadow-none border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 dark:hover:border-[#5ba0d9]/50 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-full bg-[#5ba0d9]/10 text-[#5ba0d9] flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-[#5ba0d9] group-hover:text-white transition-all duration-300">
-                    <i class="fa-solid fa-calculator"></i>
+            <!-- Elementary -->
+            <div class="bg-white dark:bg-[#0F172A] rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-500 group">
+                <div class="relative h-56 overflow-hidden">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\Elementary.avif" alt="Elementary Students Grades K-5">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="text-2xl font-bold">Elementary School</h3>
+                        <p class="text-white/80 text-sm font-medium">Grades K-5 · Ages 5-10</p>
+                    </div>
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Mathematics</h3>
-                <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
-                    From basic arithmetic to advanced calculus. We simplify complex concepts and build strong problem-solving skills.
-                </p>
-                <a href="courses.html" class="text-[#5ba0d9] font-bold text-sm group-hover:underline flex items-center gap-1">Learn more <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                <div class="p-6 md:p-8">
+                    <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> Foundational Reading, Writing &amp; Math</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> Early Science Exploration &amp; Vocabulary</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> Study Habits &amp; Confidence Building</li>
+                    </ul>
+                    <a href="courses.html#levels" class="mt-6 block w-full py-3 rounded-xl border-2 border-[#5ba0d9] text-[#5ba0d9] font-bold text-sm text-center hover:bg-[#5ba0d9] hover:text-white transition-all">
+                        View Elementary Courses
+                    </a>
+                </div>
             </div>
 
-            <!-- Subject Card 2 -->
-            <div class="group bg-white dark:bg-[#0F172A] p-8 rounded-2xl shadow-sm hover:shadow-xl dark:shadow-none border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 dark:hover:border-[#5ba0d9]/50 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-full bg-[#5ba0d9]/10 text-[#5ba0d9] flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-[#5ba0d9] group-hover:text-white transition-all duration-300">
-                    <i class="fa-solid fa-flask"></i>
+            <!-- Middle School -->
+            <div class="bg-white dark:bg-[#0F172A] rounded-3xl overflow-hidden border-2 border-[#5ba0d9]/40 dark:border-[#5ba0d9]/40 shadow-lg shadow-[#5ba0d9]/10 transition-all duration-500 group relative">
+                <span class="absolute top-4 right-4 z-10 bg-[#5ba0d9] text-white text-xs font-bold px-4 py-1 rounded-full shadow-md">Most Popular</span>
+                <div class="relative h-56 overflow-hidden">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\Middle School.avif" alt="Middle School Students Grades 6-8">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="text-2xl font-bold">Middle School</h3>
+                        <p class="text-white/80 text-sm font-medium">Grades 6-8 · Ages 11-13</p>
+                    </div>
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Sciences</h3>
-                <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
-                    Biology, Chemistry, and Physics. Hands-on learning approaches to make science engaging and understandable.
-                </p>
-                <a href="courses.html" class="text-[#5ba0d9] font-bold text-sm group-hover:underline flex items-center gap-1">Learn more <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                <div class="p-6 md:p-8">
+                    <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> Pre-Algebra, Algebra &amp; Geometry Prep</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> Life &amp; Physical Sciences</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> Essay Writing, Literature &amp; Critical Thinking</li>
+                    </ul>
+                    <a href="courses.html#levels" class="mt-6 block w-full py-3 rounded-xl bg-[#5ba0d9] text-white font-bold text-sm text-center hover:bg-blue-700 transition-all">
+                        View Middle School Courses
+                    </a>
+                </div>
             </div>
 
-            <!-- Subject Card 3 -->
-            <div class="group bg-white dark:bg-[#0F172A] p-8 rounded-2xl shadow-sm hover:shadow-xl dark:shadow-none border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 dark:hover:border-[#5ba0d9]/50 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-full bg-[#5ba0d9]/10 text-[#5ba0d9] flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-[#5ba0d9] group-hover:text-white transition-all duration-300">
-                    <i class="fa-solid fa-book-open"></i>
+            <!-- High School -->
+            <div class="bg-white dark:bg-[#0F172A] rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-500 group sm:col-span-2 lg:col-span-1">
+                <div class="relative h-56 overflow-hidden">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\High School.avif" alt="High School Students Grades 9-12">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="text-2xl font-bold">High School</h3>
+                        <p class="text-white/80 text-sm font-medium">Grades 9-12 · Ages 14-18</p>
+                    </div>
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Language Arts</h3>
-                <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
-                    Improve reading comprehension, essay writing, and grammar to help students communicate effectively.
+                <div class="p-6 md:p-8">
+                    <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> Algebra II, Pre-Calculus &amp; Calculus</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> Chemistry, Physics &amp; AP Course Support</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> SAT/ACT Prep &amp; College Essay Coaching</li>
+                    </ul>
+                    <a href="courses.html#levels" class="mt-6 block w-full py-3 rounded-xl border-2 border-[#5ba0d9] text-[#5ba0d9] font-bold text-sm text-center hover:bg-[#5ba0d9] hover:text-white transition-all">
+                        View High School Courses
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- ==================== COMPONENT 4: PROGRAMS / SUBJECTS ==================== -->
+        <section class="py-24 bg-white dark:bg-[#0F172A]">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-secondary text-sm tracking-wider uppercase font-bold">Our Programs</span>
+                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">Subjects &amp; Course Options</h2>
+                    <p class="text-slate-600 dark:text-slate-400">Comprehensive subject coverage plus flexible program formats — pick the path that fits your child best.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                        <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-calculator"></i></div>
+                        <h3 class="font-bold text-lg mb-1">Mathematics</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">K-12 &amp; Advanced</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Arithmetic, Algebra, Geometry, Trigonometry, Calculus, and Statistics.</p>
+                    </div>
+                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                        <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-flask"></i></div>
+                        <h3 class="font-bold text-lg mb-1">Sciences</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Grades 3-12</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Biology, Chemistry, Physics, Earth Science, and Environmental Science.</p>
+                    </div>
+                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                        <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-book-open"></i></div>
+                        <h3 class="font-bold text-lg mb-1">Language Arts</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">K-12</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Reading, Essay Writing, Grammar, Vocabulary, and Literature.</p>
+                    </div>
+                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                        <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-file-pen"></i></div>
+                        <h3 class="font-bold text-lg mb-1">Test Prep</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">High School</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">SAT, ACT, PSAT, AP Exams, and State Standardized Assessments.</p>
+                    </div>
+                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                        <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-language"></i></div>
+                        <h3 class="font-bold text-lg mb-1">Foreign Languages</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">All Levels</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Spanish, French, Mandarin, Latin, and ESL for non-native speakers.</p>
+                    </div>
+                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                        <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3 class="font-bold text-lg mb-1">Computer Science</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Grades 6-12</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Programming, Python, Web Development, Robotics, and AP CS.</p>
+                    </div>
+                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                        <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-music"></i></div>
+                        <h3 class="font-bold text-lg mb-1">Arts &amp; Music</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">K-12</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Music Theory, Instrument Lessons, Art History, and Studio Art.</p>
+                    </div>
+                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                        <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-person-chalkboard"></i></div>
+                        <h3 class="font-bold text-lg mb-1">Study Skills</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">All Grades</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Time Management, Note-Taking, Organization, and Exam Strategies.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="courses.html" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-secondary text-white font-bold text-base hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">Browse All Course Details <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                </div>
+            </div>
+        </section>
+
+
+
+<!-- ==========================================
+     ONLINE CLASSES & VIDEO LEARNING
+=========================================== -->
+<section class="py-24 bg-white dark:bg-primary transition-colors duration-500 overflow-hidden">
+    <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            
+            <!-- Text Content -->
+            <div>
+                <span class="text-[#5ba0d9] font-bold text-sm tracking-wider uppercase mb-3 block">Learn Anywhere</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6 leading-tight">
+                    Online Classes &amp; <br> Video Learning Options
+                </h2>
+                <p class="text-slate-600 dark:text-slate-400 text-lg mb-8">
+                    Can't make it to the center? No problem. Learn from anywhere with live online classes, or study on your own schedule with our on-demand video lessons.
                 </p>
-                <a href="courses.html" class="text-[#5ba0d9] font-bold text-sm group-hover:underline flex items-center gap-1">Learn more <i class="fa-solid fa-arrow-right text-xs"></i></a>
+
+                <div class="space-y-5">
+                    <div class="flex gap-4">
+                        <div class="w-14 h-14 shrink-0 rounded-2xl bg-[#5ba0d9]/10 text-[#5ba0d9] flex items-center justify-center text-xl"><i class="fa-solid fa-video"></i></div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Live Online Tutoring</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm">Real-time 1-on-1 or group sessions with a virtual whiteboard, screen sharing, and session recordings you can replay anytime.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-14 h-14 shrink-0 rounded-2xl bg-[#5ba0d9]/10 text-[#5ba0d9] flex items-center justify-center text-xl"><i class="fa-solid fa-play"></i></div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">On-Demand Video Lessons</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm">Hundreds of short, self-paced video tutorials across math, science, writing, and test prep. Pause, rewind, and review as often as needed.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-14 h-14 shrink-0 rounded-2xl bg-[#5ba0d9]/10 text-[#5ba0d9] flex items-center justify-center text-xl"><i class="fa-solid fa-book-open-reader"></i></div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Downloadable Study Guides</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm">Free worksheets, formula sheets, and practice sets paired with every video to reinforce learning at home.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 mt-10">
+                    <a href="resources.html#videos" class="flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl bg-[#5ba0d9] text-white font-bold text-base hover:bg-blue-700 transition-all duration-300 shadow-lg shadow-[#5ba0d9]/25">
+                        <i class="fa-regular fa-circle-play"></i> Browse Video Lessons
+                    </a>
+                    <a href="contact.html" class="flex items-center justify-center px-8 py-3.5 rounded-xl border-2 border-slate-300 dark:border-slate-700 font-bold text-base hover:border-[#5ba0d9] hover:text-[#5ba0d9] transition-all duration-300">
+                        Book an Online Class
+                    </a>
+                </div>
             </div>
 
-            <!-- Subject Card 4 -->
-            <div class="group bg-white dark:bg-[#0F172A] p-8 rounded-2xl shadow-sm hover:shadow-xl dark:shadow-none border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 dark:hover:border-[#5ba0d9]/50 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-full bg-[#5ba0d9]/10 text-[#5ba0d9] flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-[#5ba0d9] group-hover:text-white transition-all duration-300">
-                    <i class="fa-solid fa-file-pen"></i>
+            <!-- Video Cards -->
+            <div class="relative">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="group rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/30 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-40 overflow-hidden bg-slate-900 flex items-center justify-center">
+                            <img class="w-full h-full object-cover opacity-70" src="images\Mathematics.avif" alt="Math video lesson">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-14 h-14 rounded-full bg-[#5ba0d9]/90 flex items-center justify-center text-white text-xl group-hover:scale-110 transition-transform"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                            <span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-0.5 rounded">8:32</span>
+                        </div>
+                        <div class="p-4">
+                            <span class="text-[#5ba0d9] text-xs font-bold uppercase">Mathematics</span>
+                            <h3 class="font-bold text-sm mt-1">Solving Quadratic Equations</h3>
+                        </div>
+                    </div>
+                    <div class="group rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/30 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-40 overflow-hidden bg-slate-900 flex items-center justify-center">
+                            <img class="w-full h-full object-cover opacity-70" src="images\s1.avif" alt="Science video lesson">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-14 h-14 rounded-full bg-[#5ba0d9]/90 flex items-center justify-center text-white text-xl group-hover:scale-110 transition-transform"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                            <span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-0.5 rounded">6:15</span>
+                        </div>
+                        <div class="p-4">
+                            <span class="text-[#5ba0d9] text-xs font-bold uppercase">Science</span>
+                            <h3 class="font-bold text-sm mt-1">Understanding the Periodic Table</h3>
+                        </div>
+                    </div>
+                    <div class="group rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/30 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-40 overflow-hidden bg-slate-900 flex items-center justify-center">
+                            <img class="w-full h-full object-cover opacity-70" src="images\writing.avif" alt="Writing video lesson">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-14 h-14 rounded-full bg-[#5ba0d9]/90 flex items-center justify-center text-white text-xl group-hover:scale-110 transition-transform"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                            <span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-0.5 rounded">5:45</span>
+                        </div>
+                        <div class="p-4">
+                            <span class="text-[#5ba0d9] text-xs font-bold uppercase">Writing</span>
+                            <h3 class="font-bold text-sm mt-1">How to Write a Strong Thesis</h3>
+                        </div>
+                    </div>
+                    <div class="group rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/30 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-40 overflow-hidden bg-slate-900 flex items-center justify-center">
+                            <img class="w-full h-full object-cover opacity-70" src="images\img5.avif" alt="SAT prep video lesson">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-14 h-14 rounded-full bg-[#5ba0d9]/90 flex items-center justify-center text-white text-xl group-hover:scale-110 transition-transform"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                            <span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-0.5 rounded">12:20</span>
+                        </div>
+                        <div class="p-4">
+                            <span class="text-[#5ba0d9] text-xs font-bold uppercase">Test Prep</span>
+                            <h3 class="font-bold text-sm mt-1">SAT Math: Time-Saving Tricks</h3>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3"> Preparation</h3>
-                <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
-                    Targeted strategies for SAT, ACT, and state assessments to maximize scores and reduce test anxiety.
-                </p>
-                <a href="courses.html" class="text-[#5ba0d9] font-bold text-sm group-hover:underline flex items-center gap-1">Learn more <i class="fa-solid fa-arrow-right text-xs"></i></a>
             </div>
-
         </div>
     </div>
 </section>
 
 <!-- ==========================================
-     SECTION 2: HOW IT WORKS
+     HOW IT WORKS
 =========================================== -->
-<section class="py-24 bg-white dark:bg-[#0F172A] transition-colors duration-500 overflow-hidden">
+<section class="py-24 bg-slate-50 dark:bg-slate-900/50 transition-colors duration-500 overflow-hidden">
     <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
         
-        <div class="flex flex-col lg:flex-row items-center gap-16">
+        <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
             
             <!-- Text Content -->
             <div class="w-full lg:w-1/2">
@@ -273,8 +499,8 @@
                             3
                         </div>
                         <div class="pt-3">
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Customized Learning</h3>
-                            <p class="text-slate-600 dark:text-slate-400 text-sm">Watch your child thrive with 1-on-1 sessions, personalized curriculum, and regular progress reports.</p>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Enroll &amp; Start Learning</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm">Choose your schedule and learning format — in person, online, or video — and watch your child thrive with regular progress reports.</p>
                         </div>
                     </div>
 
@@ -285,10 +511,11 @@
 </section>
 
 
+
 <!-- ==========================================
-     SECTION 4: MEET OUR EXPERT TUTORS
+     MEET OUR EXPERT TUTORS
 =========================================== -->
-<section class="py-24 bg-white dark:bg-[#0F172A] transition-colors duration-500">
+<section class="py-24 bg-slate-50 dark:bg-slate-900/50 transition-colors duration-500">
     <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
         
         <!-- Header -->
@@ -309,7 +536,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             
             <!-- Tutor 1 -->
-            <div class="group rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 transition-all duration-300">
+            <div class="group rounded-2xl overflow-hidden bg-white dark:bg-[#0F172A] border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 transition-all duration-300">
                 <div class="relative h-64 overflow-hidden">
                     <img src="images\T1.webp" alt="Dr. Amanda Smith" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute bottom-3 right-3 bg-white dark:bg-[#0F172A] p-2 rounded-lg text-[#5ba0d9] font-bold text-xs shadow-sm">
@@ -326,7 +553,7 @@
             </div>
 
             <!-- Tutor 2 -->
-            <div class="group rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 transition-all duration-300">
+            <div class="group rounded-2xl overflow-hidden bg-white dark:bg-[#0F172A] border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 transition-all duration-300">
                 <div class="relative h-64 overflow-hidden">
                     <img src="images\T2.avif" alt="David Chen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute bottom-3 right-3 bg-white dark:bg-[#0F172A] p-2 rounded-lg text-[#5ba0d9] font-bold text-xs shadow-sm">
@@ -343,7 +570,7 @@
             </div>
 
             <!-- Tutor 3 -->
-            <div class="group rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 transition-all duration-300">
+            <div class="group rounded-2xl overflow-hidden bg-white dark:bg-[#0F172A] border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 transition-all duration-300">
                 <div class="relative h-64 overflow-hidden">
                     <img src="images\T3.avif" alt="Sarah Johnson" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute bottom-3 right-3 bg-white dark:bg-[#0F172A] p-2 rounded-lg text-[#5ba0d9] font-bold text-xs shadow-sm">
@@ -360,7 +587,7 @@
             </div>
 
             <!-- Tutor 4 -->
-            <div class="group rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 transition-all duration-300">
+            <div class="group rounded-2xl overflow-hidden bg-white dark:bg-[#0F172A] border border-slate-200 dark:border-slate-800 hover:border-[#5ba0d9]/50 transition-all duration-300">
                 <div class="relative h-64 overflow-hidden">
                     <img src="images\T4.avif" alt="Marcus Williams" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute bottom-3 right-3 bg-white dark:bg-[#0F172A] p-2 rounded-lg text-[#5ba0d9] font-bold text-xs shadow-sm">
@@ -379,10 +606,11 @@
         </div>
     </div>
 </section>
+
 <!-- ==========================================
-     SECTION 3: TESTIMONIALS (Dark Section)
+     TESTIMONIALS (Dark Section)
 =========================================== -->
-<section class="py-24 bg-slate-50 relative overflow-hidden">
+<section class="py-24 bg-white dark:bg-primary relative overflow-hidden">
     <!-- Decorative background elements -->
     <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-[#5ba0d9]/10 rounded-full blur-[100px] pointer-events-none"></div>
     <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
@@ -391,8 +619,8 @@
         
         <!-- Header -->
         <div class="text-center max-w-2xl mx-auto mb-16">
-            <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Real Results, Happy Parents</h2>
-            <p class="text-slate-600 text-lg">
+            <h2 class="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">Real Results, Happy Parents</h2>
+            <p class="text-slate-600 dark:text-slate-400 text-lg">
                 Don't just take our word for it. Here is what families are saying about their experience with TutorCenter.
             </p>
         </div>
@@ -401,54 +629,54 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             <!-- Review 1 -->
-            <div class="bg-white backdrop-blur-sm border border-slate-200 rounded-2xl p-8 relative shadow-sm">
-                <i class="fa-solid fa-quote-right absolute top-8 right-8 text-4xl text-slate-200"></i>
+            <div class="bg-white dark:bg-[#0F172A] backdrop-blur-sm border border-slate-200 dark:border-slate-800 rounded-2xl p-8 relative shadow-sm">
+                <i class="fa-solid fa-quote-right absolute top-8 right-8 text-4xl text-slate-200 dark:text-slate-800"></i>
                 <div class="flex gap-1 text-[#5ba0d9] mb-6 text-sm">
                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                 </div>
-                <p class="text-slate-600 mb-8 italic relative z-10">
+                <p class="text-slate-600 dark:text-slate-300 mb-8 italic relative z-10">
                     "My son was struggling with Algebra, but after just two months at TutorCenter, his grade went from a C- to an A. The tutors are incredibly patient and genuinely care."
                 </p>
                 <div class="flex items-center gap-4">
                     <img src="images\prog1.avif" alt="Sarah Jenkins" class="w-12 h-12 rounded-full object-cover border-2 border-slate-200">
                     <div>
-                        <h4 class="text-slate-900 font-bold text-sm">Sarah Jenkins</h4>
+                        <h4 class="text-slate-900 dark:text-white font-bold text-sm">Sarah Jenkins</h4>
                         <span class="text-slate-500 text-xs">Parent of 8th Grader</span>
                     </div>
                 </div>
             </div>
 
             <!-- Review 2 -->
-            <div class="bg-white backdrop-blur-sm border border-slate-200 rounded-2xl p-8 relative shadow-sm">
-                <i class="fa-solid fa-quote-right absolute top-8 right-8 text-4xl text-slate-200"></i>
+            <div class="bg-white dark:bg-[#0F172A] backdrop-blur-sm border border-slate-200 dark:border-slate-800 rounded-2xl p-8 relative shadow-sm">
+                <i class="fa-solid fa-quote-right absolute top-8 right-8 text-4xl text-slate-200 dark:text-slate-800"></i>
                 <div class="flex gap-1 text-[#5ba0d9] mb-6 text-sm">
                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                 </div>
-                <p class="text-slate-600 mb-8 italic relative z-10">
+                <p class="text-slate-600 dark:text-slate-300 mb-8 italic relative z-10">
                     "The SAT prep program was phenomenal. The customized study plan helped my daughter increase her score by 150 points. Highly recommend to any high schooler!"
                 </p>
                 <div class="flex items-center gap-4">
                     <img src="images\prob1.avif" alt="Michael Chen" class="w-12 h-12 rounded-full object-cover border-2 border-slate-200">
                     <div>
-                        <h4 class="text-slate-900 font-bold text-sm">Michael Chen</h4>
+                        <h4 class="text-slate-900 dark:text-white font-bold text-sm">Michael Chen</h4>
                         <span class="text-slate-500 text-xs">Parent of 11th Grader</span>
                     </div>
                 </div>
             </div>
 
             <!-- Review 3 -->
-            <div class="bg-white backdrop-blur-sm border border-slate-200 rounded-2xl p-8 relative shadow-sm">
-                <i class="fa-solid fa-quote-right absolute top-8 right-8 text-4xl text-slate-200"></i>
+            <div class="bg-white dark:bg-[#0F172A] backdrop-blur-sm border border-slate-200 dark:border-slate-800 rounded-2xl p-8 relative shadow-sm">
+                <i class="fa-solid fa-quote-right absolute top-8 right-8 text-4xl text-slate-200 dark:text-slate-800"></i>
                 <div class="flex gap-1 text-[#5ba0d9] mb-6 text-sm">
                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
                 </div>
-                <p class="text-slate-600 mb-8 italic relative z-10">
-                    "We love the elementary reading program. It is engaging, and my daughter actually looks forward to her sessions and classes. Her confidence reading aloud has skyrocketed."
+                <p class="text-slate-600 dark:text-slate-300 mb-8 italic relative z-10">
+                    "We love the elementary reading program and the online classes. My daughter actually looks forward to her sessions, and her confidence reading aloud has skyrocketed."
                 </p>
                 <div class="flex items-center gap-4">
                     <img src="images\prog2.avif" alt="Elena Rodriguez" class="w-12 h-12 rounded-full object-cover border-2 border-slate-200">
                     <div>
-                        <h4 class="text-slate-900 font-bold text-sm">Elena Rodriguez</h4>
+                        <h4 class="text-slate-900 dark:text-white font-bold text-sm">Elena Rodriguez</h4>
                         <span class="text-slate-500 text-xs">Parent of 3rd Grader</span>
                     </div>
                 </div>
@@ -457,12 +685,12 @@
         </div>
     </div>
 </section>
+
 <!-- ==========================================
-     SECTION 5: FINAL CALL TO ACTION
-=========================================== -->
+     FINAL CALL TO ACTION
+========================================== -->
 <section class="py-12 bg-slate-50 dark:bg-[#0F172A] transition-colors duration-500">
     <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
-        <!-- Changed md:flex-row to lg:flex-row to keep tablet view stacked and spacious -->
         <div class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#5ba0d9] to-blue-700 p-8 sm:p-12 lg:p-20 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-10">
             
             <!-- Decorative Elements -->
@@ -470,14 +698,12 @@
             <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 rounded-full bg-blue-900/20 blur-2xl pointer-events-none"></div>
             
             <!-- Content -->
-            <!-- Changed md:text-left to lg:text-left so text remains centered on tablets -->
             <div class="relative z-10 max-w-2xl text-center lg:text-left">
                 <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 lg:mb-6 leading-tight">
-                    Ready to Unlock Your Child's Full Potential?
+                    Admissions Open — Secure Your Child's Seat
                 </h2>
-                <!-- Added mx-auto lg:mx-0 to center the paragraph block on tablets -->
                 <p class="text-blue-100 text-base sm:text-lg lg:text-xl mb-0 mx-auto lg:mx-0 max-w-xl lg:max-w-none">
-                    Join TutorCenter today and give your child the academic advantage they deserve. The first consultation and assessment are completely free.
+                    Join TutorCenter today for the 2026-27 school year. The first consultation and assessment are completely free. Seats fill quickly.
                 </p>
             </div>
 

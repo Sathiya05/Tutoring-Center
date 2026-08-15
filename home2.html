@@ -122,67 +122,56 @@
             </div>
         </section>
 
-        <!-- ==================== COMPONENT 3: GRADE LEVELS ==================== -->
+        <!-- ==================== COMPONENT 3: HOW TO ENROLL ==================== -->
         <section class="py-24 bg-slate-50 dark:bg-slate-900/50">
             <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
                 <div class="text-center max-w-2xl mx-auto mb-16">
-                    <span class="text-secondary text-sm tracking-wider uppercase font-bold">Class Levels</span>
-                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">Programs for Every Grade</h2>
-                    <p class="text-slate-600 dark:text-slate-400">From kindergarten to 12th grade, our programs are built around each age group's learning needs.</p>
+                    <span class="text-secondary text-sm tracking-wider uppercase font-bold">Enrollment Process</span>
+                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">How to Enroll</h2>
+                    <p class="text-slate-600 dark:text-slate-400">Getting started at TutorCenter is simple. Follow these four easy steps to secure your child's place.</p>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="bg-white dark:bg-[#0F172A] rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-500 group">
-                        <div class="relative h-48 overflow-hidden">
-                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\Elementary.avif" alt="Elementary Grades K-5">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                            <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
-                                <h3 class="text-xl sm:text-2xl font-bold">Elementary School</h3>
-                                <p class="text-white/80 text-xs sm:text-sm font-medium">Grades K-5 · Ages 5-10</p>
-                            </div>
+
+                <div class="relative">
+                    <!-- Connecting Line (Desktop) -->
+                    <div class="hidden lg:block absolute top-10 left-[12%] right-[12%] h-0.5 bg-slate-200 dark:bg-slate-800 z-0"></div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6 relative z-10">
+                        <!-- Step 1 -->
+                        <div class="text-center px-2">
+                            <div class="relative mx-auto w-20 h-20 rounded-full bg-secondary border-4 border-secondary/20 flex items-center justify-center text-2xl font-bold text-white shadow-lg shadow-secondary/25">1</div>
+                            <div class="mt-6 w-12 h-12 mx-auto rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-lg"><i class="fa-solid fa-clipboard-check"></i></div>
+                            <h3 class="mt-4 text-lg font-bold">Book a Free Assessment</h3>
+                            <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Schedule a complimentary evaluation to identify your child's strengths, knowledge gaps, and learning style.</p>
                         </div>
-                        <div class="p-6">
-                            <ul class="space-y-2.5 text-sm text-slate-600 dark:text-slate-400">
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500 text-xs"></i> Foundational Reading, Writing &amp; Math</li>
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500 text-xs"></i> Early Science &amp; Study Habits</li>
-                            </ul>
-                            <a href="courses.html#levels" class="mt-5 block w-full py-2.5 rounded-xl border-2 border-secondary text-secondary font-bold text-sm text-center hover:bg-secondary hover:text-white transition-all">View Courses</a>
+
+                        <!-- Step 2 -->
+                        <div class="text-center px-2">
+                            <div class="relative mx-auto w-20 h-20 rounded-full bg-secondary border-4 border-secondary/20 flex items-center justify-center text-2xl font-bold text-white shadow-lg shadow-secondary/25">2</div>
+                            <div class="mt-6 w-12 h-12 mx-auto rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-lg"><i class="fa-solid fa-file-lines"></i></div>
+                            <h3 class="mt-4 text-lg font-bold">Get a Custom Plan</h3>
+                            <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">We match your child with the perfect tutor and design a personalized learning plan tailored to their goals.</p>
                         </div>
-                    </div>
-                    <div class="bg-white dark:bg-[#0F172A] rounded-3xl overflow-hidden border-2 border-secondary/40 shadow-lg shadow-secondary/10 transition-all duration-500 group relative">
-                        <span class="absolute top-3 right-3 z-10 bg-secondary text-white text-xs font-bold px-4 py-1 rounded-full shadow-md">Most Popular</span>
-                        <div class="relative h-48 overflow-hidden">
-                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\Middle School.avif" alt="Middle School Grades 6-8">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                            <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
-                                <h3 class="text-xl sm:text-2xl font-bold">Middle School</h3>
-                                <p class="text-white/80 text-xs sm:text-sm font-medium">Grades 6-8 · Ages 11-13</p>
-                            </div>
+
+                        <!-- Step 3 -->
+                        <div class="text-center px-2">
+                            <div class="relative mx-auto w-20 h-20 rounded-full bg-secondary border-4 border-secondary/20 flex items-center justify-center text-2xl font-bold text-white shadow-lg shadow-secondary/25">3</div>
+                            <div class="mt-6 w-12 h-12 mx-auto rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-lg"><i class="fa-solid fa-calendar-check"></i></div>
+                            <h3 class="mt-4 text-lg font-bold">Choose Schedule &amp; Format</h3>
+                            <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Pick in-person, live online, or small-group sessions on days and times that work best for your family.</p>
                         </div>
-                        <div class="p-6">
-                            <ul class="space-y-2.5 text-sm text-slate-600 dark:text-slate-400">
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500 text-xs"></i> Pre-Algebra, Algebra &amp; Sciences</li>
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500 text-xs"></i> Essay Writing &amp; Critical Thinking</li>
-                            </ul>
-                            <a href="courses.html#levels" class="mt-5 block w-full py-2.5 rounded-xl bg-secondary text-white font-bold text-sm text-center hover:bg-blue-700 transition-all">View Courses</a>
-                        </div>
-                    </div>
-                    <div class="bg-white dark:bg-[#0F172A] rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-500 group sm:col-span-2 lg:col-span-1">
-                        <div class="relative h-48 overflow-hidden">
-                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\High School.avif" alt="High School Grades 9-12">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                            <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
-                                <h3 class="text-xl sm:text-2xl font-bold">High School</h3>
-                                <p class="text-white/80 text-xs sm:text-sm font-medium">Grades 9-12 · Ages 14-18</p>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <ul class="space-y-2.5 text-sm text-slate-600 dark:text-slate-400">
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500 text-xs"></i> Calculus, Physics &amp; Chemistry</li>
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500 text-xs"></i> SAT/ACT Prep &amp; AP Support</li>
-                            </ul>
-                            <a href="courses.html#levels" class="mt-5 block w-full py-2.5 rounded-xl border-2 border-secondary text-secondary font-bold text-sm text-center hover:bg-secondary hover:text-white transition-all">View Courses</a>
+
+                        <!-- Step 4 -->
+                        <div class="text-center px-2">
+                            <div class="relative mx-auto w-20 h-20 rounded-full bg-secondary border-4 border-secondary/20 flex items-center justify-center text-2xl font-bold text-white shadow-lg shadow-secondary/25">4</div>
+                            <div class="mt-6 w-12 h-12 mx-auto rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-lg"><i class="fa-solid fa-rocket"></i></div>
+                            <h3 class="mt-4 text-lg font-bold">Start Learning</h3>
+                            <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Watch your child thrive with weekly sessions and monthly progress reports that track real improvement.</p>
                         </div>
                     </div>
+                </div>
+
+                <div class="text-center mt-14">
+                    <a href="contact.html" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-secondary text-white font-bold text-base hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">Start Enrollment <i class="fa-solid fa-arrow-right text-sm"></i></a>
                 </div>
             </div>
         </section>

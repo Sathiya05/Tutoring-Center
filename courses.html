@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore TutorCenter's courses for grades K-12 — mathematics, sciences, language arts, test prep, and more. In-person, live online, small groups, and boot camps.">
     <title>TutorCenter | Our Courses</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script src="tailwind.js"></script>
-          <link rel="icon" href="images\logo.png">
-              <script>
+    <link rel="icon" href="images\logo.png">
+    <script>
         tailwind.config = {
             darkMode: 'class',
             theme: {
@@ -28,15 +29,20 @@
 
     <main class="pt-20 md:pt-24">
 
-        <!-- ==================== COMPONENT 1: PAGE HEADER ==================== -->
-        <section class="relative h-screen flex items-center justify-center overflow-hidden bg-[#0F172A]">
-            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1920&q=80" alt="Courses" class="absolute inset-0 w-full h-full object-cover object-center z-0">
+        <!-- ==================== PAGE HEADER / HERO ==================== -->
+        <section class="relative flex items-center overflow-hidden bg-[#0F172A] py-20 md:py-28 lg:py-32">
+            <img src="images\img3.avif" alt="Students learning at TutorCenter" class="absolute inset-0 w-full h-full object-cover object-center z-0">
             <div class="absolute inset-0 bg-black/70 z-0"></div>
             <div class="max-w-[1440px] w-full mx-auto px-6 lg:px-10 relative z-10">
+                <nav class="text-xs md:text-sm text-slate-300 mb-6 flex items-center justify-center gap-2 font-semibold">
+                    <a href="index.html" class="hover:text-secondary transition-colors">Home</a>
+                    <i class="fa-solid fa-chevron-right text-[9px] text-slate-500"></i>
+                    <span class="text-secondary">Courses</span>
+                </nav>
                 <div class="max-w-3xl mx-auto text-center">
-                    <span class="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary text-xs font-bold uppercase tracking-wider mb-5">Explore Programs</span>
-                    <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">Find the Perfect <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5ba0d9] to-blue-300">Course</span> for Your Child</h1>
-                    <p class="text-slate-200 text-lg mt-4 max-w-xl mx-auto">From foundational reading to advanced calculus and SAT prep, we offer courses for every grade level and learning goal.</p>
+                    <span class="inline-block px-4 py-1.5 rounded-full bg-secondary/15 border border-secondary/30 text-secondary text-xs font-bold uppercase tracking-wider mb-5">Explore Programs</span>
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">Our Courses <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5ba0d9] to-blue-300">for Every Grade &amp; Goal</span></h1>
+                    <p class="text-slate-200 text-base sm:text-lg mt-5 max-w-xl mx-auto leading-relaxed">From foundational reading to advanced calculus and SAT prep — we offer courses for every grade level, subject, and learning style.</p>
                     <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
                         <a href="#subjects" class="flex items-center justify-center px-8 py-3.5 rounded-xl bg-secondary text-white font-bold text-base hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">Browse All Subjects</a>
                         <a href="#levels" class="flex items-center justify-center px-8 py-3.5 rounded-xl border-2 border-white/30 text-white font-bold text-base hover:bg-white/10 transition-all duration-300">View by Grade Level</a>
@@ -45,187 +51,262 @@
             </div>
         </section>
 
-        <!-- ==================== COMPONENT 2: SUBJECT GRID (tabbed) ==================== -->
-        <section id="subjects" class="py-20 bg-white dark:bg-primary">
+        <!-- ==================== SUBJECT GRID ==================== -->
+        <section id="subjects" class="py-16 md:py-24 bg-white dark:bg-primary">
             <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
-                <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="text-center max-w-2xl mx-auto mb-14">
                     <span class="text-secondary text-sm tracking-wider uppercase font-bold">Subjects</span>
-                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">All Subjects, One Platform</h2>
+                    <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold mt-2 mb-4">All Subjects, One Platform</h2>
                     <p class="text-slate-600 dark:text-slate-400">Comprehensive coverage across every major K-12 subject area.</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
-                        <div class="absolute -top-8 -right-8 w-24 h-24 rounded-full bg-secondary/5 group-hover:bg-secondary/10 transition-colors"></div>
-                        <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-calculator"></i></div>
-                        <h3 class="font-bold text-lg mb-1">Mathematics</h3>
-                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">K-12 & Advanced</p>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Arithmetic, Algebra, Geometry, Trigonometry, Calculus, and Statistics.</p>
-                        <span class="inline-block mt-3 text-secondary text-xs font-bold">12 tutors available</span>
-                    </div>
-                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
-                        <div class="absolute -top-8 -right-8 w-24 h-24 rounded-full bg-secondary/5 group-hover:bg-secondary/10 transition-colors"></div>
-                        <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-flask"></i></div>
-                        <h3 class="font-bold text-lg mb-1">Sciences</h3>
-                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Grades 3-12</p>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Biology, Chemistry, Physics, Earth Science, and Environmental Science.</p>
-                        <span class="inline-block mt-3 text-secondary text-xs font-bold">10 tutors available</span>
-                    </div>
-                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
-                        <div class="absolute -top-8 -right-8 w-24 h-24 rounded-full bg-secondary/5 group-hover:bg-secondary/10 transition-colors"></div>
-                        <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-book-open"></i></div>
-                        <h3 class="font-bold text-lg mb-1">Language Arts</h3>
-                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">K-12</p>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Reading Comprehension, Essay Writing, Grammar, Vocabulary, and Literature.</p>
-                        <span class="inline-block mt-3 text-secondary text-xs font-bold">8 tutors available</span>
-                    </div>
-                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
-                        <div class="absolute -top-8 -right-8 w-24 h-24 rounded-full bg-secondary/5 group-hover:bg-secondary/10 transition-colors"></div>
-                        <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-language"></i></div>
-                        <h3 class="font-bold text-lg mb-1">Foreign Languages</h3>
-                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">All Levels</p>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Spanish, French, Mandarin, Latin, and ESL for non-native speakers.</p>
-                        <span class="inline-block mt-3 text-secondary text-xs font-bold">6 tutors available</span>
-                    </div>
-                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
-                        <div class="absolute -top-8 -right-8 w-24 h-24 rounded-full bg-secondary/5 group-hover:bg-secondary/10 transition-colors"></div>
-                        <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-laptop-code"></i></div>
-                        <h3 class="font-bold text-lg mb-1">Computer Science</h3>
-                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Grades 6-12</p>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Intro to Programming, Python, Web Development, Robotics, and AP CS.</p>
-                        <span class="inline-block mt-3 text-secondary text-xs font-bold">5 tutors available</span>
-                    </div>
-                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
-                        <div class="absolute -top-8 -right-8 w-24 h-24 rounded-full bg-secondary/5 group-hover:bg-secondary/10 transition-colors"></div>
-                        <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-file-pen"></i></div>
-                        <h3 class="font-bold text-lg mb-1">Test Prep</h3>
-                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">High School</p>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">SAT, ACT, PSAT, AP Exams, and State Standardized Assessments.</p>
-                        <span class="inline-block mt-3 text-secondary text-xs font-bold">7 tutors available</span>
-                    </div>
-                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
-                        <div class="absolute -top-8 -right-8 w-24 h-24 rounded-full bg-secondary/5 group-hover:bg-secondary/10 transition-colors"></div>
-                        <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-music"></i></div>
-                        <h3 class="font-bold text-lg mb-1">Arts & Music</h3>
-                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">K-12</p>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Music Theory, Instrument Lessons, Art History, and Studio Art.</p>
-                        <span class="inline-block mt-3 text-secondary text-xs font-bold">4 tutors available</span>
-                    </div>
-                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
-                        <div class="absolute -top-8 -right-8 w-24 h-24 rounded-full bg-secondary/5 group-hover:bg-secondary/10 transition-colors"></div>
-                        <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-person-chalkboard"></i></div>
-                        <h3 class="font-bold text-lg mb-1">Study Skills</h3>
-                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">All Grades</p>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Time Management, Note-Taking, Organization, and Exam Strategies.</p>
-                        <span class="inline-block mt-3 text-secondary text-xs font-bold">3 tutors available</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== COMPONENT 3: LEVELS (tabs/grade bands) ==================== -->
-        <section id="levels" class="py-20 bg-slate-50 dark:bg-slate-900/50">
-            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
-                <div class="text-center max-w-2xl mx-auto mb-16">
-                    <span class="text-secondary text-sm tracking-wider uppercase font-bold">Grade Levels</span>
-                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">Courses by Grade</h2>
-                    <p class="text-slate-600 dark:text-slate-400">Structured programs designed for every stage of your child's academic journey.</p>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                    <div class="bg-white dark:bg-[#0F172A] rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-500">
-                        <div class="relative h-48 overflow-hidden">
-                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\Elementary.avif" alt="Elementary">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                            <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white">
-                                <h3 class="text-xl sm:text-2xl font-bold">Elementary</h3>
-                                <p class="text-white/80 text-xs sm:text-sm">Grades K-5</p>
-                            </div>
+                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-36 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\Mathematics.avif" alt="Mathematics course">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                            <div class="absolute top-3 left-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur text-secondary flex items-center justify-center text-lg shadow-sm"><i class="fa-solid fa-calculator"></i></div>
                         </div>
-                        <div class="p-5 sm:p-8">
-                            <ul class="space-y-2.5 sm:space-y-3 text-sm text-slate-600 dark:text-slate-400">
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500 text-xs"></i> Foundational Reading & Math</li>
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500 text-xs"></i> Early Science Exploration</li>
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500 text-xs"></i> Writing & Grammar Basics</li>
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500 text-xs"></i> Study Habit Building</li>
-                            </ul>
-                            <a href="resources.html" class="mt-5 sm:mt-6 block w-full py-2.5 sm:py-3 rounded-xl border-2 border-secondary text-secondary font-bold text-sm text-center hover:bg-secondary hover:text-white transition-all">View Courses</a>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg mb-1">Mathematics</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">K-12 &amp; Advanced</p>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Arithmetic, Algebra, Geometry, Trigonometry, Calculus, and Statistics.</p>
+                            <span class="inline-block mt-3 text-secondary text-xs font-bold">12 tutors available</span>
                         </div>
                     </div>
-                    <div class="bg-white dark:bg-[#0F172A] rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-500 relative">
-                        <span class="absolute top-3 right-3 z-10 bg-white text-secondary text-xs font-bold px-4 py-1 rounded-full shadow-md">Most Popular</span>
-                        <div class="relative h-48 overflow-hidden">
-                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\Middle School.avif" alt="Middle School">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                            <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white">
-                                <h3 class="text-xl sm:text-2xl font-bold">Middle School</h3>
-                                <p class="text-white/80 text-xs sm:text-sm">Grades 6-8</p>
-                            </div>
+                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-36 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\Sciences.avif" alt="Sciences course">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                            <div class="absolute top-3 left-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur text-secondary flex items-center justify-center text-lg shadow-sm"><i class="fa-solid fa-flask"></i></div>
                         </div>
-                        <div class="p-5 sm:p-8">
-                            <ul class="space-y-2.5 sm:space-y-3 text-sm text-slate-600 dark:text-slate-400">
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500 text-xs"></i> Pre-Algebra & Algebra Prep</li>
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500 text-xs"></i> Life & Physical Sciences</li>
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500 text-xs"></i> Essay Writing & Literature</li>
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500 text-xs"></i> Critical Thinking Skills</li>
-                            </ul>
-                            <a href="resources.html" class="mt-5 sm:mt-6 block w-full py-2.5 sm:py-3 rounded-xl bg-secondary text-white font-bold text-sm text-center hover:bg-blue-700 transition-all">View Courses</a>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg mb-1">Sciences</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Grades 3-12</p>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Biology, Chemistry, Physics, Earth Science, and Environmental Science.</p>
+                            <span class="inline-block mt-3 text-secondary text-xs font-bold">10 tutors available</span>
                         </div>
                     </div>
-                    <div class="bg-white dark:bg-[#0F172A] rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-500">
-                        <div class="relative h-48 overflow-hidden">
-                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\High School.avif" alt="High School">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                            <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white">
-                                <h3 class="text-xl sm:text-2xl font-bold">High School</h3>
-                                <p class="text-white/80 text-xs sm:text-sm">Grades 9-12</p>
-                            </div>
+                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-36 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\Language Arts.avif" alt="Language Arts course">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                            <div class="absolute top-3 left-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur text-secondary flex items-center justify-center text-lg shadow-sm"><i class="fa-solid fa-book-open"></i></div>
                         </div>
-                        <div class="p-5 sm:p-8">
-                            <ul class="space-y-2.5 sm:space-y-3 text-sm text-slate-600 dark:text-slate-400">
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500 text-xs"></i> Calculus, Physics & Chemistry</li>
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500 text-xs"></i> SAT/ACT Prep Programs</li>
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500 text-xs"></i> AP Course Support</li>
-                                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500 text-xs"></i> College Essay Coaching</li>
-                            </ul>
-                            <a href="resources.html" class="mt-5 sm:mt-6 block w-full py-2.5 sm:py-3 rounded-xl border-2 border-secondary text-secondary font-bold text-sm text-center hover:bg-secondary hover:text-white transition-all">View Courses</a>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg mb-1">Language Arts</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">K-12</p>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Reading Comprehension, Essay Writing, Grammar, Vocabulary, and Literature.</p>
+                            <span class="inline-block mt-3 text-secondary text-xs font-bold">8 tutors available</span>
+                        </div>
+                    </div>
+                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-36 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\Foreign Languages.avif" alt="Foreign Languages course">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                            <div class="absolute top-3 left-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur text-secondary flex items-center justify-center text-lg shadow-sm"><i class="fa-solid fa-language"></i></div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg mb-1">Foreign Languages</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">All Levels</p>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Spanish, French, Mandarin, Latin, and ESL for non-native speakers.</p>
+                            <span class="inline-block mt-3 text-secondary text-xs font-bold">6 tutors available</span>
+                        </div>
+                    </div>
+                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-36 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\computer.avif" alt="Computer Science course">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                            <div class="absolute top-3 left-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur text-secondary flex items-center justify-center text-lg shadow-sm"><i class="fa-solid fa-laptop-code"></i></div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg mb-1">Computer Science</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Grades 6-12</p>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Intro to Programming, Python, Web Development, Robotics, and AP CS.</p>
+                            <span class="inline-block mt-3 text-secondary text-xs font-bold">5 tutors available</span>
+                        </div>
+                    </div>
+                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-36 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\sat.avif" alt="Test Prep course">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                            <div class="absolute top-3 left-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur text-secondary flex items-center justify-center text-lg shadow-sm"><i class="fa-solid fa-file-pen"></i></div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg mb-1">Test Prep</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">High School</p>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">SAT, ACT, PSAT, AP Exams, and State Standardized Assessments.</p>
+                            <span class="inline-block mt-3 text-secondary text-xs font-bold">7 tutors available</span>
+                        </div>
+                    </div>
+                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-36 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\music.avif" alt="Arts and Music course">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                            <div class="absolute top-3 left-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur text-secondary flex items-center justify-center text-lg shadow-sm"><i class="fa-solid fa-music"></i></div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg mb-1">Arts &amp; Music</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">K-12</p>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Music Theory, Instrument Lessons, Art History, and Studio Art.</p>
+                            <span class="inline-block mt-3 text-secondary text-xs font-bold">4 tutors available</span>
+                        </div>
+                    </div>
+                    <div class="group relative bg-slate-50 dark:bg-slate-800/30 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300">
+                        <div class="relative h-36 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images\Study Skills.avif" alt="Study Skills course">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                            <div class="absolute top-3 left-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur text-secondary flex items-center justify-center text-lg shadow-sm"><i class="fa-solid fa-person-chalkboard"></i></div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg mb-1">Study Skills</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">All Grades</p>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Time Management, Note-Taking, Organization, and Exam Strategies.</p>
+                            <span class="inline-block mt-3 text-secondary text-xs font-bold">3 tutors available</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ==================== COMPONENT 4: LEARNING FORMATS (icon feature row) ==================== -->
-        <section class="py-20 bg-white dark:bg-primary">
+        <!-- ==================== GRADE LEVELS (TABBED) ==================== -->
+        <section id="levels" class="py-16 md:py-24 bg-slate-50 dark:bg-slate-900/50">
             <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
-                <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <span class="text-secondary text-sm tracking-wider uppercase font-bold">Class Levels</span>
+                    <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold mt-2 mb-4">Programs for Every Grade</h2>
+                    <p class="text-slate-600 dark:text-slate-400">From kindergarten to 12th grade, our programs are built around each age group's learning needs. Select a level to explore.</p>
+                </div>
+
+                <!-- Level Tabs -->
+                <div class="flex flex-wrap justify-center gap-3 mb-10">
+                    <button data-level="elementary" class="level-tab inline-flex items-center gap-2 px-5 sm:px-6 py-3 rounded-xl border-2 font-bold text-sm transition-all duration-300 bg-secondary text-white border-secondary shadow-lg shadow-secondary/25">
+                        <i class="fa-solid fa-child"></i> Elementary <span class="hidden sm:inline">K-5</span>
+                    </button>
+                    <button data-level="middle" class="level-tab inline-flex items-center gap-2 px-5 sm:px-6 py-3 rounded-xl border-2 font-bold text-sm transition-all duration-300 bg-white dark:bg-[#0F172A] text-slate-700 dark:text-slate-200 border-slate-200 dark:border-slate-800 hover:border-secondary">
+                        <i class="fa-solid fa-user-graduate"></i> Middle School <span class="hidden sm:inline">6-8</span>
+                        <span class="ml-1 hidden lg:inline-block bg-secondary text-white text-[10px] font-bold px-2 py-0.5 rounded-full">Popular</span>
+                    </button>
+                    <button data-level="high" class="level-tab inline-flex items-center gap-2 px-5 sm:px-6 py-3 rounded-xl border-2 font-bold text-sm transition-all duration-300 bg-white dark:bg-[#0F172A] text-slate-700 dark:text-slate-200 border-slate-200 dark:border-slate-800 hover:border-secondary">
+                        <i class="fa-solid fa-graduation-cap"></i> High School <span class="hidden sm:inline">9-12</span>
+                    </button>
+                </div>
+
+                <!-- Elementary Panel -->
+                <div id="level-panel-elementary" class="level-panel max-w-4xl mx-auto">
+                    <div class="bg-white dark:bg-[#0F172A] rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl grid grid-cols-1 lg:grid-cols-2">
+                        <div class="relative h-56 sm:h-64 lg:h-auto min-h-[280px] overflow-hidden">
+                            <img class="absolute inset-0 w-full h-full object-cover" src="images\Elementary.avif" alt="Elementary students learning">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                                <h3 class="text-2xl sm:text-3xl font-bold">Elementary School</h3>
+                                <p class="text-white/80 text-sm font-medium mt-1">Grades K-5 · Ages 5-10</p>
+                            </div>
+                        </div>
+                        <div class="p-6 sm:p-10 flex flex-col">
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">A warm, engaging foundation in reading, writing, and math — plus the study habits that set young learners up for success.</p>
+                            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-600 dark:text-slate-400">
+                                <li class="flex items-center gap-3"><span class="w-8 h-8 shrink-0 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center text-xs"><i class="fa-solid fa-book-open-reader"></i></span> Foundational Reading</li>
+                                <li class="flex items-center gap-3"><span class="w-8 h-8 shrink-0 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center text-xs"><i class="fa-solid fa-calculator"></i></span> Early Math Skills</li>
+                                <li class="flex items-center gap-3"><span class="w-8 h-8 shrink-0 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center text-xs"><i class="fa-solid fa-pen-nib"></i></span> Writing &amp; Grammar</li>
+                                <li class="flex items-center gap-3"><span class="w-8 h-8 shrink-0 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center text-xs"><i class="fa-solid fa-flask"></i></span> Science &amp; Study Habits</li>
+                            </ul>
+                            <div class="mt-8 flex flex-col sm:flex-row gap-3">
+                                <a href="resources.html" class="flex-1 text-center px-4 py-3 rounded-xl bg-secondary text-white font-bold text-sm hover:bg-blue-700 transition-all">View Courses</a>
+                                <a href="contact.html" class="flex-1 text-center px-4 py-3 rounded-xl border-2 border-secondary text-secondary font-bold text-sm hover:bg-secondary hover:text-white transition-all">Free Assessment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Middle School Panel -->
+                <div id="level-panel-middle" class="level-panel hidden max-w-4xl mx-auto">
+                    <div class="bg-white dark:bg-[#0F172A] rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl grid grid-cols-1 lg:grid-cols-2">
+                        <div class="relative h-56 sm:h-64 lg:h-auto min-h-[280px] overflow-hidden">
+                            <img class="absolute inset-0 w-full h-full object-cover" src="images\Middle School.avif" alt="Middle school students learning">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                                <h3 class="text-2xl sm:text-3xl font-bold">Middle School</h3>
+                                <p class="text-white/80 text-sm font-medium mt-1">Grades 6-8 · Ages 11-13</p>
+                            </div>
+                        </div>
+                        <div class="p-6 sm:p-10 flex flex-col">
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">We bridge the gap between childhood learning and high school rigor with courses that build independence, confidence, and critical thinking.</p>
+                            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-600 dark:text-slate-400">
+                                <li class="flex items-center gap-3"><span class="w-8 h-8 shrink-0 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center text-xs"><i class="fa-solid fa-square-root-variable"></i></span> Pre-Algebra &amp; Algebra</li>
+                                <li class="flex items-center gap-3"><span class="w-8 h-8 shrink-0 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center text-xs"><i class="fa-solid fa-microscope"></i></span> Life &amp; Physical Sciences</li>
+                                <li class="flex items-center gap-3"><span class="w-8 h-8 shrink-0 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center text-xs"><i class="fa-solid fa-pen-clip"></i></span> Essay Writing &amp; Literature</li>
+                                <li class="flex items-center gap-3"><span class="w-8 h-8 shrink-0 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center text-xs"><i class="fa-solid fa-lightbulb"></i></span> Critical Thinking Skills</li>
+                            </ul>
+                            <div class="mt-8 flex flex-col sm:flex-row gap-3">
+                                <a href="resources.html" class="flex-1 text-center px-4 py-3 rounded-xl bg-secondary text-white font-bold text-sm hover:bg-blue-700 transition-all">View Courses</a>
+                                <a href="contact.html" class="flex-1 text-center px-4 py-3 rounded-xl border-2 border-secondary text-secondary font-bold text-sm hover:bg-secondary hover:text-white transition-all">Free Assessment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- High School Panel -->
+                <div id="level-panel-high" class="level-panel hidden max-w-4xl mx-auto">
+                    <div class="bg-white dark:bg-[#0F172A] rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl grid grid-cols-1 lg:grid-cols-2">
+                        <div class="relative h-56 sm:h-64 lg:h-auto min-h-[280px] overflow-hidden">
+                            <img class="absolute inset-0 w-full h-full object-cover" src="images\High School.avif" alt="High school students learning">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                                <h3 class="text-2xl sm:text-3xl font-bold">High School</h3>
+                                <p class="text-white/80 text-sm font-medium mt-1">Grades 9-12 · Ages 14-18</p>
+                            </div>
+                        </div>
+                        <div class="p-6 sm:p-10 flex flex-col">
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">From advanced coursework to college admissions, we prepare high schoolers for the academic challenges ahead — and beyond.</p>
+                            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-600 dark:text-slate-400">
+                                <li class="flex items-center gap-3"><span class="w-8 h-8 shrink-0 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center text-xs"><i class="fa-solid fa-sigma"></i></span> Calculus &amp; Advanced Math</li>
+                                <li class="flex items-center gap-3"><span class="w-8 h-8 shrink-0 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center text-xs"><i class="fa-solid fa-atom"></i></span> Chemistry &amp; Physics</li>
+                                <li class="flex items-center gap-3"><span class="w-8 h-8 shrink-0 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center text-xs"><i class="fa-solid fa-file-pen"></i></span> SAT/ACT Prep Programs</li>
+                                <li class="flex items-center gap-3"><span class="w-8 h-8 shrink-0 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center text-xs"><i class="fa-solid fa-building-columns"></i></span> AP Support &amp; College Essays</li>
+                            </ul>
+                            <div class="mt-8 flex flex-col sm:flex-row gap-3">
+                                <a href="resources.html" class="flex-1 text-center px-4 py-3 rounded-xl bg-secondary text-white font-bold text-sm hover:bg-blue-700 transition-all">View Courses</a>
+                                <a href="contact.html" class="flex-1 text-center px-4 py-3 rounded-xl border-2 border-secondary text-secondary font-bold text-sm hover:bg-secondary hover:text-white transition-all">Free Assessment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== LEARNING FORMATS ==================== -->
+        <section class="py-16 md:py-24 bg-white dark:bg-primary">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+                <div class="text-center max-w-2xl mx-auto mb-14">
                     <span class="text-secondary text-sm tracking-wider uppercase font-bold">Formats</span>
-                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">Choose How Your Child Learns</h2>
+                    <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold mt-2 mb-4">Choose How Your Child Learns</h2>
                     <p class="text-slate-600 dark:text-slate-400">Flexible delivery options to match your family's lifestyle and preferences.</p>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
                     <div class="bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden group hover:-translate-y-2 transition-all duration-300">
-                        <img class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500" src="images\1-on-1 In-Person.webp" alt="In-person">
-                        <div class="p-6 text-center">
+                        <img class="w-full h-44 sm:h-52 object-cover group-hover:scale-105 transition-transform duration-500" src="images\1-on-1 In-Person.webp" alt="One-on-one in-person tutoring">
+                        <div class="p-5 sm:p-6 text-center">
                             <h3 class="font-bold text-lg mb-2">1-on-1 In-Person</h3>
                             <p class="text-slate-600 dark:text-slate-400 text-sm">Traditional face-to-face tutoring at our center or your home for personalized attention.</p>
                         </div>
                     </div>
                     <div class="bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden group hover:-translate-y-2 transition-all duration-300">
-                        <img class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500" src="images\Live Online.avif" alt="Online">
-                        <div class="p-6 text-center">
+                        <img class="w-full h-44 sm:h-52 object-cover group-hover:scale-105 transition-transform duration-500" src="images\Live Online.avif" alt="Live online tutoring">
+                        <div class="p-5 sm:p-6 text-center">
                             <h3 class="font-bold text-lg mb-2">Live Online</h3>
                             <p class="text-slate-600 dark:text-slate-400 text-sm">Interactive virtual sessions with whiteboard, screen sharing, and session recordings.</p>
                         </div>
                     </div>
                     <div class="bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden group hover:-translate-y-2 transition-all duration-300">
-                        <img class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500" src="images\Small Groups.avif" alt="Group">
-                        <div class="p-6 text-center">
+                        <img class="w-full h-44 sm:h-52 object-cover group-hover:scale-105 transition-transform duration-500" src="images\Small Groups.avif" alt="Small group tutoring">
+                        <div class="p-5 sm:p-6 text-center">
                             <h3 class="font-bold text-lg mb-2">Small Groups</h3>
                             <p class="text-slate-600 dark:text-slate-400 text-sm">3-5 students per group for collaborative learning at a more affordable rate.</p>
                         </div>
                     </div>
                     <div class="bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden group hover:-translate-y-2 transition-all duration-500">
-                        <img class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500" src="images\Boot Camps.webp" alt="Boot camp">
-                        <div class="p-6 text-center">
+                        <img class="w-full h-44 sm:h-52 object-cover group-hover:scale-105 transition-transform duration-500" src="images\Boot Camps.webp" alt="Intensive boot camp program">
+                        <div class="p-5 sm:p-6 text-center">
                             <h3 class="font-bold text-lg mb-2">Boot Camps</h3>
                             <p class="text-slate-600 dark:text-slate-400 text-sm">Intensive weekend or week-long programs for exam prep and subject mastery.</p>
                         </div>
@@ -234,153 +315,87 @@
             </div>
         </section>
 
-        <!-- ==================== COMPONENT 5: PRICING TABLE ==================== -->
-        <section class="py-20 bg-slate-50 dark:bg-slate-900/50">
+        <!-- ==================== PRICING ==================== -->
+        <section class="py-16 md:py-24 bg-slate-50 dark:bg-slate-900/50">
             <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
-                <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="text-center max-w-2xl mx-auto mb-14">
                     <span class="text-secondary text-sm tracking-wider uppercase font-bold">Pricing</span>
-                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">Course Pricing</h2>
+                    <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold mt-2 mb-4">Simple, Transparent Pricing</h2>
                     <p class="text-slate-600 dark:text-slate-400">Affordable rates with no hidden fees. Flexible packages to fit any budget.</p>
                 </div>
-                <!-- Mobile: Card Layout -->
-                <div class="space-y-4 md:hidden">
-                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl border border-slate-200 dark:border-slate-800 p-5 hover:border-secondary/50 dark:hover:border-secondary/50 transition-colors">
-                        <div class="flex items-center justify-between mb-3">
-                            <div>
-                                <p class="font-bold text-slate-900 dark:text-white">Single Subject</p>
-                                <p class="text-xs text-slate-500 mt-0.5">One subject, weekly sessions</p>
-                            </div>
-                            <span class="text-secondary font-bold text-lg">$39</span>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                    <div class="bg-white dark:bg-[#0F172A] rounded-3xl border border-slate-200 dark:border-slate-800 p-6 sm:p-8 flex flex-col hover:border-secondary/50 transition-colors">
+                        <h3 class="text-lg font-bold">Single Subject</h3>
+                        <p class="text-xs text-slate-500 mt-1">One subject, weekly sessions</p>
+                        <div class="flex items-end gap-1 mt-5 mb-2">
+                            <span class="text-4xl font-bold text-slate-900 dark:text-white">$39</span>
+                            <span class="text-xs text-slate-500 mb-1">/ hour</span>
                         </div>
-                        <div class="flex items-center gap-3 text-xs text-slate-500 mb-4">
-                            <span><i class="fas fa-user mr-1"></i>1-on-1</span>
-                            <span><i class="fas fa-clock mr-1"></i>1 hour</span>
-                        </div>
-                        <a href="contact.html" class="block w-full text-center px-4 py-2.5 rounded-xl bg-secondary/10 text-secondary text-xs font-bold hover:bg-secondary hover:text-white transition-all">Enroll</a>
+                        <ul class="space-y-2.5 text-sm text-slate-600 dark:text-slate-400 mt-4 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500 text-xs"></i> 1-on-1 personalized sessions</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500 text-xs"></i> 1-hour weekly sessions</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500 text-xs"></i> Monthly progress reports</li>
+                        </ul>
+                        <a href="contact.html" class="mt-auto block w-full text-center px-4 py-3 rounded-xl bg-secondary/10 text-secondary text-sm font-bold hover:bg-secondary hover:text-white transition-all">Choose This Plan</a>
                     </div>
-
-                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl border border-slate-200 dark:border-slate-800 p-5 hover:border-secondary/50 dark:hover:border-secondary/50 transition-colors">
-                        <div class="flex items-center justify-between mb-3">
-                            <div>
-                                <p class="font-bold text-slate-900 dark:text-white">Multi-Subject</p>
-                                <p class="text-xs text-slate-500 mt-0.5">Up to 3 subjects</p>
-                            </div>
-                            <span class="text-secondary font-bold text-lg">$34</span>
+                    <div class="bg-white dark:bg-[#0F172A] rounded-3xl border-2 border-secondary shadow-lg shadow-secondary/10 p-6 sm:p-8 flex flex-col relative">
+                        <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-white text-xs font-bold px-4 py-1 rounded-full shadow-md">Best Value</span>
+                        <h3 class="text-lg font-bold">Multi-Subject</h3>
+                        <p class="text-xs text-slate-500 mt-1">Up to 3 subjects</p>
+                        <div class="flex items-end gap-1 mt-5 mb-2">
+                            <span class="text-4xl font-bold text-slate-900 dark:text-white">$34</span>
+                            <span class="text-xs text-slate-500 mb-1">/ hour</span>
                         </div>
-                        <div class="flex items-center gap-3 text-xs text-slate-500 mb-4">
-                            <span><i class="fas fa-user mr-1"></i>1-on-1</span>
-                            <span><i class="fas fa-clock mr-1"></i>1 hour</span>
-                        </div>
-                        <a href="contact.html" class="block w-full text-center px-4 py-2.5 rounded-xl bg-secondary/10 text-secondary text-xs font-bold hover:bg-secondary hover:text-white transition-all">Enroll</a>
+                        <ul class="space-y-2.5 text-sm text-slate-600 dark:text-slate-400 mt-4 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500 text-xs"></i> 1-on-1 across multiple subjects</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500 text-xs"></i> 1-hour weekly sessions</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500 text-xs"></i> Flexible scheduling</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500 text-xs"></i> Monthly progress reports</li>
+                        </ul>
+                        <a href="contact.html" class="mt-auto block w-full text-center px-4 py-3 rounded-xl bg-secondary text-white text-sm font-bold hover:bg-blue-700 transition-all">Choose This Plan</a>
                     </div>
-
-                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl border border-slate-200 dark:border-slate-800 p-5 hover:border-secondary/50 dark:hover:border-secondary/50 transition-colors">
-                        <div class="flex items-center justify-between mb-3">
-                            <div>
-                                <p class="font-bold text-slate-900 dark:text-white">Unlimited</p>
-                                <p class="text-xs text-slate-500 mt-0.5">All subjects, all access</p>
-                            </div>
-                            <span class="text-secondary font-bold text-lg">$29</span>
+                    <div class="bg-white dark:bg-[#0F172A] rounded-3xl border border-slate-200 dark:border-slate-800 p-6 sm:p-8 flex flex-col hover:border-secondary/50 transition-colors">
+                        <h3 class="text-lg font-bold">Unlimited</h3>
+                        <p class="text-xs text-slate-500 mt-1">All subjects, all access</p>
+                        <div class="flex items-end gap-1 mt-5 mb-2">
+                            <span class="text-4xl font-bold text-slate-900 dark:text-white">$29</span>
+                            <span class="text-xs text-slate-500 mb-1">/ hour</span>
                         </div>
-                        <div class="flex items-center gap-3 text-xs text-slate-500 mb-4">
-                            <span><i class="fas fa-user mr-1"></i>1-on-1</span>
-                            <span><i class="fas fa-clock mr-1"></i>1 hour</span>
-                        </div>
-                        <a href="contact.html" class="block w-full text-center px-4 py-2.5 rounded-xl bg-secondary/10 text-secondary text-xs font-bold hover:bg-secondary hover:text-white transition-all">Enroll</a>
-                    </div>
-
-                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl border border-slate-200 dark:border-slate-800 p-5 hover:border-secondary/50 dark:hover:border-secondary/50 transition-colors">
-                        <div class="flex items-center justify-between mb-3">
-                            <div>
-                                <p class="font-bold text-slate-900 dark:text-white">Group Tutoring</p>
-                                <p class="text-xs text-slate-500 mt-0.5">Small groups of 3-5</p>
-                            </div>
-                            <span class="text-secondary font-bold text-lg">$19</span>
-                        </div>
-                        <div class="flex items-center gap-3 text-xs text-slate-500 mb-4">
-                            <span><i class="fas fa-users mr-1"></i>Group</span>
-                            <span><i class="fas fa-clock mr-1"></i>1.5 hours</span>
-                        </div>
-                        <a href="contact.html" class="block w-full text-center px-4 py-2.5 rounded-xl bg-secondary/10 text-secondary text-xs font-bold hover:bg-secondary hover:text-white transition-all">Enroll</a>
-                    </div>
-
-                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl border border-slate-200 dark:border-slate-800 p-5 hover:border-secondary/50 dark:hover:border-secondary/50 transition-colors">
-                        <div class="flex items-center justify-between mb-3">
-                            <div>
-                                <p class="font-bold text-slate-900 dark:text-white">Boot Camp</p>
-                                <p class="text-xs text-slate-500 mt-0.5">Intensive exam prep</p>
-                            </div>
-                            <span class="text-secondary font-bold text-lg">$249</span>
-                        </div>
-                        <div class="flex items-center gap-3 text-xs text-slate-500 mb-4">
-                            <span><i class="fas fa-users mr-1"></i>Group/1-on-1</span>
-                            <span><i class="fas fa-clock mr-1"></i>2 weeks</span>
-                        </div>
-                        <a href="contact.html" class="block w-full text-center px-4 py-2.5 rounded-xl bg-secondary/10 text-secondary text-xs font-bold hover:bg-secondary hover:text-white transition-all">Enroll</a>
+                        <ul class="space-y-2.5 text-sm text-slate-600 dark:text-slate-400 mt-4 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500 text-xs"></i> 1-on-1 in any subject</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500 text-xs"></i> 1-hour weekly sessions</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500 text-xs"></i> On-demand video library</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500 text-xs"></i> Priority scheduling</li>
+                        </ul>
+                        <a href="contact.html" class="mt-auto block w-full text-center px-4 py-3 rounded-xl bg-secondary/10 text-secondary text-sm font-bold hover:bg-secondary hover:text-white transition-all">Choose This Plan</a>
                     </div>
                 </div>
-
-                <!-- Desktop: Table Layout -->
-                <div class="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800 hidden md:block">
-                    <table class="w-full text-sm bg-white dark:bg-[#0F172A]">
-                        <thead>
-                            <tr class="bg-secondary text-white text-left">
-                                <th class="px-6 py-4 font-bold">Course Type</th>
-                                <th class="px-6 py-4 font-bold">Format</th>
-                                <th class="px-6 py-4 font-bold">Duration</th>
-                                <th class="px-6 py-4 font-bold">Price</th>
-                                <th class="px-6 py-4 font-bold">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-slate-200 dark:divide-slate-800">
-                            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
-                                <td class="px-6 py-4"><span class="font-bold">Single Subject</span><br><span class="text-xs text-slate-500">One subject, weekly sessions</span></td>
-                                <td class="px-6 py-4">1-on-1</td>
-                                <td class="px-6 py-4">1 hour</td>
-                                <td class="px-6 py-4 text-secondary font-bold">$39</td>
-                                <td class="px-6 py-4"><a href="contact.html" class="px-4 py-1.5 rounded-lg bg-secondary/10 text-secondary text-xs font-bold hover:bg-secondary hover:text-white transition-all">Enroll</a></td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
-                                <td class="px-6 py-4"><span class="font-bold">Multi-Subject</span><br><span class="text-xs text-slate-500">Up to 3 subjects</span></td>
-                                <td class="px-6 py-4">1-on-1</td>
-                                <td class="px-6 py-4">1 hour</td>
-                                <td class="px-6 py-4 text-secondary font-bold">$34</td>
-                                <td class="px-6 py-4"><a href="contact.html" class="px-4 py-1.5 rounded-lg bg-secondary/10 text-secondary text-xs font-bold hover:bg-secondary hover:text-white transition-all">Enroll</a></td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
-                                <td class="px-6 py-4"><span class="font-bold">Unlimited</span><br><span class="text-xs text-slate-500">All subjects, all access</span></td>
-                                <td class="px-6 py-4">1-on-1</td>
-                                <td class="px-6 py-4">1 hour</td>
-                                <td class="px-6 py-4 text-secondary font-bold">$29</td>
-                                <td class="px-6 py-4"><a href="contact.html" class="px-4 py-1.5 rounded-lg bg-secondary/10 text-secondary text-xs font-bold hover:bg-secondary hover:text-white transition-all">Enroll</a></td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
-                                <td class="px-6 py-4"><span class="font-bold">Group Tutoring</span><br><span class="text-xs text-slate-500">Small groups of 3-5</span></td>
-                                <td class="px-6 py-4">Group</td>
-                                <td class="px-6 py-4">1.5 hours</td>
-                                <td class="px-6 py-4 text-secondary font-bold">$19</td>
-                                <td class="px-6 py-4"><a href="contact.html" class="px-4 py-1.5 rounded-lg bg-secondary/10 text-secondary text-xs font-bold hover:bg-secondary hover:text-white transition-all">Enroll</a></td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
-                                <td class="px-6 py-4"><span class="font-bold">Boot Camp</span><br><span class="text-xs text-slate-500">Intensive exam prep</span></td>
-                                <td class="px-6 py-4">Group/1-on-1</td>
-                                <td class="px-6 py-4">2 weeks</td>
-                                <td class="px-6 py-4 text-secondary font-bold">$249</td>
-                                <td class="px-6 py-4"><a href="contact.html" class="px-4 py-1.5 rounded-lg bg-secondary/10 text-secondary text-xs font-bold hover:bg-secondary hover:text-white transition-all">Enroll</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto text-center">
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl border border-slate-200 dark:border-slate-800 p-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+                        <div class="text-left">
+                            <p class="font-bold">Group Tutoring</p>
+                            <p class="text-xs text-slate-500">Small groups of 3-5 · 1.5-hour sessions</p>
+                        </div>
+                        <a href="contact.html" class="shrink-0 px-5 py-2.5 rounded-xl bg-secondary/10 text-secondary text-xs font-bold hover:bg-secondary hover:text-white transition-all">Enroll · $19</a>
+                    </div>
+                    <div class="bg-white dark:bg-[#0F172A] rounded-2xl border border-slate-200 dark:border-slate-800 p-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+                        <div class="text-left">
+                            <p class="font-bold">Boot Camp</p>
+                            <p class="text-xs text-slate-500">Intensive exam prep · 2-week program</p>
+                        </div>
+                        <a href="contact.html" class="shrink-0 px-5 py-2.5 rounded-xl bg-secondary/10 text-secondary text-xs font-bold hover:bg-secondary hover:text-white transition-all">Enroll · $249</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- ==================== COMPONENT 6: FEATURED INSTRUCTOR ==================== -->
-        <section class="py-20 bg-white dark:bg-primary">
+        <!-- ==================== FEATURED INSTRUCTOR ==================== -->
+        <section class="py-16 md:py-24 bg-white dark:bg-primary">
             <div class="max-w-[1200px] mx-auto px-6 lg:px-10">
-                <div class="flex flex-col lg:flex-row items-center gap-14">
+                <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
                     <div class="w-full lg:w-2/5">
                         <div class="relative">
-                            <img class="w-full h-auto rounded-3xl shadow-xl" src="images\T3.avif" alt="Master Instructor">
+                            <img class="w-full h-auto rounded-3xl shadow-xl" src="images\T3.avif" alt="Featured TutorCenter instructor">
                             <div class="absolute -bottom-4 -right-4 bg-secondary text-white p-5 rounded-2xl shadow-lg text-center">
                                 <span class="text-3xl font-bold block">98%</span>
                                 <span class="text-xs text-blue-100">Pass Rate</span>
@@ -389,20 +404,20 @@
                     </div>
                     <div class="w-full lg:w-3/5">
                         <span class="text-secondary text-sm tracking-wider uppercase font-bold">Featured Instructor</span>
-                        <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6">Learn from the Best</h2>
-                        <p class="text-slate-600 dark:text-slate-400 mb-6">Our instructors don't just teach — they inspire. With an average of 8+ years of teaching experience, our team brings passion, expertise, and proven track records.</p>
-                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                        <h2 class="text-2xl sm:text-4xl font-bold mt-2 mb-6">Learn from the Best</h2>
+                        <p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">Our instructors don't just teach — they inspire. With an average of 8+ years of teaching experience, our team brings passion, expertise, and proven track records.</p>
+                        <div class="grid grid-cols-3 gap-3 sm:gap-4 text-center">
                             <div class="bg-slate-50 dark:bg-slate-800/30 rounded-xl p-4 border border-slate-200 dark:border-slate-800">
-                                <span class="block text-2xl font-bold text-secondary">50+</span>
-                                <span class="text-xs text-slate-500">Certified Tutors</span>
+                                <span class="block text-xl sm:text-2xl font-bold text-secondary">50+</span>
+                                <span class="text-[10px] sm:text-xs text-slate-500">Certified Tutors</span>
                             </div>
                             <div class="bg-slate-50 dark:bg-slate-800/30 rounded-xl p-4 border border-slate-200 dark:border-slate-800">
-                                <span class="block text-2xl font-bold text-secondary">8yr</span>
-                                <span class="text-xs text-slate-500">Avg. Experience</span>
+                                <span class="block text-xl sm:text-2xl font-bold text-secondary">8yr</span>
+                                <span class="text-[10px] sm:text-xs text-slate-500">Avg. Experience</span>
                             </div>
                             <div class="bg-slate-50 dark:bg-slate-800/30 rounded-xl p-4 border border-slate-200 dark:border-slate-800">
-                                <span class="block text-2xl font-bold text-secondary">95%</span>
-                                <span class="text-xs text-slate-500">Satisfaction</span>
+                                <span class="block text-xl sm:text-2xl font-bold text-secondary">95%</span>
+                                <span class="text-[10px] sm:text-xs text-slate-500">Satisfaction</span>
                             </div>
                         </div>
                         <a href="about.html" class="mt-6 inline-flex items-center gap-2 text-secondary font-bold hover:underline">Meet our full team <i class="fa-solid fa-arrow-right text-xs"></i></a>
@@ -411,14 +426,14 @@
             </div>
         </section>
 
-        <!-- ==================== COMPONENT 7: CTA ==================== -->
-        <section class="py-20 bg-secondary relative overflow-hidden">
+        <!-- ==================== CTA ==================== -->
+        <section class="py-16 md:py-24 bg-secondary relative overflow-hidden">
             <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-[120px] pointer-events-none"></div>
             <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-900/10 rounded-full blur-[120px] pointer-events-none"></div>
             <div class="max-w-[1440px] mx-auto px-6 lg:px-10 relative z-10">
                 <div class="text-center max-w-3xl mx-auto">
-                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Ready to Get Started?</h2>
-                    <p class="text-blue-100 text-lg mb-10">Enroll today and give your child the academic advantage they deserve. First consultation is free.</p>
+                    <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">Ready to Get Started?</h2>
+                    <p class="text-blue-100 text-base sm:text-lg mb-10">Enroll today and give your child the academic advantage they deserve. First consultation is free.</p>
                     <div class="flex flex-col sm:flex-row justify-center gap-4">
                         <a href="contact.html" class="px-10 py-4 rounded-xl bg-white text-secondary font-bold text-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">Enroll Now</a>
                         <a href="contact.html" class="px-10 py-4 rounded-xl border-2 border-white/30 text-white font-bold text-lg hover:bg-white/10 transition-all duration-300">Book a Free Assessment</a>
@@ -430,6 +445,28 @@
     </main>
 
     <div id="footer"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const tabs = document.querySelectorAll(".level-tab");
+            const panels = document.querySelectorAll(".level-panel");
+            const activeClasses = ["bg-secondary", "text-white", "border-secondary", "shadow-lg", "shadow-secondary/25"];
+            const inactiveClasses = ["bg-white", "dark:bg-[#0F172A]", "text-slate-700", "dark:text-slate-200", "border-slate-200", "dark:border-slate-800", "hover:border-secondary"];
+
+            tabs.forEach((tab) => {
+                tab.addEventListener("click", () => {
+                    tabs.forEach((t) => {
+                        activeClasses.forEach((c) => t.classList.remove(c));
+                        inactiveClasses.forEach((c) => t.classList.add(c));
+                    });
+                    activeClasses.forEach((c) => tab.classList.add(c));
+                    inactiveClasses.forEach((c) => tab.classList.remove(c));
+                    panels.forEach((p) => p.classList.add("hidden"));
+                    document.getElementById("level-panel-" + tab.dataset.level).classList.remove("hidden");
+                });
+            });
+        });
+    </script>
 
     <script src="navbar.js"></script>
     <script src="footer.js"></script>

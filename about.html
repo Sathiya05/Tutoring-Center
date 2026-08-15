@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about TutorCenter — our story, mission, values, and the educators dedicated to helping every K-12 student reach their academic potential.">
     <title>TutorCenter | About Us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script src="tailwind.js"></script>
-          <link rel="icon" href="images\logo.png">
-              <script>
+    <link rel="icon" href="images\logo.png">
+    <script>
         tailwind.config = {
             darkMode: 'class',
             theme: {
@@ -28,55 +29,60 @@
 
     <main class="pt-20 md:pt-24">
 
-        <!-- ==================== COMPONENT 1: PAGE HEADER (with overlay bg) ==================== -->
-        <section class="relative h-screen flex items-center justify-center overflow-hidden bg-[#0F172A]">
-            <img src="images\bg2.avif" alt="Campus" class="absolute inset-0 w-full h-full object-cover object-center z-0">
-            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-black/50 z-0"></div>
-            <div class="max-w-[1440px] w-full mx-auto px-6 lg:px-10 relative z-10 pt-5">
+        <!-- ==================== PAGE HEADER / HERO ==================== -->
+        <section class="relative flex items-center overflow-hidden bg-[#0F172A] py-20 md:py-28 lg:py-32">
+            <img src="images\bg2.avif" alt="TutorCenter learning center" class="absolute inset-0 w-full h-full object-cover object-center z-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/65 to-black/50 z-0"></div>
+            <div class="max-w-[1440px] w-full mx-auto px-6 lg:px-10 relative z-10">
+                <nav class="text-xs md:text-sm text-slate-300 mb-6 flex items-center justify-center gap-2 font-semibold">
+                    <a href="index.html" class="hover:text-secondary transition-colors">Home</a>
+                    <i class="fa-solid fa-chevron-right text-[9px] text-slate-500"></i>
+                    <span class="text-secondary">About Us</span>
+                </nav>
                 <div class="max-w-3xl mx-auto text-center">
-                    <span class="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary text-xs font-bold uppercase tracking-wider mb-5">About Us</span>
-                    <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">Dedicated to <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5ba0d9] to-blue-300">Academic Excellence</span></h1>
-                    <p class="text-slate-200 text-lg mt-4 max-w-xl mx-auto">Discover the story behind TutorCenter — our mission, our values, and the team that makes it all happen.</p>
+                    <span class="inline-block px-4 py-1.5 rounded-full bg-secondary/15 border border-secondary/30 text-secondary text-xs font-bold uppercase tracking-wider mb-5">About TutorCenter</span>
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">Who We Are <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5ba0d9] to-blue-300">&amp; What Drives Us</span></h1>
+                    <p class="text-slate-200 text-base sm:text-lg mt-5 max-w-xl mx-auto leading-relaxed">Since 2010, TutorCenter has helped K-12 students build confidence, master their subjects, and unlock their full academic potential — one learner at a time.</p>
                     <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
                         <a href="contact.html" class="flex items-center justify-center px-8 py-3.5 rounded-xl bg-secondary text-white font-bold text-base hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">Book a Free Consultation</a>
-                        <a href="#story" class="flex items-center justify-center px-8 py-3.5 rounded-xl border-2 border-white/30 text-white font-bold text-base hover:bg-white/10 transition-all duration-300">Learn Our Story</a>
+                        <a href="#story" class="flex items-center justify-center px-8 py-3.5 rounded-xl border-2 border-white/30 text-white font-bold text-base hover:bg-white/10 transition-all duration-300">Read Our Story</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ==================== COMPONENT 2: OUR STORY (large text + image split) ==================== -->
-        <section class="py-20 bg-white dark:bg-primary">
+        <!-- ==================== OUR STORY ==================== -->
+        <section id="story" class="py-16 md:py-24 bg-white dark:bg-primary">
             <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
-                <div class="flex flex-col lg:flex-row items-center gap-14">
+                <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
                     <div class="w-full lg:w-1/2">
-                        <img class="w-full h-auto rounded-3xl shadow-xl" src="images\bg1.avif" alt="Our team">
+                        <img class="w-full h-auto max-h-[420px] object-cover rounded-3xl shadow-xl" src="images\bg1.avif" alt="TutorCenter team working with students">
                     </div>
                     <div class="w-full lg:w-1/2">
                         <span class="text-secondary text-sm tracking-wider uppercase font-bold">Our Story</span>
-                        <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-6">Helping Students Succeed Since 2010</h2>
-                        <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
-                            TutorCenter was founded by a group of passionate educators who saw a gap in traditional tutoring. We believed that every child deserves personalized attention tailored to their unique learning style — not a one-size-fits-all approach.
+                        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold mt-2 mb-6">Helping Students Succeed Since 2010</h2>
+                        <p class="text-slate-600 dark:text-slate-400 mb-5 leading-relaxed">
+                            TutorCenter was founded by a group of passionate educators who saw a gap in traditional tutoring. We believe every child deserves personalized attention tailored to their unique learning style — not a one-size-fits-all approach.
                         </p>
-                        <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
-                            What started as small afterschool sessions in a local library has grown into a thriving learning center serving over 500 students annually. Our growth comes from one thing: results. When students gain confidence, grades follow.
+                        <p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                            What started as small after-school sessions in a local library has grown into a thriving learning center serving over 500 students each year. Our growth comes from one thing: results. When students gain confidence, grades follow.
                         </p>
-                        <div class="flex items-center gap-6 pt-4 border-t border-slate-200 dark:border-slate-800">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6 border-t border-slate-200 dark:border-slate-800">
                             <div class="text-center">
-                                <span class="block text-3xl font-bold text-secondary">500+</span>
-                                <span class="text-xs text-slate-500">Students</span>
+                                <span class="block text-2xl md:text-3xl font-bold text-secondary">500+</span>
+                                <span class="text-xs text-slate-500">Students Each Year</span>
                             </div>
                             <div class="text-center">
-                                <span class="block text-3xl font-bold text-secondary">50+</span>
-                                <span class="text-xs text-slate-500">Tutors</span>
+                                <span class="block text-2xl md:text-3xl font-bold text-secondary">50+</span>
+                                <span class="text-xs text-slate-500">Certified Tutors</span>
                             </div>
                             <div class="text-center">
-                                <span class="block text-3xl font-bold text-secondary">12</span>
-                                <span class="text-xs text-slate-500">Years</span>
+                                <span class="block text-2xl md:text-3xl font-bold text-secondary">12</span>
+                                <span class="text-xs text-slate-500">Years of Experience</span>
                             </div>
                             <div class="text-center">
-                                <span class="block text-3xl font-bold text-secondary">4.9</span>
-                                <span class="text-xs text-slate-500">Rating</span>
+                                <span class="block text-2xl md:text-3xl font-bold text-secondary">4.9</span>
+                                <span class="text-xs text-slate-500">Average Rating</span>
                             </div>
                         </div>
                     </div>
@@ -84,15 +90,15 @@
             </div>
         </section>
 
-        <!-- ==================== COMPONENT 3: MISSION & VALUES (3 cards) ==================== -->
-        <section class="py-20 bg-slate-50 dark:bg-slate-900/50">
+        <!-- ==================== MISSION / VISION / VALUES ==================== -->
+        <section class="py-16 md:py-24 bg-slate-50 dark:bg-slate-900/50">
             <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
-                <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="text-center max-w-2xl mx-auto mb-14">
                     <span class="text-secondary text-sm tracking-wider uppercase font-bold">Our Values</span>
-                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">What Drives Us</h2>
+                    <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold mt-2 mb-4">What Drives Us</h2>
                     <p class="text-slate-600 dark:text-slate-400">Every decision we make is guided by these core principles.</p>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                     <div class="bg-white dark:bg-[#0F172A] rounded-2xl p-8 border border-slate-200 dark:border-slate-800 hover:border-secondary/50 transition-colors group">
                         <div class="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary text-3xl mb-6 group-hover:bg-secondary group-hover:text-white transition-all duration-300"><i class="fa-solid fa-bullseye"></i></div>
                         <h3 class="text-xl font-bold mb-3">Our Mission</h3>
@@ -101,65 +107,92 @@
                     <div class="bg-white dark:bg-[#0F172A] rounded-2xl p-8 border border-slate-200 dark:border-slate-800 hover:border-secondary/50 transition-colors group">
                         <div class="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary text-3xl mb-6 group-hover:bg-secondary group-hover:text-white transition-all duration-300"><i class="fa-solid fa-eye"></i></div>
                         <h3 class="text-xl font-bold mb-3">Our Vision</h3>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">A world where every child has access to quality education that adapts to how they learn best, regardless of their background or challenges.</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">A world where every child has access to quality education that adapts to how they learn best — regardless of their background or challenges.</p>
                     </div>
                     <div class="bg-white dark:bg-[#0F172A] rounded-2xl p-8 border border-slate-200 dark:border-slate-800 hover:border-secondary/50 transition-colors group">
                         <div class="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary text-3xl mb-6 group-hover:bg-secondary group-hover:text-white transition-all duration-300"><i class="fa-solid fa-handshake"></i></div>
                         <h3 class="text-xl font-bold mb-3">Our Promise</h3>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">We guarantee measurable progress within the first three months or we adjust your plan at no extra cost. Your child's success is our commitment.</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">We guarantee measurable progress within the first three months, or we adjust your plan at no extra cost. Your child's success is our commitment.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-    
-
-        <!-- ==================== COMPONENT 5: GALLERY (3-column image grid) ==================== -->
-        <section class="py-20 bg-slate-50 dark:bg-slate-900/50">
+        <!-- ==================== WHY CHOOSE US ==================== -->
+        <section class="py-16 md:py-24 bg-white dark:bg-primary">
             <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
-                <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <span class="text-secondary text-sm tracking-wider uppercase font-bold">Why Us</span>
+                    <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold mt-2 mb-4">What Sets Us Apart</h2>
+                    <p class="text-slate-600 dark:text-slate-400">Here's why hundreds of families trust TutorCenter every year.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                    <div class="flex flex-col items-center text-center gap-4 p-6 md:p-8 bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-secondary/50 transition-colors">
+                        <div class="w-20 h-20 shrink-0 rounded-full bg-secondary/10 flex items-center justify-center text-secondary text-3xl"><i class="fa-solid fa-user-check"></i></div>
+                        <h3 class="text-xl font-bold">Rigorous Tutor Selection</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Only 5% of applicants make it through. Every tutor undergoes background checks, subject-matter testing, and a teaching demonstration.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center gap-4 p-6 md:p-8 bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-secondary/50 transition-colors">
+                        <div class="w-20 h-20 shrink-0 rounded-full bg-secondary/10 flex items-center justify-center text-secondary text-3xl"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3 class="text-xl font-bold">Measurable Progress Tracking</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">We provide monthly progress reports with data on grades, test scores, and confidence levels so you can see the improvement.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center gap-4 p-6 md:p-8 bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-secondary/50 transition-colors">
+                        <div class="w-20 h-20 shrink-0 rounded-full bg-secondary/10 flex items-center justify-center text-secondary text-3xl"><i class="fa-solid fa-rotate-left"></i></div>
+                        <h3 class="text-xl font-bold">Satisfaction Guarantee</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Not seeing results after 3 months? We'll revise the learning plan at no additional cost. Your child's progress matters more than anything.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== GALLERY ==================== -->
+        <section class="py-16 md:py-24 bg-white dark:bg-primary">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
+                <div class="text-center max-w-2xl mx-auto mb-14">
                     <span class="text-secondary text-sm tracking-wider uppercase font-bold">Gallery</span>
-                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">Life at TutorCenter</h2>
+                    <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold mt-2 mb-4">Life at TutorCenter</h2>
                     <p class="text-slate-600 dark:text-slate-400">A glimpse into our learning environment and community.</p>
                 </div>
-                <div class="flex flex-wrap gap-5 justify-center">
-                    <div class="relative group rounded-2xl overflow-hidden shadow-sm flex-[1_1_280px] max-w-[400px] hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
-                        <img class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-700" src="images\Collaborative Study.avif" alt="Students learning">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div class="relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+                        <img class="w-full h-64 md:h-72 object-cover group-hover:scale-105 transition-transform duration-700" src="images\Collaborative Study.avif" alt="Students collaborating in the main hall">
                         <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-5">
                             <h3 class="text-white font-bold text-lg">Collaborative Study</h3>
                             <p class="text-white/70 text-sm">Students working in our main hall</p>
                         </div>
                     </div>
-                    <div class="relative group rounded-2xl overflow-hidden shadow-sm flex-[1_1_280px] max-w-[400px] hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
-                        <img class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-700" src="images\Group Sessions.avif" alt="Group study">
+                    <div class="relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+                        <img class="w-full h-64 md:h-72 object-cover group-hover:scale-105 transition-transform duration-700" src="images\Group Sessions.avif" alt="Students in a group study session">
                         <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-5">
                             <h3 class="text-white font-bold text-lg">Group Sessions</h3>
                             <p class="text-white/70 text-sm">Collaborative peer learning</p>
                         </div>
                     </div>
-                    <div class="relative group rounded-2xl overflow-hidden shadow-sm flex-[1_1_280px] max-w-[400px] hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
-                        <img class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-700" src="images\Focused Classrooms.avif" alt="Classroom">
+                    <div class="relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+                        <img class="w-full h-64 md:h-72 object-cover group-hover:scale-105 transition-transform duration-700" src="images\Focused Classrooms.avif" alt="Students focused in the classroom">
                         <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-5">
                             <h3 class="text-white font-bold text-lg">Focused Classrooms</h3>
                             <p class="text-white/70 text-sm">Distraction-free learning zones</p>
                         </div>
                     </div>
-                    <div class="relative group rounded-2xl overflow-hidden shadow-sm flex-[1_1_280px] max-w-[400px] hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
-                        <img class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-700" src="images\One-on-One Tutoring.avif" alt="One-on-one">
+                    <div class="relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+                        <img class="w-full h-64 md:h-72 object-cover group-hover:scale-105 transition-transform duration-700" src="images\One-on-One Tutoring.avif" alt="One-on-one tutoring session">
                         <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-5">
                             <h3 class="text-white font-bold text-lg">One-on-One Tutoring</h3>
                             <p class="text-white/70 text-sm">Personalized attention for every student</p>
                         </div>
                     </div>
-                    <div class="relative group rounded-2xl overflow-hidden shadow-sm flex-[1_1_280px] max-w-[400px] hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
-                        <img class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-700" src="images\Expert Guidance.webp" alt="Teaching">
+                    <div class="relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+                        <img class="w-full h-64 md:h-72 object-cover group-hover:scale-105 transition-transform duration-700" src="images\Expert Guidance.webp" alt="A tutor guiding a student">
                         <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-5">
                             <h3 class="text-white font-bold text-lg">Expert Guidance</h3>
                             <p class="text-white/70 text-sm">Dedicated tutor support</p>
                         </div>
                     </div>
-                    <div class="relative group rounded-2xl overflow-hidden shadow-sm flex-[1_1_280px] max-w-[400px] hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
-                        <img class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-700" src="images\Team Projects.avif" alt="Students collaborating">
+                    <div class="relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+                        <img class="w-full h-64 md:h-72 object-cover group-hover:scale-105 transition-transform duration-700" src="images\Team Projects.avif" alt="Students working on a team project">
                         <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-5">
                             <h3 class="text-white font-bold text-lg">Team Projects</h3>
                             <p class="text-white/70 text-sm">Building collaboration skills</p>
@@ -169,85 +202,147 @@
             </div>
         </section>
 
-        <!-- ==================== COMPONENT 6: WHY PARENTS CHOOSE US (alternating rows) ==================== -->
-        <section class="py-20 bg-white dark:bg-primary">
+        <!-- ==================== OUR JOURNEY (TIMELINE) ==================== -->
+        <section class="py-16 md:py-24 bg-slate-50 dark:bg-slate-900/50">
             <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
-                <div class="text-center max-w-2xl mx-auto mb-16">
-                    <span class="text-secondary text-sm tracking-wider uppercase font-bold">Why Us</span>
-                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">What Sets Us Apart</h2>
-                    <p class="text-slate-600 dark:text-slate-400">Here's why hundreds of families trust TutorCenter every year.</p>
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <span class="text-secondary text-sm tracking-wider uppercase font-bold">Our Journey</span>
+                    <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold mt-2 mb-4">Milestones That Shaped Us</h2>
+                    <p class="text-slate-600 dark:text-slate-400">From a library study group to a thriving learning center — here's how we got here.</p>
                 </div>
-                <div class="space-y-12 max-w-4xl mx-auto">
-                    <div class="flex flex-col md:flex-row items-center gap-8">
-                        <div class="w-20 h-20 shrink-0 rounded-full bg-secondary/10 flex items-center justify-center text-secondary text-3xl"><i class="fa-solid fa-user-check"></i></div>
-                        <div>
-                            <h3 class="text-xl font-bold mb-2">Rigorous Tutor Selection</h3>
-                            <p class="text-slate-600 dark:text-slate-400 text-sm">Only 5% of applicants make it through. Every tutor undergoes background checks, subject matter testing, and a teaching demonstration.</p>
+
+                <div class="relative max-w-4xl mx-auto">
+                    <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-slate-200 dark:bg-slate-800 -translate-x-1/2"></div>
+                    <div class="space-y-10 md:space-y-14">
+
+                        <div class="relative flex md:justify-start">
+                            <span class="absolute left-4 md:left-1/2 top-6 -translate-x-1/2 w-5 h-5 rounded-full bg-secondary ring-4 ring-secondary/20"></span>
+                            <div class="ml-12 md:ml-0 md:w-1/2 md:pr-12">
+                                <span class="inline-block px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-bold">2010</span>
+                                <div class="bg-white dark:bg-[#0F172A] rounded-2xl p-6 border border-slate-200 dark:border-slate-800 mt-3 hover:border-secondary/50 transition-colors">
+                                    <h3 class="font-bold text-lg mb-1">The Beginning</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">TutorCenter starts as a small after-school study group meeting in a local library, serving a handful of neighborhood students.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative flex md:justify-end">
+                            <span class="absolute left-4 md:left-1/2 top-6 -translate-x-1/2 w-5 h-5 rounded-full bg-secondary ring-4 ring-secondary/20"></span>
+                            <div class="ml-12 md:ml-0 md:w-1/2 md:pl-12">
+                                <span class="inline-block px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-bold">2014</span>
+                                <div class="bg-white dark:bg-[#0F172A] rounded-2xl p-6 border border-slate-200 dark:border-slate-800 mt-3 hover:border-secondary/50 transition-colors">
+                                    <h3 class="font-bold text-lg mb-1">A Home of Our Own</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">We move into our first dedicated learning center with four classrooms, welcoming our first cohort of full-time tutors.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative flex md:justify-start">
+                            <span class="absolute left-4 md:left-1/2 top-6 -translate-x-1/2 w-5 h-5 rounded-full bg-secondary ring-4 ring-secondary/20"></span>
+                            <div class="ml-12 md:ml-0 md:w-1/2 md:pr-12">
+                                <span class="inline-block px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-bold">2018</span>
+                                <div class="bg-white dark:bg-[#0F172A] rounded-2xl p-6 border border-slate-200 dark:border-slate-800 mt-3 hover:border-secondary/50 transition-colors">
+                                    <h3 class="font-bold text-lg mb-1">Going Online</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">We launch live online tutoring, bringing personalized instruction to families far beyond our home city.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative flex md:justify-end">
+                            <span class="absolute left-4 md:left-1/2 top-6 -translate-x-1/2 w-5 h-5 rounded-full bg-secondary ring-4 ring-secondary/20"></span>
+                            <div class="ml-12 md:ml-0 md:w-1/2 md:pl-12">
+                                <span class="inline-block px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-bold">2021</span>
+                                <div class="bg-white dark:bg-[#0F172A] rounded-2xl p-6 border border-slate-200 dark:border-slate-800 mt-3 hover:border-secondary/50 transition-colors">
+                                    <h3 class="font-bold text-lg mb-1">Growing Fast</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">We pass 500 students a year and grow our team to more than 50 certified tutors across every subject area.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative flex md:justify-start">
+                            <span class="absolute left-4 md:left-1/2 top-6 -translate-x-1/2 w-5 h-5 rounded-full bg-secondary ring-4 ring-secondary/20"></span>
+                            <div class="ml-12 md:ml-0 md:w-1/2 md:pr-12">
+                                <span class="inline-block px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-bold">2024</span>
+                                <div class="bg-white dark:bg-[#0F172A] rounded-2xl p-6 border border-slate-200 dark:border-slate-800 mt-3 hover:border-secondary/50 transition-colors">
+                                    <h3 class="font-bold text-lg mb-1">Learning Anywhere</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">We add a free video library, downloadable study guides, and intensive exam boot camps to support every kind of learner.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TESTIMONIALS ==================== -->
+        <section class="py-16 md:py-24 bg-white dark:bg-primary relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-[100px] pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-10 relative z-10">
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <span class="text-secondary text-sm tracking-wider uppercase font-bold">Testimonials</span>
+                    <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold mt-2 mb-4">What Families Say</h2>
+                    <p class="text-slate-600 dark:text-slate-400">Real stories from parents and students who've grown with TutorCenter.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                    <div class="bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-8 border border-slate-200 dark:border-slate-800 relative shadow-sm hover:border-secondary/50 transition-colors">
+                        <i class="fa-solid fa-quote-right absolute top-6 right-6 text-4xl text-slate-200 dark:text-slate-800"></i>
+                        <div class="flex gap-1 text-amber-400 text-sm mb-5">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed italic mb-7 relative z-10">"My son was struggling with Algebra, but after just two months at TutorCenter his grade went from a C- to an A. The tutors are incredibly patient and genuinely care."</p>
+                        <div class="flex items-center gap-4">
+                            <img class="w-12 h-12 rounded-full object-cover border-2 border-white dark:border-slate-700" src="images\prog1.avif" alt="Sarah Jenkins">
+                            <div>
+                                <h4 class="text-slate-900 dark:text-white font-bold text-sm">Sarah Jenkins</h4>
+                                <span class="text-slate-500 text-xs">Parent of 8th Grader</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="flex flex-col md:flex-row items-center gap-8">
-                        <div class="w-20 h-20 shrink-0 rounded-full bg-secondary/10 flex items-center justify-center text-secondary text-3xl"><i class="fa-solid fa-chart-line"></i></div>
-                        <div>
-                            <h3 class="text-xl font-bold mb-2">Measurable Progress Tracking</h3>
-                            <p class="text-slate-600 dark:text-slate-400 text-sm">We provide monthly progress reports with data on grades, test scores, and confidence levels so you can see the improvement.</p>
+                    <div class="bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-8 border border-slate-200 dark:border-slate-800 relative shadow-sm hover:border-secondary/50 transition-colors">
+                        <i class="fa-solid fa-quote-right absolute top-6 right-6 text-4xl text-slate-200 dark:text-slate-800"></i>
+                        <div class="flex gap-1 text-amber-400 text-sm mb-5">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed italic mb-7 relative z-10">"The SAT prep program was phenomenal. The customized study plan helped my daughter raise her score by 150 points. Highly recommend to any high schooler!"</p>
+                        <div class="flex items-center gap-4">
+                            <img class="w-12 h-12 rounded-full object-cover border-2 border-white dark:border-slate-700" src="images\prob1.avif" alt="Michael Chen">
+                            <div>
+                                <h4 class="text-slate-900 dark:text-white font-bold text-sm">Michael Chen</h4>
+                                <span class="text-slate-500 text-xs">Parent of 11th Grader</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="flex flex-col md:flex-row items-center gap-8">
-                        <div class="w-20 h-20 shrink-0 rounded-full bg-secondary/10 flex items-center justify-center text-secondary text-3xl"><i class="fa-solid fa-rotate-left"></i></div>
-                        <div>
-                            <h3 class="text-xl font-bold mb-2">Satisfaction Guarantee</h3>
-                            <p class="text-slate-600 dark:text-slate-400 text-sm">Not seeing results after 3 months? We'll revise the learning plan at no additional cost. Your child's progress matters more than anything.</p>
+                    <div class="bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-8 border border-slate-200 dark:border-slate-800 relative shadow-sm hover:border-secondary/50 transition-colors md:col-span-2 lg:col-span-1">
+                        <i class="fa-solid fa-quote-right absolute top-6 right-6 text-4xl text-slate-200 dark:text-slate-800"></i>
+                        <div class="flex gap-1 text-amber-400 text-sm mb-5">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed italic mb-7 relative z-10">"We love the elementary reading program and the online classes. My daughter actually looks forward to her sessions, and her reading confidence has skyrocketed."</p>
+                        <div class="flex items-center gap-4">
+                            <img class="w-12 h-12 rounded-full object-cover border-2 border-white dark:border-slate-700" src="images\prog2.avif" alt="Elena Rodriguez">
+                            <div>
+                                <h4 class="text-slate-900 dark:text-white font-bold text-sm">Elena Rodriguez</h4>
+                                <span class="text-slate-500 text-xs">Parent of 3rd Grader</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-  <section class="py-20 bg-white dark:bg-primary">
-            <div class="max-w-[1440px] mx-auto px-6 lg:px-10">
-                <div class="text-center max-w-2xl mx-auto mb-16">
-                    <span class="text-secondary text-sm tracking-wider uppercase font-bold">Leadership</span>
-                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">Meet Our Founders</h2>
-                    <p class="text-slate-600 dark:text-slate-400">The people behind TutorCenter who bring decades of experience in education.</p>
-                </div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-4xl mx-auto">
-                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800">
-                        <img class="w-28 h-28 rounded-2xl object-cover shrink-0" src="images\prob1.avif" alt="Founder">
-                        <div class="text-center sm:text-left">
-                            <h3 class="text-xl font-bold">Dr. Lisa Monroe</h3>
-                            <span class="text-secondary text-xs font-bold uppercase tracking-wider">Co-Founder &amp; CEO</span>
-                            <p class="text-slate-600 dark:text-slate-400 text-sm mt-3">Former university professor with a PhD in Education. Lisa has spent 20 years developing curriculum strategies that work for diverse learners.</p>
-                            <div class="flex gap-3 mt-4 justify-center sm:justify-start text-slate-400">
-                                <a href="https://linkedin.com" target="_blank" class="hover:text-secondary transition-colors"><i class="fa-brands fa-linkedin"></i></a>
-                                <a href="https://twitter.com" target="_blank" class="hover:text-secondary transition-colors"><i class="fa-brands fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 bg-slate-50 dark:bg-slate-800/30 rounded-2xl p-6 border border-slate-200 dark:border-slate-800">
-                        <img class="w-28 h-28 rounded-2xl object-cover shrink-0" src="images\b1.avif" alt="Founder">
-                        <div class="text-center sm:text-left">
-                            <h3 class="text-xl font-bold">Michael Torres</h3>
-                            <span class="text-secondary text-xs font-bold uppercase tracking-wider">Co-Founder &amp; COO</span>
-                            <p class="text-slate-600 dark:text-slate-400 text-sm mt-3">Master's in Educational Leadership. Michael oversees operations and has built a network of 50+ certified tutors across the region.</p>
-                            <div class="flex gap-3 mt-4 justify-center sm:justify-start text-slate-400">
-                                <a href="https://linkedin.com" target="_blank" class="hover:text-secondary transition-colors"><i class="fa-brands fa-linkedin"></i></a>
-                                <a href="https://twitter.com" target="_blank" class="hover:text-secondary transition-colors"><i class="fa-brands fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ==================== COMPONENT 7: CTA ==================== -->
-        <section class="py-20 bg-secondary relative overflow-hidden">
+
+        <!-- ==================== CTA ==================== -->
+        <section class="py-16 md:py-24 bg-secondary relative overflow-hidden">
             <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-[120px] pointer-events-none"></div>
             <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-900/10 rounded-full blur-[120px] pointer-events-none"></div>
             <div class="max-w-[1440px] mx-auto px-6 lg:px-10 relative z-10">
                 <div class="text-center max-w-3xl mx-auto">
-                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Ready to Join the TutorCenter Family?</h2>
-                    <p class="text-blue-100 text-lg mb-10">Schedule a free consultation today and meet the team that will help your child succeed.</p>
+                    <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">Ready to Join the TutorCenter Family?</h2>
+                    <p class="text-blue-100 text-base sm:text-lg mb-10">Schedule a free consultation today and meet the team that will help your child succeed.</p>
                     <div class="flex flex-col sm:flex-row justify-center gap-4">
                         <a href="contact.html" class="px-10 py-4 rounded-xl bg-white text-secondary font-bold text-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">Book a Free Consultation</a>
-                        <a href="courses.html" class="px-10 py-4 rounded-xl border-2 border-white/30 text-white font-bold text-lg hover:bg-white/10 transition-all duration-300">Learn More</a>
+                        <a href="courses.html" class="px-10 py-4 rounded-xl border-2 border-white/30 text-white font-bold text-lg hover:bg-white/10 transition-all duration-300">Explore Our Courses</a>
                     </div>
                 </div>
             </div>
